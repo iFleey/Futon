@@ -1,0 +1,1616 @@
+<resources>
+  <string name="app_name">Futon</string>
+
+  <!-- Common Actions -->
+  <string name="action_back">Back</string>
+  <string name="action_confirm">Confirm</string>
+  <string name="action_cancel">Cancel</string>
+  <string name="action_save">Save</string>
+  <string name="action_delete">Delete</string>
+  <string name="action_retry">Retry</string>
+  <string name="action_show">Show</string>
+  <string name="action_hide">Hide</string>
+  <string name="action_clear">Clear</string>
+  <string name="action_send">Send</string>
+  <string name="action_undo">Undo</string>
+  <string name="action_edit">Edit</string>
+
+  <!-- Swipe Actions -->
+  <string name="swipe_deleted">Deleted</string>
+  <string name="swipe_deleted_item">Item deleted</string>
+  <string name="swipe_deleted_conversation">Conversation deleted</string>
+  <string name="swipe_deleted_record">Record deleted</string>
+
+  <!-- Navigation -->
+  <string name="nav_home">Home</string>
+  <string name="nav_task">Tasks</string>
+  <string name="nav_settings">Settings</string>
+  <string name="nav_history">History</string>
+
+  <!-- Content Descriptions -->
+  <string name="content_description_menu">Open menu</string>
+  <string name="content_description_new_conversation">New conversation</string>
+
+  <!-- Home Screen -->
+  <string name="status_running">Running</string>
+  <string name="status_not_enabled">Not Enabled</string>
+  <string name="status_warning">Warning</string>
+  <string name="status_connected">Connected</string>
+
+  <!-- Settings Screen -->
+  <string name="settings">Settings</string>
+  <string name="api_key">API Key</string>
+  <string name="api_base_url">API Base URL</string>
+  <string name="model_name">Model Name</string>
+  <string name="max_steps">Max Steps</string>
+  <string name="system_prompt">System Prompt</string>
+  <string name="save_settings">Save Settings</string>
+  <string name="settings_saved">Settings saved</string>
+
+  <!-- Settings Screen Categories -->
+  <string name="settings_category_ai">AI &amp; Models</string>
+  <string name="settings_category_automation">Automation</string>
+  <string name="settings_category_perception">Perception Engine</string>
+  <string name="settings_category_system">System &amp; Daemon</string>
+  <string name="settings_category_integrations">Integrations</string>
+  <string name="settings_category_other">Other</string>
+  <string name="settings_category_appearance">Interface</string>
+  <string name="settings_category_debug">Debug</string>
+  <string name="settings_ai_provider">AI Provider</string>
+  <string name="settings_local_model">Local Model</string>
+  <string name="settings_appearance">Appearance</string>
+  <string name="settings_automation">Automation</string>
+  <string name="settings_hybrid_perception">Hybrid Perception</string>
+  <string name="settings_advanced_options">Advanced Options</string>
+
+  <!-- Appearance Settings -->
+  <string name="settings_theme">Theme</string>
+  <string name="settings_theme_mode">Theme Mode</string>
+  <string name="settings_theme_system">System Default</string>
+  <string name="settings_theme_system_description">Follow system light/dark settings</string>
+  <string name="settings_theme_light">Light Mode</string>
+  <string name="settings_theme_light_description">Always use light theme</string>
+  <string name="settings_theme_dark">Dark Mode</string>
+  <string name="settings_theme_dark_description">Always use dark theme</string>
+  <string name="settings_theme_description">Choose app theme mode</string>
+  <string name="settings_color">Color</string>
+  <string name="settings_dynamic_color">Dynamic Color</string>
+  <string name="settings_dynamic_color_description">Automatically adjust app colors based on wallpaper (Material You)</string>
+
+  <!-- Language Settings -->
+  <string name="settings_language">Language</string>
+  <string name="settings_language_system">System Default</string>
+  <string name="settings_language_system_description">Follow system language settings</string>
+  <string name="settings_language_english">English</string>
+  <string name="settings_language_chinese_simplified">简体中文</string>
+  <string name="settings_language_chinese_traditional">繁體中文</string>
+  <string name="settings_language_japanese">日本語</string>
+
+  <!-- Automation Settings -->
+  <string name="settings_execution">Execution Settings</string>
+  <string name="settings_max_steps_description">Max steps per task</string>
+  <string name="settings_timeout">Timeout Settings</string>
+  <string name="settings_ai_timeout">AI Request Timeout</string>
+  <string name="settings_ai_timeout_description">AI request timeout (seconds). Recommended to increase for thinking models.</string>
+  <string name="settings_timeout_seconds">%d seconds</string>
+  <string name="settings_steps_count">%d steps</string>
+  <string name="settings_token">Token Settings</string>
+  <string name="settings_max_tokens">Max Tokens</string>
+  <string name="settings_max_tokens_description">Max tokens for AI response. Increase this if responses are truncated.</string>
+  <string name="settings_screenshot">Screenshot Quality</string>
+  <string name="settings_screenshot_quality">Screenshot Quality</string>
+  <string name="settings_screenshot_quality_low">Low Quality</string>
+  <string name="settings_screenshot_quality_low_description">50% compression, faster upload, suitable for slow networks</string>
+  <string name="settings_screenshot_quality_medium">Medium Quality</string>
+  <string name="settings_screenshot_quality_medium_description">70% compression, balanced speed and recognition accuracy</string>
+  <string name="settings_screenshot_quality_high">High Quality</string>
+  <string name="settings_screenshot_quality_high_description">90% compression, more accurate recognition, but slower upload</string>
+  <string name="settings_screenshot_quality_description">Lower quality speeds up upload, higher quality improves AI recognition accuracy</string>
+
+  <!-- Advanced Settings -->
+  <string name="settings_ai_prompt">AI Prompts</string>
+  <string name="settings_system_prompt_description">Custom AI system prompt to guide how the AI analyzes the screen and performs tasks</string>
+
+  <!-- Settings Validation -->
+  <string name="error_api_key_required">Please enter API Key</string>
+  <string name="error_base_url_required">Please enter API Base URL</string>
+  <string name="error_model_required">Please enter model name</string>
+  <string name="error_max_steps_invalid">Max steps must be greater than 0</string>
+
+  <!-- Task Screen -->
+  <string name="task_input_label">Input Task</string>
+  <string name="task_input_placeholder">e.g., Visit fleey.me/blog</string>
+  <string name="chat_input_placeholder">Type what you want me to do...</string>
+  <string name="chat_input_hint">Ask me anything</string>
+  <string name="chat_input_attach">Attach files</string>
+  <string name="chat_input_remove_attachment">Remove attachment</string>
+  <string name="chat_attachment_image">Image</string>
+  <string name="chat_attachment_file">File</string>
+  <string name="chat_attachment_limit">Maximum %d attachments</string>
+  <string name="slash_commands_title">Commands</string>
+  <string name="ai_disclaimer">AI can make mistakes. Please verify responses.</string>
+  <string name="start_execution">Start Execution</string>
+  <string name="stop_execution">Stop</string>
+  <string name="executing">Executing...</string>
+  <string name="step_progress">Step %1$d / %2$d</string>
+  <string name="task_suggestions">Suggested Actions</string>
+  <string name="task_no_action_history">No action history</string>
+
+  <!-- Automation Results -->
+  <string name="result_success">Task Completed</string>
+  <string name="result_failure">Task Failed</string>
+  <string name="result_cancelled">Task Cancelled</string>
+  <string name="result_timeout">Task Timed Out</string>
+
+  <!-- History Screen -->
+  <string name="history">History</string>
+  <string name="no_history">No history</string>
+  <string name="retry_task">Retry Task</string>
+  <string name="clear_history">Clear History</string>
+  <string name="history_steps">%d steps</string>
+
+  <!-- History Header -->
+  <string name="history_header_title">Execution Records</string>
+  <string name="history_record_count">Total %d records</string>
+
+  <!-- History Multi-Select -->
+  <string name="history_selected_count">%d selected</string>
+  <string name="history_select_all">Select All</string>
+  <string name="history_deselect_all">Deselect All</string>
+  <string name="history_delete_selected">Delete Selected</string>
+  <string name="history_status_success">Success</string>
+  <string name="history_status_failure">Failure</string>
+  <string name="history_status_cancelled">Cancelled</string>
+  <string name="history_status_timeout">Timeout</string>
+
+  <!-- Execution Phase -->
+  <string name="phase_capturing_screenshot">Capturing Screenshot</string>
+  <string name="phase_analyzing_with_ai">AI Analyzing</string>
+  <string name="phase_executing_action">Executing Action</string>
+  <string name="phase_waiting">Waiting</string>
+  <string name="phase_retrying">Retrying</string>
+
+  <!-- Execution Details -->
+  <string name="elapsed_time">Elapsed Time</string>
+  <string name="step_elapsed_time">Current Step</string>
+  <string name="total_elapsed_time">Total Time</string>
+  <string name="thinking_model_hint">This is normal for reasoning models</string>
+  <string name="ai_reasoning">AI Reasoning</string>
+  <string name="action_history">Action History</string>
+  <string name="retry_attempt">Retry %1$d/%2$d</string>
+  <string name="retry_reason">Reason: %s</string>
+  <string name="retry_current_step">Retry Current Step</string>
+  <string name="action_success">Success</string>
+  <string name="action_failed">Failed</string>
+  <string name="duration_ms">%d ms</string>
+  <string name="step_number">Step %d</string>
+
+  <!-- Error Suggestions -->
+  <string name="suggestion_check_network">Check network connection</string>
+  <string name="suggestion_increase_timeout">Increase timeout</string>
+  <string name="suggestion_check_api_key">Check API Key</string>
+
+  <!-- Execution Log Detail -->
+  <string name="execution_log_detail">Execution Log Details</string>
+  <string name="export_log">Export Log</string>
+  <string name="log_not_found">Log not found</string>
+  <string name="actions_section">Actions</string>
+  <string name="ai_responses_section">AI Responses</string>
+  <string name="errors_section">Errors</string>
+  <string name="execution_steps_section">Execution Steps</string>
+  <string name="start_time">Start Time</string>
+  <string name="duration">Duration</string>
+  <string name="steps_executed">Steps Executed</string>
+  <string name="errors_count">Error Count</string>
+  <string name="parameters">Parameters</string>
+  <string name="failure_reason">Failure Reason</string>
+  <string name="response_time_ms">Response time: %d ms</string>
+  <string name="execution_ms">Exec: %d ms</string>
+  <string name="ai_response_ms">AI: %d ms</string>
+  <string name="retryable">Retryable</string>
+  <string name="error_type_network">Network Error</string>
+  <string name="error_type_timeout">Timeout</string>
+  <string name="error_type_api">API Error</string>
+  <string name="error_type_invalid_response">Invalid Response</string>
+  <string name="error_type_action_failed">Action Failed</string>
+  <string name="error_type_unknown">Unknown Error</string>
+  <string name="view_details">View Details</string>
+
+  <!-- Error Messages -->
+  <string name="error_api_key_not_configured">API Key not configured</string>
+  <string name="error_screenshot_failed">Screenshot failed: %s</string>
+  <string name="error_ai_request_failed">AI request failed: %s</string>
+  <string name="error_action_execution_failed">Action execution failed</string>
+  <string name="error_network">Network error: %s</string>
+  <string name="error_invalid_api_key">Invalid API Key</string>
+  <string name="error_rate_limit">Rate limit exceeded</string>
+  <string name="error_server">Server error: %d</string>
+  <string name="error_invalid_response">Invalid response format</string>
+  <string name="error_timeout">Request timeout</string>
+  <string name="error_settings_not_configured">Please configure API settings first</string>
+  <string name="error_unknown">Unknown error</string>
+
+  <!-- Provider Config -->
+  <string name="provider_name_openai">OpenAI</string>
+  <string name="provider_name_gemini">Gemini</string>
+  <string name="provider_name_new_api">New API</string>
+  <string name="provider_name_custom">Custom</string>
+  <string name="provider_name_local_model">Local Model</string>
+  <string name="provider_config_title">%s Config</string>
+  <string name="provider_api_key">API Key</string>
+  <string name="provider_base_url">Base URL</string>
+  <string name="provider_refresh_models">Refresh Models</string>
+  <string name="provider_set_active">Set as Active Provider</string>
+  <string name="provider_currently_active">Currently Active</string>
+  <string name="provider_switch_to">Switch to %s</string>
+  <string name="provider_save_changes">Save Changes</string>
+  <string name="provider_saved">Saved</string>
+  <string name="provider_api_key_empty_warning">API Key is empty. This provider will be unusable after saving.</string>
+  <string name="provider_test_connection">Test Connection</string>
+  <string name="provider_testing">Testing...</string>
+  <string name="provider_close">Close</string>
+
+  <!-- Hybrid Perception Settings -->
+  <string name="perception_mode">Perception Mode</string>
+  <string name="perception_enable_advanced">Enable Advanced Perception</string>
+  <string name="perception_enable_description">Enable to choose different perception modes</string>
+  <string name="perception_method">Perception Method</string>
+  <string name="perception_screenshot_only">Screenshot Only Mode</string>
+  <string name="perception_screenshot_only_description">Uses only screenshots for visual perception, relying on AI to understand the interface</string>
+  <string name="perception_ui_tree_only">UI Tree Only Mode</string>
+  <string name="perception_ui_tree_only_description">Uses only UI structure, providing precise element info (Requires Root)</string>
+  <string name="perception_hybrid">Hybrid Mode</string>
+  <string name="perception_hybrid_description">Uses both screenshot and UI tree for best accuracy (Requires Root)</string>
+  <string name="perception_performance">Performance</string>
+  <string name="perception_timeout">Perception Timeout</string>
+  <string name="perception_timeout_description">Max wait time for UI tree retrieval</string>
+  <string name="perception_timeout_min">1s</string>
+  <string name="perception_timeout_max">10s</string>
+  <string name="perception_ai_optimization">AI Optimization</string>
+  <string name="perception_ui_tree_depth">UI Tree Depth</string>
+  <string name="perception_ui_tree_depth_description">Limit UI tree depth sent to AI to reduce tokens and speed up response</string>
+  <string name="perception_depth_levels">%d levels</string>
+  <string name="perception_depth_shallow">Shallow</string>
+  <string name="perception_depth_deep">Deep</string>
+  <string name="perception_include_non_interactive">Include non-interactive elements</string>
+  <string name="perception_include_non_interactive_description">Include unclickable elements (like text labels) in AI context, increases token usage</string>
+  <string name="perception_adaptive_learning">Adaptive Learning</string>
+  <string name="perception_enable_learning">Enable Adaptive Learning</string>
+  <string name="perception_learning_description">Record successful element matching patterns to improve future speed</string>
+  <string name="perception_root_status">Root Status</string>
+  <string name="perception_root_checking">Checking...</string>
+  <string name="perception_root_available">Available (%s)</string>
+  <string name="perception_root_unavailable">Unavailable</string>
+  <string name="perception_root_denied">Permission Denied</string>
+  <string name="perception_refresh">Refresh</string>
+  <string name="perception_root_denied_message">Root permission denied. Please grant Futon in your Root manager and click below to request again.</string>
+  <string name="perception_root_unavailable_message">Root permission not detected. If you installed KSU, SukiSU Ultra, Magisk, or other Root solutions, click below to request permission.</string>
+  <string name="perception_request_root">Request Root Permission</string>
+  <string name="perception_requesting">Requesting...</string>
+  <string name="perception_cache">Learning Cache</string>
+  <string name="perception_cache_count">%1$d / %2$d records</string>
+  <string name="perception_clear_cache">Clear Cache</string>
+  <string name="perception_clearing">Clearing...</string>
+  <string name="perception_cache_warning">Clearing cache deletes all learned patterns, which may temporarily reduce matching accuracy.</string>
+  <string name="perception_cache_cleared">Cache cleared</string>
+
+  <!-- Root Types -->
+  <string name="root_type_ksu">KernelSU</string>
+  <string name="root_type_ksu_next">KernelSU Next</string>
+  <string name="root_type_sukisu_ultra">SukiSU Ultra</string>
+  <string name="root_type_magisk">Magisk</string>
+  <string name="root_type_supersu">SuperSU</string>
+  <string name="root_type_apatch">APatch</string>
+  <string name="root_type_other">Other</string>
+  <string name="root_type_none">None</string>
+
+  <!-- Execution Settings -->
+  <string name="settings_execution_layer">Execution Layer Settings</string>
+  <string name="settings_input_method">Input Injection Method</string>
+  <string name="settings_capture_method">Screenshot Method</string>
+  <string name="settings_method_auto">Auto Select</string>
+  <string name="settings_method_auto_description">Automatically select best method based on device capabilities</string>
+  <string name="settings_input_native">Native IOCTL</string>
+  <string name="settings_input_native_description">JNI direct write to /dev/input, latency &lt;5ms</string>
+  <string name="settings_input_android">Android Input</string>
+  <string name="settings_input_android_description">Execute input command via Root Shell, latency ~80ms</string>
+  <string name="settings_input_shell">Shell Sendevent</string>
+  <string name="settings_input_shell_description">Execute sendevent command via Root Shell</string>
+  <string name="settings_capture_root">Root Screencap</string>
+  <string name="settings_capture_root_description">Execute screencap command via Root Shell</string>
+  <string name="settings_capture_media_projection">Media Projection</string>
+  <string name="settings_method_active">Active</string>
+  <string name="settings_method_available">Available</string>
+  <string name="settings_method_unavailable">Unavailable</string>
+  <string name="settings_fallback">Fallback Settings</string>
+  <string name="settings_enable_fallback">Enable Auto Fallback</string>
+  <string name="settings_enable_fallback_description">Automatically try other methods when preferred method fails</string>
+  <string name="settings_show_warnings">Show Capability Warnings</string>
+  <string name="settings_show_warnings_description">Show warnings when certain execution methods are unavailable</string>
+
+  <!-- Privacy Settings -->
+  <string name="settings_privacy">Privacy Settings</string>
+  <string name="privacy_mode_title">Privacy Mode</string>
+  <string name="privacy_mode_strict">Strict Mode</string>
+  <string name="privacy_mode_strict_description">Never capture secure windows (FLAG_SECURE), maximum privacy</string>
+  <string name="privacy_mode_consent">Consent Mode</string>
+  <string name="privacy_mode_consent_description">Ask user when secure window is detected</string>
+  <string name="privacy_mode_trusted">Trusted Mode</string>
+  <string name="privacy_mode_trusted_description">Allow capturing all windows, including secure ones</string>
+  <string name="privacy_trusted_warning">Warning: Trusted Mode allows capturing sensitive apps (banking, password managers). Ensure you understand the risks before enabling.</string>
+  <string name="privacy_audit_log_title">Audit Log</string>
+  <string name="privacy_enable_audit_log">Enable Audit Log</string>
+  <string name="privacy_enable_audit_log_description">Log all screenshot attempts on secure windows</string>
+  <string name="privacy_audit_log_entries">%d entries</string>
+  <string name="privacy_no_audit_entries">No audit entries</string>
+  <string name="privacy_clear_audit_log_title">Clear Audit Log</string>
+  <string name="privacy_clear_audit_log_message">Are you sure you want to clear the audit log? This cannot be undone.</string>
+
+  <!-- Capability Status -->
+  <string name="settings_capability_status">Capability Status</string>
+  <string name="capability_active_methods">Current Active Methods</string>
+  <string name="capability_active_input">Input Injection</string>
+  <string name="capability_active_capture">Screenshot Method</string>
+  <string name="capability_none">None</string>
+  <string name="capability_root_status">Root Status</string>
+  <string name="capability_root_available">Root Available</string>
+  <string name="capability_root_type">Root Type</string>
+  <string name="capability_root_version">Root Version</string>
+  <string name="capability_yes">Yes</string>
+  <string name="capability_no">No</string>
+  <string name="capability_selinux_status">SELinux Status</string>
+  <string name="capability_selinux_mode">SELinux Mode</string>
+  <string name="capability_input_access">Input Device Access</string>
+  <string name="capability_allowed">Allowed</string>
+  <string name="capability_blocked">Blocked</string>
+  <string name="capability_suggested_policy">Suggested SELinux Policy:</string>
+  <string name="capability_input_device">Input Devices</string>
+  <string name="capability_dev_input_access">/dev/input Access</string>
+  <string name="capability_accessible">Accessible</string>
+  <string name="capability_not_accessible">Not Accessible</string>
+  <string name="capability_device_path">Device Path</string>
+  <string name="capability_mt_protocol">Multi-touch Protocol</string>
+  <string name="capability_max_touch_points">Max Touch Points</string>
+  <string name="capability_service_running">Service Running</string>
+  <string name="capability_input_methods">Input Methods Availability</string>
+  <string name="capability_capture_methods">Screenshot Methods Availability</string>
+  <string name="capability_available">Available</string>
+  <string name="capability_unavailable">Unavailable</string>
+  <string name="capability_daemon_connection">Daemon Connection</string>
+  <string name="capability_daemon_binder_ipc">Daemon (Binder IPC)</string>
+  <string name="capability_daemon_not_running">Daemon not running - start via root shell</string>
+  <string name="capability_daemon_connecting">Connecting to daemon...</string>
+  <string name="capability_daemon_authenticating">Authenticating with daemon...</string>
+  <string name="capability_daemon_reconciling">Reconciling daemon state...</string>
+  <string name="capability_daemon_starting">Starting daemon...</string>
+  <string name="capability_daemon_error">Daemon error: %s</string>
+  <string name="capability_input_injection_daemon">Daemon IPC</string>
+  <string name="capability_unavailable_reason">Unavailable: %s</string>
+  <string name="capability_stale_data">Data may be outdated</string>
+  <string name="capability_auth_failed">Authentication failed: %s</string>
+  <string name="capability_connection_lost">Connection lost</string>
+  <string name="capability_reconnecting">Reconnecting...</string>
+
+  <!-- SELinux Modes -->
+  <string name="selinux_enforcing">Enforcing</string>
+  <string name="selinux_permissive">Permissive</string>
+  <string name="selinux_disabled">Disabled</string>
+  <string name="selinux_unknown">Unknown</string>
+
+  <!-- MT Protocol -->
+  <string name="mt_protocol_a">Protocol A (Stateless)</string>
+  <string name="mt_protocol_b">Protocol B (Slotted)</string>
+  <string name="mt_single_touch">Single Touch</string>
+
+  <!-- System Messages -->
+  <string name="welcome_greeting">How can I help you?</string>
+  <string name="welcome_greeting_1">How can I help you?</string>
+  <string name="welcome_greeting_2">What would you like to do today?</string>
+  <string name="welcome_greeting_3">Let me help you get things done</string>
+  <string name="welcome_subtitle">I can automate various actions on your phone</string>
+  <string name="welcome_title">Hello!</string>
+  <string name="welcome_message">I am Futon AI Assistant. Tell me what you want to do, and I\'ll help you do it.</string>
+  <string name="welcome_try_examples">Try these examples:</string>
+  <string name="example_task_camera">Open Camera</string>
+  <string name="example_task_camera_desc">Launch system camera app</string>
+  <string name="example_task_camera_action">Open camera app</string>
+  <string name="example_task_browser">Visit Blog</string>
+  <string name="example_task_browser_desc">Open browser to visit website</string>
+  <string name="example_task_browser_action">Open browser and visit fleey.me/blog</string>
+  <string name="example_task_settings">System Settings</string>
+  <string name="example_task_settings_desc">Open system settings page</string>
+  <string name="example_task_settings_action">Open system settings</string>
+  <string name="example_task_idea_1">Give me ideas</string>
+  <string name="example_task_idea_1_action">Suggest some things I can do today</string>
+  <string name="example_task_idea_2">Send a message</string>
+  <string name="example_task_idea_2_action">Open WeChat and send a greeting to a friend</string>
+  <string name="example_task_idea_3">Check weather</string>
+  <string name="example_task_idea_3_action">Open weather app and check today\'s weather</string>
+  <string name="example_task_idea_4">Play music</string>
+  <string name="example_task_idea_4_action">Open music app and play a song</string>
+  <string name="example_task_idea_5">Set alarm</string>
+  <string name="example_task_idea_5_action">Set an alarm for 8 AM tomorrow</string>
+  <string name="example_task_idea_6">Check news</string>
+  <string name="example_task_idea_6_action">Open news app and check top stories</string>
+  <string name="settings_required_title">Setup Required</string>
+  <string name="settings_required_subtitle">Configure an AI provider to get started</string>
+  <string name="settings_required_message">API key or local model needed</string>
+  <string name="setup_ai_provider">AI Provider</string>
+  <string name="go_to_settings">Go to Settings</string>
+  <string name="conversation_cleared">Conversation cleared</string>
+
+  <!-- Drawer -->
+  <string name="drawer_search_hint">Search conversations</string>
+  <string name="drawer_search_empty">Enter keywords to search</string>
+  <string name="drawer_search_no_result">No results for \"%s\"</string>
+  <string name="drawer_search_try_other">Try other keywords</string>
+  <string name="drawer_recent_conversations">Recent Conversations</string>
+  <string name="drawer_no_conversations">No conversation history</string>
+  <string name="drawer_start_new_task">Start a new task</string>
+
+  <!-- Relative Time -->
+  <string name="time_just_now">Just now</string>
+  <plurals name="time_minutes_ago">
+    <item quantity="one">%d min ago</item>
+    <item quantity="other">%d mins ago</item>
+  </plurals>
+  <plurals name="time_hours_ago">
+    <item quantity="one">%d hour ago</item>
+    <item quantity="other">%d hours ago</item>
+  </plurals>
+  <plurals name="time_days_ago">
+    <item quantity="one">%d day ago</item>
+    <item quantity="other">%d days ago</item>
+  </plurals>
+  <string name="time_date_format">%1$d/%2$d</string>
+  <string name="time_today">Today</string>
+  <string name="time_yesterday">Yesterday</string>
+  <string name="time_this_week">This week</string>
+  <string name="time_hour_minute">%1$02d:%2$02d</string>
+
+  <!-- Task Status -->
+  <string name="status_success">Success</string>
+  <string name="status_failure">Failure</string>
+  <string name="status_cancelled">Cancelled</string>
+  <string name="status_timeout">Timeout</string>
+  <string name="status_with_steps">%1$s · %2$d steps</string>
+
+  <!-- Chat AI Messages -->
+  <string name="chat_task_started">Task started</string>
+  <string name="chat_task_completed">Task completed!</string>
+  <string name="chat_task_failed">Task failed: %s</string>
+  <string name="chat_task_cancelled">Task cancelled</string>
+  <string name="chat_task_timeout">Task timed out</string>
+  <string name="chat_phase_capturing">Capturing screen...</string>
+  <string name="chat_phase_analyzing">AI analyzing...</string>
+  <string name="chat_phase_executing">Executing actions...</string>
+  <string name="chat_phase_waiting">Waiting...</string>
+  <string name="chat_phase_retrying">Retrying...</string>
+  <string name="chat_phase_retrying_reason">Retrying: %s</string>
+
+  <!-- Chat Action Parameters -->
+  <string name="chat_action_tap_position">Position: (%1$d, %2$d)</string>
+  <string name="chat_action_swipe_from_to">From (%1$d, %2$d) to (%3$d, %4$d)</string>
+  <string name="chat_action_input_text">Text: %s</string>
+  <string name="chat_action_wait_duration">Wait: %dms</string>
+
+  <!-- Chat Suggestions -->
+  <string name="suggestion_check_screen">Check screen status</string>
+  <string name="suggestion_retry_task">Retry task</string>
+  <string name="suggestion_adjust_description">Adjust task description</string>
+  <string name="suggestion_increase_max_steps">Increase max steps</string>
+  <string name="suggestion_simplify_task">Simplify task description</string>
+
+  <!-- Local Model Settings -->
+  <string name="local_model_import">Import Model</string>
+  <string name="local_model_import_description">Import downloaded GGUF model files from local storage</string>
+  <string name="local_model_select_file">Select File</string>
+  <string name="local_model_supported_formats">Supported Formats</string>
+  <string name="local_model_supported_formats_description">• GGUF model files\n• VLM requires mmproj file</string>
+  <string name="local_model_mmproj_required">mmproj File Required</string>
+  <string name="local_model_mmproj_description">VLM detected. Please import the mmproj file to use this model.</string>
+  <string name="local_model_mmproj_hint">mmproj files are usually provided with the model, filename contains \"mmproj\".</string>
+  <string name="local_model_select_mmproj">Select mmproj File</string>
+  <string name="local_model_quantization_select">Select Quantization</string>
+  <string name="local_model_quantization_recommended">Recommended</string>
+  <string name="local_model_quantization_size_ram">Size: %1$s | Min RAM: %2$s</string>
+  <string name="local_model_storage_insufficient">Insufficient Storage</string>
+  <string name="local_model_available_quantizations">Available Quantizations</string>
+  <string name="local_model_ram_required">Requires %s RAM</string>
+  <string name="local_model_download">Download</string>
+  <string name="local_model_downloading">Downloading - %d%%</string>
+  <string name="local_model_download_failed">Download Failed</string>
+  <string name="local_model_quantization">Quantization: %s</string>
+  <string name="local_model_size">Size: %s</string>
+  <string name="local_model_enabled">Enabled</string>
+  <string name="local_model_enable">Enable</string>
+  <string name="local_model_disable">Disable</string>
+  <string name="local_model_delete">Delete Model</string>
+  <string name="local_model_pause_download">Pause Download</string>
+  <string name="local_model_resume_download">Resume Download</string>
+  <string name="local_model_cancel_download">Cancel Download</string>
+  <string name="local_model_expand">Expand</string>
+  <string name="local_model_collapse">Collapse</string>
+
+  <!-- Filter Chips -->
+  <string name="filter_all">All</string>
+  <string name="filter_any_ram">Any</string>
+  <string name="filter_ram_4gb">≤4GB</string>
+  <string name="filter_ram_6gb">≤6GB</string>
+  <string name="filter_ram_8gb">≤8GB</string>
+  <string name="filter_ram_12gb">≤12GB</string>
+  <string name="sort_by_name">Name</string>
+  <string name="sort_by_size">Size</string>
+  <string name="sort_by_popularity">Popularity</string>
+  <string name="sort_by_name_action">Sort by Name</string>
+  <string name="sort_by_size_action">Sort by Size</string>
+  <string name="sort_by_popularity_action">Sort by Popularity</string>
+
+  <!-- AI Error Messages -->
+  <string name="error_request_timeout">Request timed out (%1$ds). If using a thinking model, try increasing timeout to %2$d seconds.</string>
+  <string name="error_request_timeout_thinking">Request timed out (%1$ds). If using a thinking model (e.g., o1, Claude thinking), try increasing timeout to %2$d seconds.</string>
+  <string name="error_connection_timeout">Connection timed out. Check network or increase timeout to %d seconds.</string>
+  <string name="error_dns_failed">DNS resolution failed: Cannot resolve %s. Check: 1) Network 2) DNS 3) Domain correctness.</string>
+  <string name="error_network_unreachable">Network unreachable: Cannot connect to %s. Check: 1) Server IP 2) Firewall 3) VPN/Proxy.</string>
+  <string name="error_ssl_handshake">SSL handshake failed: Certificate error or incompatible TLS. If using proxy, check SSL config. Reason: %s</string>
+  <string name="error_ssl_connection">SSL connection error. If using VPN/Proxy, try disabling it. Reason: %s</string>
+  <string name="error_connection_aborted">Connection aborted by server or network. Details: %s</string>
+  <string name="error_connection_failed">Connection failed to %1$s. Details: %2$s</string>
+  <string name="error_network_io">Network IO Error: %s</string>
+  <string name="error_request_failed">Request Failed (%1$s): %2$s</string>
+  <string name="error_response_format">Response format error: %s</string>
+  <string name="error_api_key_or_url_empty">API Key or Base URL empty</string>
+  <string name="error_fetch_models_failed">Failed to fetch models: %s</string>
+  <string name="error_empty_response_thinking">AI returned empty response. Model might still be thinking. Try increasing timeout.</string>
+  <string name="error_empty_text_thinking">AI returned empty text. Model might be thinking. Try increasing timeout.</string>
+  <string name="error_safety_blocked">Request blocked by safety filter: %s</string>
+  <string name="error_response_safety_blocked">Response blocked by safety filter</string>
+  <string name="error_response_recitation_blocked">Response blocked due to recitation/copyright</string>
+  <string name="error_content_filter_blocked">Response blocked by content filter</string>
+  <string name="error_no_text_content_thinking">No text in Gemini response. Model might be thinking. Try increasing timeout.</string>
+  <string name="error_cleaned_response_empty">Cleaned response is empty. Raw: %s</string>
+  <string name="error_parse_ai_response">Failed to parse AI response: %1$s\nResponse: %2$s</string>
+  <string name="error_gemini_api">Gemini API Error: %s</string>
+  <string name="error_bad_request">Bad Request</string>
+  <string name="error_api_key_invalid">Invalid API Key. Please check configuration.</string>
+  <string name="error_model_not_found">Model not found. Check model name.</string>
+  <string name="error_rate_limit_exceeded">Rate limit exceeded. Please try again later.</string>
+  <string name="error_service_unavailable">Service unavailable. Try again later (%1$d): %2$s</string>
+  <string name="error_request_failed_code">Request failed (%1$d): %2$s</string>
+
+  <!-- Local Model Inference Errors -->
+  <string name="error_inference_timeout">Inference timed out (%ds). Try a smaller model or lower resolution.</string>
+
+  <!-- Delete Confirmation Dialog -->
+  <string name="local_model_delete_title">Delete Model</string>
+  <string name="local_model_delete_confirm">Are you sure you want to delete \"%s\"?</string>
+  <string name="local_model_delete_storage_info">This will free up %s of storage.</string>
+  <string name="local_model_delete_irreversible">This action cannot be undone.</string>
+  <string name="local_model_delete_active_warning">This model is currently in use. You will be switched to cloud AI after deletion.</string>
+
+  <!-- Inference Config -->
+  <string name="inference_preset_config">Preset Config</string>
+  <string name="inference_preset_fast">Fast</string>
+  <string name="inference_preset_fast_desc">Low Latency</string>
+  <string name="inference_preset_balanced">Balanced</string>
+  <string name="inference_preset_balanced_desc">Default</string>
+  <string name="inference_preset_quality">Quality</string>
+  <string name="inference_preset_quality_desc">High Precision</string>
+  <string name="inference_nnapi">NNAPI Acceleration</string>
+  <string name="inference_nnapi_description">Use Android Neural Networks API to accelerate inference</string>
+  <string name="inference_nnapi_unsupported">Unsupported</string>
+
+  <!-- Local Model Screen -->
+  <string name="local_model_loading">Loading model list...</string>
+  <string name="local_model_load_failed">Load Failed</string>
+  <string name="local_model_no_results_hint">Try adjusting search or filters</string>
+  <string name="local_model_reset_filters">Reset Filters</string>
+  <string name="local_model_ram_info">RAM: %1$s Free · Rec: %2$s</string>
+  <string name="local_model_recommended_quantization">Rec. Quant: %s</string>
+  <string name="local_model_china_mirror">Mirror</string>
+  <string name="local_model_recommended">Recommended</string>
+
+  <!-- Common Dialog -->
+  <string name="dialog_error_title">Error</string>
+
+  <!-- Inference Config Sliders -->
+  <string name="inference_context_length">Context Length</string>
+  <string name="inference_context_length_desc">Longer context handles complex tasks but uses more memory</string>
+  <string name="inference_context_length_value">%d tokens</string>
+  <string name="inference_thread_count">Thread Count</string>
+  <string name="inference_thread_count_desc">More threads increase speed but consume more power</string>
+  <string name="inference_thread_count_value">%d threads</string>
+
+  <!-- Local Model Screen Sections -->
+  <string name="local_model_device_info">Device Info</string>
+  <string name="local_model_expand_details">Expand Details</string>
+  <string name="local_model_device_details">Device Details</string>
+  <string name="local_model_memory">Memory</string>
+  <string name="local_model_memory_value">%1$s (Free: %2$s)</string>
+  <string name="local_model_processor">Processor</string>
+  <string name="local_model_available_storage">Available Storage</string>
+  <string name="local_model_nnapi_acceleration">NNAPI Acceleration</string>
+  <string name="local_model_supported">Supported</string>
+  <string name="local_model_not_supported">Not Supported</string>
+  <string name="local_model_device_not_meet_minimum">Device does not meet minimum requirements</string>
+  <string name="local_model_device_good_performance">Good Device Performance</string>
+  <string name="local_model_device_average_performance">Average Device Performance</string>
+  <string name="local_model_available_models">Available Models</string>
+  <string name="local_model_no_matching">No matching models</string>
+  <string name="local_model_no_available">No available models</string>
+  <string name="local_model_top_bar_title">Local Models</string>
+
+  <!-- Model Search Section -->
+  <string name="local_model_search_filter">Search &amp; Filter</string>
+  <string name="local_model_search_placeholder">Search models…</string>
+  <string name="local_model_catalog_loading">Loading</string>
+  <string name="local_model_catalog_online">Online</string>
+  <string name="local_model_catalog_cache">Cache</string>
+  <string name="local_model_catalog_offline">Offline</string>
+  <string name="local_model_catalog_unknown">Unknown</string>
+
+  <!-- Local Model ViewModel Messages -->
+  <string name="local_model_download_complete">Model download complete</string>
+  <string name="local_model_download_paused">Download paused</string>
+  <string name="local_model_download_resumed">Download resumed</string>
+  <string name="local_model_download_cancelled">Download cancelled</string>
+  <string name="local_model_enabled_success">Local model enabled</string>
+  <string name="local_model_disabled_success">Local model disabled</string>
+  <string name="local_model_deleted_success">Model deleted</string>
+  <string name="local_model_import_success">Model imported successfully</string>
+  <string name="local_model_list_refreshed">Model list refreshed</string>
+  <string name="local_model_pause_failed">Pause failed: %s</string>
+  <string name="local_model_resume_failed">Resume failed: %s</string>
+  <string name="local_model_cancel_failed">Cancel failed: %s</string>
+
+  <!-- Settings ViewModel Messages -->
+  <string name="settings_load_failed">Failed to load settings</string>
+  <string name="settings_detect_capability_failed">Failed to detect capabilities</string>
+  <string name="settings_refresh_capability_failed">Failed to refresh capabilities</string>
+  <string name="settings_save_failed">Save failed</string>
+  <string name="settings_clear_failed">Clear failed</string>
+  <string name="settings_local_model_no_fetch">Local model does not need to fetch model list</string>
+  <string name="settings_fetch_models_failed">Failed to fetch models</string>
+  <string name="settings_local_model_no_test">Local model does not require connection test</string>
+  <string name="settings_unsupported_provider">Unsupported provider type</string>
+  <string name="settings_connection_failed">Connection failed</string>
+  <string name="settings_set_active_provider_failed">Failed to set active provider</string>
+  <string name="settings_save_config_failed">Failed to save configuration</string>
+  <string name="settings_enter_base_url">Please enter API Base URL</string>
+  <string name="settings_invalid_url">Invalid URL format</string>
+  <string name="settings_enter_model_name">Please enter model name</string>
+
+  <!-- Common UI -->
+  <string name="content_description_clear_search">Clear Search</string>
+  <string name="copied_to_clipboard">Copied to clipboard</string>
+  <string name="action_undo_default">Undo</string>
+  <string name="common_save">Save</string>
+  <string name="common_cancel">Cancel</string>
+  <string name="common_delete">Delete</string>
+  <string name="common_close">Close</string>
+
+  <!-- Prompt Management -->
+  <string name="prompt_management_title">Prompt Management</string>
+  <string name="prompt_management_description">Manage system prompts and quick phrases</string>
+  <string name="prompt_tab_templates">Templates</string>
+  <string name="prompt_tab_quick_phrases">Quick Phrases</string>
+  <string name="prompt_section_builtin">Built-in Templates</string>
+  <string name="prompt_section_custom">Custom Templates</string>
+  <string name="prompt_builtin_badge">Built-in</string>
+  <string name="prompt_add_new">Add New</string>
+  <string name="prompt_edit">Edit</string>
+  <string name="prompt_delete">Delete</string>
+  <string name="prompt_empty_templates">No templates yet. Tap + to create one.</string>
+  <string name="prompt_empty_phrases">No quick phrases yet. Tap + to create one.</string>
+  <string name="prompt_quick_phrases_enable">Enable Quick Phrases</string>
+  <string name="prompt_quick_phrases_description">Type trigger words to quickly insert predefined text</string>
+  <string name="prompt_delete_template_title">Delete Template</string>
+  <string name="prompt_delete_template_message">Are you sure you want to delete \"%s\"?</string>
+  <string name="prompt_delete_phrase_title">Delete Quick Phrase</string>
+  <string name="prompt_delete_phrase_message">Are you sure you want to delete \"%s\"?</string>
+
+  <!-- Prompt Editor -->
+  <string name="prompt_editor_title_new">New Template</string>
+  <string name="prompt_editor_title_edit">Edit Template</string>
+  <string name="prompt_editor_title_view">View Template</string>
+  <string name="prompt_editor_name">Name</string>
+  <string name="prompt_editor_description">Description</string>
+  <string name="prompt_editor_content">Content</string>
+  <string name="prompt_editor_variables">Available Variables</string>
+  <string name="prompt_editor_builtin_hint">Built-in templates cannot be edited. You can create a copy based on this template.</string>
+
+  <!-- Quick Phrase Editor -->
+  <string name="prompt_phrase_editor_title_new">New Quick Phrase</string>
+  <string name="prompt_phrase_editor_title_edit">Edit Quick Phrase</string>
+  <string name="prompt_phrase_trigger">Trigger</string>
+  <string name="prompt_phrase_trigger_hint">Start with / for easy recognition, e.g. /open</string>
+  <string name="prompt_phrase_trigger_placeholder">/example</string>
+  <string name="prompt_phrase_expansion">Expansion Text</string>
+  <string name="prompt_phrase_description">Description (optional)</string>
+  <string name="prompt_phrase_preview">Preview</string>
+  <string name="prompt_phrase_preview_input">Input: %s</string>
+
+  <!-- Prompt Errors -->
+  <string name="prompt_error_save_failed">Failed to save</string>
+  <string name="prompt_error_delete_failed">Failed to delete</string>
+  <string name="prompt_error_invalid_template">Invalid template</string>
+  <string name="prompt_error_name_required">Name is required</string>
+  <string name="prompt_error_content_required">Content is required</string>
+  <string name="prompt_error_trigger_required">Trigger is required</string>
+  <string name="prompt_error_expansion_required">Expansion text is required</string>
+
+  <!-- Prompt Variables -->
+  <string name="prompt_var_task_name">Task Description</string>
+  <string name="prompt_var_task_desc">The user\'s task input</string>
+  <string name="prompt_var_step_number_name">Step Number</string>
+  <string name="prompt_var_step_number_desc">Current automation step number</string>
+  <string name="prompt_var_max_steps_name">Max Steps</string>
+  <string name="prompt_var_max_steps_desc">Maximum allowed steps</string>
+  <string name="prompt_var_app_name_name">Current App</string>
+  <string name="prompt_var_app_name_desc">Name of the currently focused app</string>
+  <string name="prompt_var_app_package_name">App Package</string>
+  <string name="prompt_var_app_package_desc">Package name of the current app</string>
+  <string name="prompt_var_app_activity_name">Current Activity</string>
+  <string name="prompt_var_app_activity_desc">Current activity class name</string>
+  <string name="prompt_var_timestamp_name">Timestamp</string>
+  <string name="prompt_var_timestamp_desc">Current date and time (ISO format)</string>
+  <string name="prompt_var_date_name">Date</string>
+  <string name="prompt_var_date_desc">Current date (YYYY-MM-DD)</string>
+  <string name="prompt_var_time_name">Time</string>
+  <string name="prompt_var_time_desc">Current time (HH:mm:ss)</string>
+  <string name="prompt_var_day_of_week_name">Day of Week</string>
+  <string name="prompt_var_day_of_week_desc">Current day name</string>
+  <string name="prompt_var_timezone_name">Timezone</string>
+  <string name="prompt_var_timezone_desc">Device timezone</string>
+  <string name="prompt_var_device_model_name">Device Model</string>
+  <string name="prompt_var_device_model_desc">Device model name</string>
+  <string name="prompt_var_device_brand_name">Device Brand</string>
+  <string name="prompt_var_device_brand_desc">Device manufacturer</string>
+  <string name="prompt_var_android_version_name">Android Version</string>
+  <string name="prompt_var_android_version_desc">Android OS version</string>
+  <string name="prompt_var_sdk_version_name">SDK Version</string>
+  <string name="prompt_var_sdk_version_desc">Android SDK level</string>
+  <string name="prompt_var_screen_size_name">Screen Size</string>
+  <string name="prompt_var_screen_size_desc">Screen resolution (WxH)</string>
+  <string name="prompt_var_screen_density_name">Screen Density</string>
+  <string name="prompt_var_screen_density_desc">Screen density (dpi)</string>
+  <string name="prompt_var_orientation_name">Orientation</string>
+  <string name="prompt_var_orientation_desc">Screen orientation</string>
+  <string name="prompt_var_model_name_name">AI Model</string>
+  <string name="prompt_var_model_name_desc">Current AI model name</string>
+  <string name="prompt_var_provider_name_name">AI Provider</string>
+  <string name="prompt_var_provider_name_desc">Current AI provider</string>
+  <string name="prompt_var_locale_name">Locale</string>
+  <string name="prompt_var_locale_desc">Device locale code</string>
+  <string name="prompt_var_language_name">Language</string>
+  <string name="prompt_var_language_desc">Device language name</string>
+  <string name="prompt_var_battery_level_name">Battery Level</string>
+  <string name="prompt_var_battery_level_desc">Current battery percentage</string>
+  <string name="prompt_var_network_type_name">Network Type</string>
+  <string name="prompt_var_network_type_desc">Current network connection</string>
+  <string name="prompt_var_session_id_name">Session ID</string>
+  <string name="prompt_var_session_id_desc">Current automation session ID</string>
+  <string name="prompt_var_elapsed_time_name">Elapsed Time</string>
+  <string name="prompt_var_elapsed_time_desc">Time since task started (seconds)</string>
+
+  <!-- DSP Perception Settings -->
+  <string name="settings_dsp_perception">DSP Perception</string>
+  <string name="settings_dsp_perception_description">Configure DSP-accelerated perception system</string>
+  <string name="dsp_master_switch">DSP Perception</string>
+  <string name="dsp_enable_perception">Enable DSP Perception</string>
+  <string name="dsp_enable_perception_description">Use LiteRT + OCR for enhanced UI element detection during automation</string>
+  <string name="dsp_injection_mode">Touch Injection Mode</string>
+  <string name="dsp_injection_mode_description">Select how touch events are injected</string>
+  <string name="dsp_injection_root">Root (uinput)</string>
+  <string name="dsp_injection_root_description">Kernel-level injection via /dev/uinput, latency &lt;50ms (requires root)</string>
+  <string name="dsp_capture_settings">Capture Settings</string>
+  <string name="dsp_downscale_factor">Downscale Factor</string>
+  <string name="dsp_downscale_factor_description">Lower resolution for faster inference (1 = full, 2 = half)</string>
+  <string name="dsp_downscale_value">1/%d</string>
+  <string name="dsp_downscale_full">Full</string>
+  <string name="dsp_downscale_quarter">1/4</string>
+  <string name="dsp_latency_settings">Latency Settings</string>
+  <string name="dsp_target_latency">Target Latency</string>
+  <string name="dsp_target_latency_description">Target latency for perception loop (warning threshold)</string>
+  <string name="dsp_target_latency_value">%d ms</string>
+  <string name="dsp_target_latency_min">10ms</string>
+  <string name="dsp_target_latency_max">100ms</string>
+  <string name="dsp_detection_settings">Detection Settings</string>
+  <string name="dsp_enable_ocr">Enable OCR</string>
+  <string name="dsp_enable_ocr_description">Enable text recognition for detected UI elements</string>
+  <string name="dsp_min_confidence">Minimum Confidence</string>
+  <string name="dsp_min_confidence_description">Filter out detections below this confidence threshold</string>
+  <string name="dsp_min_confidence_value">%d%%</string>
+  <string name="dsp_min_confidence_low">Low</string>
+  <string name="dsp_min_confidence_high">High</string>
+  <string name="dsp_buffer_settings">Buffer Settings</string>
+  <string name="dsp_max_buffers">Max Concurrent Buffers</string>
+  <string name="dsp_max_buffers_description">Maximum number of capture buffers in pool</string>
+  <string name="dsp_max_buffers_value">%d buffers</string>
+  <string name="dsp_max_buffers_min">1</string>
+  <string name="dsp_max_buffers_max">5</string>
+
+  <!-- Input Device Selection -->
+  <string name="dsp_input_device">Touch Input Device</string>
+  <string name="dsp_input_device_description">Select the touch input device for injection. Auto-detect is recommended.</string>
+  <string name="dsp_input_device_auto">Auto-detect</string>
+  <string name="dsp_input_device_auto_description">Automatically select the best touchscreen device</string>
+  <string name="dsp_input_device_refresh">Refresh Devices</string>
+  <string name="dsp_input_device_loading">Loading devices…</string>
+  <string name="dsp_input_device_none">No devices found</string>
+  <string name="dsp_input_device_probability">%d%% match</string>
+  <string name="dsp_input_device_recommended">Recommended</string>
+  <string name="dsp_input_device_resolution">Resolution: %s</string>
+  <string name="dsp_input_device_touch_points">Touch points: %d</string>
+  <string name="dsp_input_device_protocol">Protocol: %s</string>
+  <string name="dsp_input_device_selected">Selected</string>
+
+  <string name="dsp_hardware_info">Hardware Info</string>
+  <string name="dsp_hardware_accelerators">Accelerators</string>
+  <string name="dsp_active_delegate">Active Delegate</string>
+  <string name="dsp_gpu_vendor">GPU</string>
+  <string name="dsp_hexagon_dsp">Hexagon DSP</string>
+  <string name="dsp_nnapi">NNAPI</string>
+  <string name="dsp_npu">NPU</string>
+  <string name="dsp_available">Available</string>
+  <string name="dsp_not_available">Not Available</string>
+  <string name="dsp_performance_metrics">Performance Metrics</string>
+  <string name="dsp_avg_latency">Average Latency</string>
+  <string name="dsp_p95_latency">P95 Latency</string>
+  <string name="dsp_loop_count">Loop Count</string>
+  <string name="dsp_model_memory">Model Memory</string>
+  <string name="dsp_buffer_memory">Buffer Memory</string>
+  <string name="dsp_latency_ms">%d ms</string>
+  <string name="dsp_memory_mb">%.1f MB</string>
+  <string name="dsp_capture_avg">Capture Avg</string>
+  <string name="dsp_detection_avg">Detection Avg</string>
+  <string name="dsp_ocr_avg">OCR Avg</string>
+  <string name="dsp_no_metrics">No metrics available</string>
+  <string name="dsp_above_threshold">Above threshold</string>
+  <string name="dsp_below_threshold">Below threshold</string>
+
+  <!-- SELinux Fix -->
+  <string name="selinux_fix_button">Fix SELinux Policy</string>
+  <string name="selinux_fix_title">Fix SELinux Policy</string>
+  <string name="selinux_current_mode">Current SELinux Mode: %s</string>
+  <string name="selinux_fix_explanation">Android\'s SELinux security mechanism blocks apps from directly accessing input devices. This fix adds temporary policy rules to allow the app to use Native IOCTL for input injection, achieving the lowest latency (&lt;5ms).</string>
+  <string name="selinux_fix_warning">This fix will be lost after reboot and needs to be re-applied. It only affects input device access and does not reduce overall system security.</string>
+  <string name="selinux_fix_confirm">Apply Fix</string>
+  <string name="selinux_fix_success_title">Fix Successful</string>
+  <string name="selinux_fix_success_message">SELinux policy updated. If Native IOCTL is still unavailable, use Android Input or Shell Sendevent methods instead - they are equally reliable.</string>
+  <string name="selinux_fix_failed_title">Fix Failed</string>
+  <string name="selinux_fix_failed_message">Failed to fix SELinux policy. Consider using Android Input or Shell Sendevent methods as alternatives.</string>
+  <string name="common_ok">OK</string>
+
+  <!-- Automation Foreground Service -->
+  <string name="automation_running">Automation Running</string>
+  <string name="automation_running_description">Executing automation task in background</string>
+  <string name="automation_channel_name">Automation Tasks</string>
+  <string name="automation_channel_description">Notifications for running automation tasks</string>
+  <string name="task_completed">Task Completed</string>
+  <string name="task_failed">Task Failed</string>
+  <string name="task_timeout">Task Timeout</string>
+  <string name="task_cancelled">Task Cancelled</string>
+  <string name="task_completed_description">Task completed successfully</string>
+  <string name="task_timeout_description">Task exceeded maximum steps</string>
+  <string name="task_completed_steps">Completed in %d steps</string>
+  <string name="task_timeout_steps">Timed out after %d steps</string>
+  <string name="task_cancelled_by_user">Cancelled by user</string>
+  <string name="stop">Stop</string>
+
+  <!-- App Discovery Settings -->
+  <string name="settings_app_discovery">App Discovery</string>
+  <string name="settings_app_discovery_description">Configure how apps are discovered and provided to AI</string>
+  <string name="app_discovery_enable">Enable App Discovery</string>
+  <string name="app_discovery_enable_description">Provide installed app information to AI for better task understanding</string>
+  <string name="app_discovery_include_system">Include System Apps</string>
+  <string name="app_discovery_include_system_description">Include system apps in the app list provided to AI</string>
+  <string name="app_discovery_max_apps">Max Apps in Context</string>
+  <string name="app_discovery_max_apps_description">Maximum number of apps to include in AI context</string>
+  <string name="app_discovery_max_apps_value">%d apps</string>
+  <string name="app_discovery_categories">App Categories</string>
+  <string name="app_discovery_hidden_apps">Hidden Apps</string>
+  <string name="app_discovery_hidden_apps_count">%d apps hidden</string>
+  <string name="app_discovery_no_hidden_apps">No hidden apps</string>
+  <string name="app_discovery_reset">Reset to Defaults</string>
+  <string name="app_discovery_reset_confirm">Reset all app discovery settings to defaults?</string>
+  <string name="app_discovery_discovered_apps">Discovered Apps</string>
+  <string name="app_discovery_view_apps">View Discovered Apps</string>
+  <string name="app_discovery_apps_count">%d apps discovered</string>
+  <string name="app_discovery_system_badge">System</string>
+  <string name="app_discovery_aliases_count">%d aliases</string>
+  <string name="app_discovery_edit_aliases">Edit Aliases</string>
+  <string name="app_discovery_edit_aliases_title">Edit Aliases for %s</string>
+  <string name="app_discovery_aliases_hint">Enter alternative names for this app (one per line). AI will use these to better understand your commands.</string>
+  <string name="app_discovery_aliases_placeholder">e.g.\nWX\nWeChat</string>
+  <string name="app_discovery_hide">Hide App</string>
+  <string name="app_discovery_unhide">Unhide</string>
+  <string name="app_discovery_refresh">Refresh App List</string>
+  <string name="app_discovery_refresh_description">Rescan installed apps</string>
+
+  <!-- App Categories -->
+  <string name="app_category_social">Social</string>
+  <string name="app_category_communication">Communication</string>
+  <string name="app_category_browser">Browser</string>
+  <string name="app_category_media">Media</string>
+  <string name="app_category_finance">Finance</string>
+  <string name="app_category_shopping">Shopping</string>
+  <string name="app_category_travel">Travel</string>
+  <string name="app_category_productivity">Productivity</string>
+  <string name="app_category_other">Other</string>
+
+  <!-- AI Context Headers -->
+  <string name="ai_context_installed_apps">Installed Apps (%d)</string>
+
+  <!-- Download Sources -->
+  <string name="local_model_source_huggingface">Hugging Face</string>
+  <string name="local_model_source_hf_mirror">HF-Mirror</string>
+
+  <!-- Clipboard -->
+  <string name="clipboard_label">Futon</string>
+
+  <!-- AI Client Errors - Network -->
+  <string name="error_ai_request_timeout">Request timeout (%1$d seconds). Consider increasing timeout to %2$d seconds for thinking models.</string>
+  <string name="error_ai_connection_timeout">Connection timeout. Check network or increase timeout to %1$d seconds.</string>
+  <string name="error_ai_dns_failed">DNS resolution failed: cannot resolve %1$s. Check network connection or domain name.</string>
+  <string name="error_ai_network_unreachable">Network unreachable: cannot connect to %1$s. May be firewall or proxy issue.</string>
+  <string name="error_ai_ssl_handshake">SSL handshake failed: certificate verification error. Check proxy SSL config if using one.</string>
+  <string name="error_ai_ssl_error">SSL connection error: may be certificate issue or network interference. Detail: %1$s</string>
+  <string name="error_ai_connection_aborted">Connection aborted: may be proxy/VPN or firewall issue. Detail: %1$s</string>
+  <string name="error_ai_connection_failed">Connection failed: cannot connect to %1$s. Check URL or proxy settings. Detail: %2$s</string>
+  <string name="error_ai_io_error">Network IO error: %1$s: %2$s</string>
+  <string name="error_ai_unknown">Request failed (%1$s): %2$s</string>
+
+  <!-- AI Client Errors - API -->
+  <string name="error_ai_invalid_api_key">Invalid API Key, please check configuration</string>
+  <string name="error_ai_rate_limit">Rate limit exceeded, please try again later</string>
+  <string name="error_ai_bad_request">Bad request format</string>
+  <string name="error_ai_model_not_found">Model not found, please check model name</string>
+  <string name="error_ai_server_error">Service temporarily unavailable, please try again later (%1$d): %2$s</string>
+  <string name="error_ai_http_error">Request failed (%1$d): %2$s</string>
+
+  <!-- AI Client Errors - Response -->
+  <string name="error_ai_empty_response">AI returned empty response, model may still be thinking. Consider increasing timeout.</string>
+  <string name="error_ai_content_filtered">Response blocked by content filter</string>
+  <string name="error_ai_safety_blocked">Request blocked by safety filter: %1$s</string>
+  <string name="error_ai_recitation_blocked">Response blocked due to recitation issue</string>
+  <string name="error_ai_no_text_content">No text content in AI response, model may still be thinking. Consider increasing timeout.</string>
+  <string name="error_ai_parse_failed">Failed to parse AI response: %1$s\nContent: %2$s</string>
+  <string name="error_ai_response_format">Invalid response format</string>
+  <string name="error_ai_response_format_detail">Invalid response format: %1$s</string>
+
+  <!-- AI Client Errors - Config -->
+  <string name="error_ai_config_empty">API Key or Base URL is empty</string>
+  <string name="error_ai_fetch_models_failed">Failed to fetch model list: %1$s</string>
+
+  <!-- AI Client Errors - Input Validation -->
+  <string name="error_ai_no_screenshot_or_ui">Screenshot or UI context is required</string>
+  <string name="error_ai_no_active_provider">No active AI provider configured</string>
+  <string name="error_ai_provider_not_configured">API Key for %1$s is not configured</string>
+  <string name="error_ai_provider_not_found">Provider %1$s not found</string>
+  <string name="error_ai_unsupported_protocol">Unsupported protocol: %1$s</string>
+  <string name="error_ai_local_engine_not_configured">Local inference engine is not configured</string>
+
+  <!-- Gateway / LAN Server -->
+  <string name="server_status">Server: %s</string>
+  <string name="server_running">Running at %1$s:%2$d</string>
+  <string name="server_untrusted_network">Untrusted network - server disabled</string>
+  <string name="server_stopped">Server stopped</string>
+  <string name="server_starting">Starting server...</string>
+  <string name="server_error">Server error: %s</string>
+  <string name="service_running">Service running</string>
+  <string name="gateway_idle_timeout_warning">Server will stop in %s due to inactivity</string>
+  <string name="gateway_idle_timeout_stopped">Server stopped due to inactivity</string>
+
+  <!-- Daemon Status -->
+  <string name="daemon_status_title">Daemon</string>
+  <string name="daemon_state_stopped">Stopped</string>
+  <string name="daemon_state_starting">Starting…</string>
+  <string name="daemon_state_connecting">Connecting…</string>
+  <string name="daemon_state_authenticating">Authenticating…</string>
+  <string name="daemon_state_reconciling">Reconciling…</string>
+  <string name="daemon_state_ready">Ready</string>
+  <string name="daemon_state_error">Error</string>
+  <string name="daemon_version_label">Version</string>
+  <string name="daemon_capabilities_label">Capabilities</string>
+  <string name="retry">Retry</string>
+
+  <!-- Daemon Metrics -->
+  <string name="daemon_metrics_title">Performance</string>
+  <string name="daemon_metrics_fps">FPS</string>
+  <string name="daemon_metrics_capture_latency">Capture</string>
+  <string name="daemon_metrics_inference_latency">Inference</string>
+  <string name="daemon_metrics_total_latency">Total</string>
+  <string name="daemon_metrics_delegate">Delegate</string>
+  <string name="daemon_metrics_frame_count">Frames</string>
+  <string name="daemon_metrics_show_details">Show Details</string>
+  <string name="daemon_metrics_hide_details">Hide Details</string>
+  <string name="daemon_metrics_latency_warning">High latency detected</string>
+  <string name="daemon_metrics_ms">%1$.1f ms</string>
+  <string name="daemon_metrics_fps_value">%1$.1f</string>
+
+  <!-- Connection Indicator -->
+  <string name="connection_connected">Connected</string>
+  <string name="connection_disconnected">Disconnected</string>
+  <string name="connection_connecting">Connecting</string>
+
+  <!-- Automation Mode -->
+  <string name="automation_mode_label">Mode</string>
+  <string name="automation_mode_hot_path">Hot Path</string>
+  <string name="automation_mode_ai">AI</string>
+  <string name="automation_mode_hybrid">Hybrid</string>
+  <string name="automation_mode_hot_path_desc">Daemon-driven autonomous execution</string>
+  <string name="automation_mode_ai_desc">AI-driven decision making</string>
+  <string name="automation_mode_hybrid_desc">Hot Path with AI fallback</string>
+
+  <!-- AI Decision Mode -->
+  <string name="ai_decision_mode_label">AI Status</string>
+  <string name="ai_decision_mode_idle">Idle</string>
+  <string name="ai_decision_mode_analyzing">Analyzing</string>
+  <string name="ai_decision_mode_executing">Executing</string>
+
+  <!-- Inference Source -->
+  <string name="inference_source_label">Inference Source</string>
+  <string name="inference_source_auto">Auto</string>
+  <string name="inference_source_local">Local Model</string>
+  <string name="inference_source_openai">OpenAI</string>
+  <string name="inference_source_gemini">Gemini</string>
+  <string name="inference_source_newapi">NewAPI</string>
+  <string name="inference_source_custom">Custom</string>
+
+  <!-- Daemon Unavailable -->
+  <string name="daemon_unavailable_title">Daemon Unavailable</string>
+  <string name="daemon_unavailable_message">Start the daemon to enable automation</string>
+  <string name="daemon_start_button">Start Daemon</string>
+
+  <!-- Automation Progress -->
+  <string name="automation_progress_title">Automation Progress</string>
+  <string name="automation_progress_step">Step %1$d / %2$d</string>
+  <string name="automation_progress_hot_path_rate">Hot Path: %1$d%%</string>
+  <string name="automation_progress_ai_fallback">AI Fallback Active</string>
+  <string name="automation_progress_loop_warning">Loop Detected</string>
+  <string name="automation_progress_loop_message">Same state detected %1$d times</string>
+  <string name="automation_progress_current_action">Current: %s</string>
+  <string name="automation_progress_executed">Executed steps</string>
+  <string name="automation_progress_hot_path_hits">Hot Path Hits</string>
+  <string name="automation_progress_ai_calls">AI Calls</string>
+
+  <!-- Daemon Settings -->
+  <string name="settings_daemon">Daemon Settings</string>
+  <string name="daemon_status">Daemon Status</string>
+  <string name="daemon_lifecycle_state">Lifecycle State</string>
+  <string name="daemon_status_stopped">Stopped</string>
+  <string name="daemon_status_starting">Starting</string>
+  <string name="daemon_status_running">Running</string>
+  <string name="daemon_status_stopping">Stopping</string>
+  <string name="daemon_status_failed">Failed</string>
+  <string name="daemon_root_status">Root Status</string>
+  <string name="daemon_root_checking">Checking…</string>
+  <string name="daemon_root_available">Available</string>
+  <string name="daemon_root_unavailable">Unavailable</string>
+  <string name="daemon_root_selinux_blocked">SELinux Blocked</string>
+  <string name="daemon_control">Daemon Control</string>
+  <string name="daemon_start">Start Daemon</string>
+  <string name="daemon_start_description">Launch the daemon process</string>
+  <string name="daemon_stop">Stop Daemon</string>
+  <string name="daemon_stop_description">Terminate the daemon process</string>
+  <string name="daemon_restart">Restart Daemon</string>
+  <string name="daemon_restart_description">Stop and restart the daemon</string>
+  <string name="daemon_deployment">Deployment</string>
+  <string name="daemon_binary_integrity">Binary Integrity</string>
+  <string name="daemon_integrity_unknown">Unknown</string>
+  <string name="daemon_integrity_verified">Verified</string>
+  <string name="daemon_integrity_tampered">Tampered</string>
+  <string name="daemon_integrity_check_failed">Check Failed</string>
+  <string name="daemon_model_status">Model Status</string>
+  <string name="daemon_models_not_deployed">Not Deployed</string>
+  <string name="daemon_models_deploying">Deploying…</string>
+  <string name="daemon_models_deployed">Deployed</string>
+  <string name="daemon_models_error">Deployment Error</string>
+  <string name="daemon_lifecycle_settings">Lifecycle Settings</string>
+  <string name="daemon_auto_stop">Auto Stop</string>
+  <string name="daemon_auto_stop_description">Automatically stop daemon when app is closed</string>
+  <string name="daemon_keep_alive">Keep Alive</string>
+  <string name="daemon_keep_alive_description">Keep daemon running in background</string>
+  <string name="daemon_error_root_unavailable">Root access unavailable</string>
+  <string name="daemon_error_start_failed">Failed to start daemon</string>
+  <string name="daemon_error_stop_failed">Failed to stop daemon</string>
+  <string name="daemon_startup_logs">Startup Logs</string>
+  <string name="daemon_elapsed_time">%.1fs</string>
+  <string name="daemon_phase_initializing">Initializing…</string>
+  <string name="daemon_phase_checking_root">Checking root access…</string>
+  <string name="daemon_phase_checking_binary">Checking binary…</string>
+  <string name="daemon_phase_deploying">Deploying binary…</string>
+  <string name="daemon_phase_executing">Executing start command…</string>
+  <string name="daemon_phase_waiting_binder">Waiting for service…</string>
+  <string name="daemon_phase_verifying">Verifying version…</string>
+  <string name="daemon_phase_connecting">Connecting…</string>
+
+  <!-- Inference Routing Settings -->
+  <string name="settings_inference_routing">Inference Routing</string>
+  <string name="inference_source_priority">Source Priority</string>
+  <string name="inference_source_priority_description">Long press and drag to reorder. Only available sources can be reordered.</string>
+  <string name="inference_last_used">Last used: %s</string>
+  <string name="inference_last_used_badge">Last Used</string>
+  <string name="action_drag_to_reorder">Drag to reorder</string>
+  <string name="inference_available">Available</string>
+  <string name="inference_unavailable">Unavailable</string>
+  <string name="inference_unknown">Unknown</string>
+  <string name="inference_routing_strategy">Routing Strategy</string>
+  <string name="inference_strategy_priority">Priority</string>
+  <string name="inference_strategy_priority_description">Use sources in configured priority order</string>
+  <string name="inference_strategy_cost">Cost Optimized</string>
+  <string name="inference_strategy_cost_description">Prefer lower cost sources</string>
+  <string name="inference_strategy_latency">Latency Optimized</string>
+  <string name="inference_strategy_latency_description">Prefer faster sources</string>
+  <string name="inference_strategy_reliability">Reliability</string>
+  <string name="inference_strategy_reliability_description">Prefer sources with higher success rate</string>
+  <string name="inference_local_model">Local Model</string>
+  <string name="inference_warmup_model">Warmup Model</string>
+  <string name="inference_warmup_description">Pre-load model on app start for faster first inference</string>
+  <string name="inference_warmup">Warmup</string>
+
+  <!-- Inference Metrics -->
+  <string name="settings_inference_metrics">Inference Metrics</string>
+  <string name="metrics_usage_distribution">Usage Distribution</string>
+  <string name="metrics_no_data">No data available</string>
+  <string name="metrics_requests_count">%d requests</string>
+  <string name="metrics_requests_short">%d</string>
+  <string name="metrics_percentage">%d%%</string>
+  <string name="metrics_success_rate">Success Rate</string>
+  <string name="metrics_latency">Latency</string>
+  <string name="metrics_avg_latency">Avg: %d ms</string>
+  <string name="metrics_cost_estimation">Cost Estimation</string>
+  <string name="metrics_cost_value">$%.4f</string>
+  <string name="metrics_total_cost">Total Cost</string>
+  <string name="metrics_no_cost_data">No cost data available</string>
+  <string name="metrics_reset_statistics">Reset</string>
+  <string name="metrics_reset_title">Reset Statistics</string>
+  <string name="metrics_reset_confirm_message">Are you sure you want to reset all inference statistics? This action cannot be undone.</string>
+  <string name="metrics_token_usage">Token Usage</string>
+  <string name="metrics_input_tokens">Input Tokens</string>
+  <string name="metrics_output_tokens">Output Tokens</string>
+  <string name="metrics_total_tokens">Total Tokens</string>
+
+  <!-- Integrations Settings -->
+  <string name="settings_integrations">Integrations</string>
+  <string name="integration_tasker">Tasker Integration</string>
+  <string name="integration_tasker_description">Allow Tasker to trigger automation tasks</string>
+  <string name="integration_tasker_token">Tasker Token</string>
+  <string name="integration_lan_server">LAN Server</string>
+  <string name="integration_server_enabled">Server Enabled</string>
+  <string name="integration_server_enabled_description">Enable HTTP server for LAN access</string>
+  <string name="integration_server_port">Server Port</string>
+  <string name="integration_server_port_description">Port for LAN HTTP server</string>
+  <string name="integration_port_label">Port Number</string>
+  <string name="integration_port_hint">Valid range: %1$d - %2$d</string>
+  <string name="integration_port_error">Port must be between %1$d and %2$d</string>
+  <string name="integration_lan_token">LAN Token</string>
+  <string name="integration_server_status">Server Status</string>
+  <string name="integration_server_running">Running</string>
+  <string name="integration_server_stopped">Stopped</string>
+  <string name="integration_server_starting">Starting…</string>
+  <string name="integration_server_error">Error</string>
+  <string name="integration_trusted_networks">Trusted Networks</string>
+  <string name="integration_trusted_networks_description">Only allow connections from trusted networks</string>
+  <string name="integration_trusted_networks_explanation">Network Whitelist</string>
+  <string name="integration_trusted_networks_explanation_detail">When enabled, the LAN server will only accept connections from devices on the WiFi networks you specify. This adds an extra layer of security by restricting access to known networks.</string>
+  <string name="integration_trust_all_wifi">Trust All WiFi</string>
+  <string name="integration_trust_all_wifi_warning">No networks added. Server accepts connections from any WiFi network.</string>
+  <string name="integration_add_current_network">Add Current Network</string>
+  <string name="integration_add_network_hint">Add \"%s\" to trusted networks</string>
+  <string name="integration_current_network">Current: %s</string>
+  <string name="integration_idle_timeout">Idle Timeout</string>
+  <string name="integration_idle_timeout_title">Auto Stop After Idle</string>
+  <string name="integration_idle_timeout_hours">%d hours</string>
+  <string name="integration_idle_timeout_description">Auto-stop server after inactivity</string>
+  <string name="integration_idle_timeout_disabled">Disabled</string>
+  <string name="integration_idle_timeout_never">Never</string>
+  <string name="integration_idle_timeout_value">%d hours</string>
+  <string name="integration_time_remaining">Time remaining: %s</string>
+  <string name="integration_service_discovery">Service Discovery</string>
+  <string name="integration_enable_mdns">Enable mDNS</string>
+  <string name="integration_mdns_description">Advertise server via mDNS/Bonjour</string>
+  <string name="integration_service_name">Service Name</string>
+  <string name="integration_tls">TLS Security</string>
+  <string name="integration_enable_tls">Enable TLS</string>
+  <string name="integration_tls_description">Use HTTPS for secure connections</string>
+  <string name="integration_tls_status">TLS Status</string>
+  <string name="integration_tls_enabled">Enabled</string>
+  <string name="integration_tls_disabled">Disabled</string>
+  <string name="integration_tls_cert_expired">Certificate Expired</string>
+  <string name="integration_tls_cert_invalid">Certificate Invalid</string>
+  <string name="integration_import_certificate">Import Certificate</string>
+  <string name="integration_import_certificate_not_available">Certificate import is not yet available</string>
+  <string name="integration_location_permission_required">Location Permission Required</string>
+  <string name="integration_location_permission_description">Location permission is needed to detect WiFi network name. Tap to grant permission.</string>
+  <string name="integration_location_service_required">Location Service Required</string>
+  <string name="integration_location_service_description">Location permission and service must be enabled to detect WiFi network name. Tap to grant permission.</string>
+  <string name="integration_open_location_settings">Open Location Settings</string>
+  <string name="integration_open_location_settings_description">If permission is already granted, enable location service in settings.</string>
+  <string name="integration_rate_limit">Rate Limiting</string>
+  <string name="integration_rate_limit_qps">Rate Limit (QPS)</string>
+  <string name="integration_rate_limit_description">Maximum requests per second</string>
+  <string name="integration_token_rotation">Token Rotation</string>
+  <string name="integration_auto_rotate_token">Auto Rotate Token</string>
+  <string name="integration_auto_rotate_description">Automatically rotate token when IP address changes or at scheduled intervals</string>
+  <string name="integration_rotation_interval">Rotation Interval</string>
+  <string name="integration_rotation_interval_description">How often to automatically rotate the access token</string>
+  <string name="integration_rotation_interval_value">%d days</string>
+  <string name="integration_regenerate_token">Regenerate Token</string>
+  <string name="integration_token_regenerated">Token regenerated</string>
+  <string name="integration_scan_wifi">Scan WiFi Networks</string>
+  <string name="integration_scan_wifi_description">Scan for available WiFi networks to add</string>
+  <string name="integration_scanning">Scanning…</string>
+  <string name="integration_available_networks">Available Networks</string>
+  <string name="integration_trusted_networks_list">Trusted Networks</string>
+  <string name="integration_current_network_label">Current Network</string>
+  <string name="integration_add_network">Add Network</string>
+  <string name="action_copy">Copy</string>
+
+  <!-- Debug Dashboard -->
+  <string name="debug_dashboard_title">Debug Dashboard</string>
+  <string name="debug_stream_status">Debug Stream</string>
+  <string name="debug_stream_disconnected">Disconnected</string>
+  <string name="debug_stream_connecting">Connecting (%1$d/%2$d)</string>
+  <string name="debug_stream_connected">Connected (port %d)</string>
+  <string name="debug_stream_error">Error</string>
+  <string name="debug_stream_connect">Connect</string>
+  <string name="debug_stream_disconnect">Disconnect</string>
+  <string name="debug_performance_metrics">Performance Metrics</string>
+  <string name="debug_fps">FPS</string>
+  <string name="debug_latency">Latency</string>
+  <string name="debug_frames">Frames</string>
+  <string name="debug_fps_chart">FPS History</string>
+  <string name="debug_latency_chart">Latency History</string>
+  <string name="debug_delegate_info">Delegate Info</string>
+  <string name="debug_delegate_none">None</string>
+  <string name="debug_delegate_gpu">GPU</string>
+  <string name="debug_delegate_nnapi">NNAPI</string>
+  <string name="debug_delegate_hexagon">Hexagon DSP</string>
+  <string name="debug_delegate_xnnpack">XNNPACK</string>
+  <string name="debug_active_delegate">Active Delegate:</string>
+  <string name="debug_detection_results">Detection Results</string>
+  <string name="debug_detection_count">%d detections</string>
+  <string name="debug_no_detections">No detections</string>
+  <string name="debug_class_id">Class ID: %d</string>
+  <string name="debug_bbox_info">Box: (%1$d, %2$d) %3$dx%4$d</string>
+  <string name="debug_ocr_text">Text: %s</string>
+  <string name="debug_more_detections">+%d more detections</string>
+
+  <!-- Debug Security Logs -->
+  <string name="debug_security_logs_title">Security Logs</string>
+  <string name="debug_clear_logs_title">Clear Logs</string>
+  <string name="debug_clear_logs_message">Are you sure you want to clear all security logs?</string>
+  <string name="debug_search_logs">Search logs…</string>
+  <string name="debug_log_count">%d entries</string>
+  <string name="debug_loading">Loading…</string>
+  <string name="debug_no_matching_logs">No matching logs</string>
+  <string name="debug_no_logs">No security logs</string>
+  <string name="debug_load_logs_failed">Failed to load security logs</string>
+  <string name="debug_logs_cleared">Security logs cleared</string>
+  <string name="debug_clear_logs_failed">Failed to clear security logs</string>
+
+  <!-- Debug Chaos Testing -->
+  <string name="debug_chaos_testing_title">Chaos Testing</string>
+  <string name="debug_chaos_enable">Enable Chaos Testing</string>
+  <string name="debug_chaos_enable_description">Enable chaos testing to simulate failures and test recovery</string>
+  <string name="debug_chaos_actions">Chaos Actions</string>
+  <string name="debug_chaos_simulate_crash">Simulate Daemon Crash</string>
+  <string name="debug_chaos_simulate_crash_description">Simulate a daemon crash to test recovery mechanisms</string>
+  <string name="debug_chaos_network_delay">Network Delay</string>
+  <string name="debug_chaos_network_delay_description">Inject network latency to test timeout handling</string>
+  <string name="debug_chaos_apply_network_delay">Apply Network Delay</string>
+  <string name="debug_chaos_memory_pressure">Memory Pressure</string>
+  <string name="debug_chaos_memory_pressure_description">Simulate memory pressure to test buffer release</string>
+  <string name="debug_chaos_apply_memory_pressure">Apply Memory Pressure</string>
+  <string name="debug_chaos_level">Level %d</string>
+  <string name="debug_chaos_simulate_auth_failure">Simulate Auth Failure</string>
+  <string name="debug_chaos_simulate_auth_failure_description">Simulate authentication failure to test re-auth flow</string>
+  <string name="debug_chaos_recovery_metrics">Recovery Metrics</string>
+  <string name="debug_chaos_reset_metrics">Reset</string>
+  <string name="debug_chaos_detection_time">Detection</string>
+  <string name="debug_chaos_reconciliation_time">Reconcile</string>
+  <string name="debug_chaos_total_recovery_time">Total</string>
+  <string name="debug_chaos_successful_recoveries">Success</string>
+  <string name="debug_chaos_failed_recoveries">Failed</string>
+  <string name="debug_chaos_success_rate">Rate</string>
+  <string name="debug_chaos_event_history">Event History</string>
+  <string name="debug_chaos_no_events">No chaos events yet</string>
+
+  <!-- Notification Permission -->
+  <string name="notification_permission_title">Notification Permission</string>
+  <string name="notification_permission_rationale">Futon needs notification permission to show foreground service notifications. This ensures stable background operation for automation tasks and LAN server.</string>
+  <string name="notification_permission_grant">Grant Permission</string>
+  <string name="notification_permission_settings">Open Settings</string>
+  <string name="notification_permission_required_title">Notification Permission Required</string>
+  <string name="notification_permission_required_message">The LAN server requires notification permission to run as a foreground service. Without this permission, the server may be stopped by the system.</string>
+  <string name="notification_permission_denied">Notification permission denied</string>
+  <string name="notification_permission_warning">Notification permission not granted. Some features may not work properly.</string>
+
+  <!-- Onboarding -->
+  <string name="onboarding_welcome_title">Welcome to Futon</string>
+  <string name="onboarding_welcome_subtitle">Let\'s set up your device for automation</string>
+  <string name="onboarding_progress">%d%% Complete</string>
+  <string name="onboarding_complete">Get Started</string>
+  <string name="onboarding_exit">Exit</string>
+  <string name="onboarding_exit_confirm_title">Exit Setup?</string>
+  <string name="onboarding_exit_confirm_message">Futon requires root access and daemon setup to function. Are you sure you want to exit?</string>
+
+  <!-- Onboarding Steps -->
+  <string name="onboarding_step_root_title">Root Permission</string>
+  <string name="onboarding_step_root_description">Verify root access is available</string>
+  <string name="onboarding_step_root_in_progress">Checking root permission…</string>
+  <string name="onboarding_step_root_success">Root access verified</string>
+
+  <string name="onboarding_step_deploy_title">Deploy Daemon</string>
+  <string name="onboarding_step_deploy_description">Install the native daemon binary</string>
+  <string name="onboarding_step_deploy_in_progress">Deploying daemon binary…</string>
+  <string name="onboarding_step_deploy_success">Daemon deployed successfully</string>
+  <string name="onboarding_step_deploy_success_reboot">Module installed. Reboot recommended for auto-start.</string>
+  <string name="onboarding_step_deploy_up_to_date">Already up-to-date</string>
+  <string name="onboarding_step_deploy_confirm_message">Ready to install daemon module</string>
+  <string name="onboarding_step_deploy_confirm_action">Install Module</string>
+  <string name="onboarding_step_deploy_update_message">A newer version is available</string>
+  <string name="onboarding_step_deploy_update_action">Update Module</string>
+
+  <string name="onboarding_step_model_title">Deploy Models</string>
+  <string name="onboarding_step_model_description">Install OCR and detection models for on-device inference</string>
+  <string name="onboarding_step_model_in_progress">Deploying models…</string>
+  <string name="onboarding_step_model_success">Models deployed successfully</string>
+  <string name="onboarding_step_model_progress">Deploying %1$s (%2$d%%)</string>
+  <string name="onboarding_step_model_skipped">Skipped (reduced functionality)</string>
+  <string name="onboarding_error_model_deploy_failed">Failed to deploy models: %s</string>
+  <string name="onboarding_model_skip_title">Skip Model Deployment?</string>
+  <string name="onboarding_model_skip_message">Skipping model deployment will disable OCR and on-device detection features. You can deploy models later from Settings.</string>
+  <string name="onboarding_model_skip_confirm">Skip</string>
+
+  <string name="onboarding_step_key_title">Security Keys</string>
+  <string name="onboarding_step_key_description">Generate authentication keys for daemon communication</string>
+  <string name="onboarding_step_key_in_progress">Generating security keys…</string>
+  <string name="onboarding_step_key_success">Security keys generated</string>
+
+  <string name="onboarding_step_verify_title">Verification</string>
+  <string name="onboarding_step_verify_description">Start daemon and verify connection</string>
+  <string name="onboarding_step_verify_in_progress">Starting daemon and verifying…</string>
+  <string name="onboarding_step_verify_success">Daemon running and authenticated</string>
+
+  <!-- Onboarding Errors -->
+  <string name="onboarding_error_root_unavailable">Root access is not available. Please ensure your device is rooted.</string>
+  <string name="onboarding_error_selinux_blocked">SELinux is blocking operations. Try setting SELinux to permissive mode.</string>
+  <string name="onboarding_error_root_check_failed">Failed to check root status. Please try again.</string>
+  <string name="onboarding_error_deploy_failed">Failed to deploy daemon binary. Please check storage permissions.</string>
+  <string name="onboarding_error_key_generation_failed">Failed to generate security keys. Please try again.</string>
+  <string name="onboarding_error_key_deploy_failed">Failed to deploy public key to daemon. Please check root permissions.</string>
+  <string name="onboarding_error_daemon_start_failed">Failed to start daemon. Please check root permissions.</string>
+  <string name="onboarding_error_binder_connection_failed">Failed to connect to daemon. Please try again.</string>
+  <string name="onboarding_error_auth_failed">Authentication failed. Please try again.</string>
+  <string name="onboarding_error_deploy_check_failed">Failed to check deployment status</string>
+  <string name="onboarding_verify_needs_reboot">Module installed but daemon not responding. Please reboot your device.</string>
+
+  <!-- Deployment Errors -->
+  <string name="deploy_error_contract_not_found">Module contract not found</string>
+  <string name="deploy_error_contract_parse">Failed to parse module contract</string>
+  <string name="deploy_error_incompatible_version">App version not compatible with module</string>
+  <string name="deploy_error_unknown_deployment">Unknown module deployment detected</string>
+  <string name="deploy_error_root_not_available">Root access not available</string>
+  <string name="deploy_error_extraction_failed">Failed to extract module files</string>
+  <string name="deploy_error_installation_timeout">Installation timed out</string>
+  <string name="deploy_error_installation_failed">Module installation failed</string>
+  <string name="deploy_error_root_denied">Root permission denied</string>
+  <string name="deploy_error_fallback_failed">Fallback deployment failed</string>
+  <string name="deploy_error_uninstall_failed">Failed to uninstall module</string>
+
+  <!-- Model Settings -->
+  <string name="settings_models">Models</string>
+  <string name="model_settings_deployed_models">Deployed Models</string>
+  <string name="model_settings_no_models">No models found</string>
+  <string name="model_settings_no_models_description">Model manifest could not be loaded</string>
+  <string name="model_settings_required">Required</string>
+  <string name="model_settings_status_not_deployed">Not deployed</string>
+  <string name="model_settings_status_deploying">Deploying (%d%%)</string>
+  <string name="model_settings_status_deployed">Deployed</string>
+  <string name="model_settings_status_corrupted">Corrupted</string>
+  <string name="model_settings_status_failed">Failed</string>
+  <string name="model_settings_actions">Actions</string>
+  <string name="model_settings_redeploy">Re-deploy Models</string>
+  <string name="model_settings_redeploy_description">Re-copy models from app assets to daemon directory</string>
+  <string name="model_settings_verify">Verify Models</string>
+  <string name="model_settings_verify_description">Check model integrity using SHA256 checksums</string>
+
+  <!-- SoM (Set-of-Mark) Settings -->
+  <string name="settings_som">Set-of-Mark (SoM)</string>
+  <string name="settings_som_description">Configure SoM visual grounding for AI automation</string>
+  <string name="som_master_switch">SoM Mode</string>
+  <string name="som_enable">Enable SoM Mode</string>
+  <string name="som_enable_description">Use Set-of-Mark prompting for more accurate element targeting</string>
+  <string name="som_perception_settings">Perception</string>
+  <string name="som_include_ui_tree">Include UI Tree</string>
+  <string name="som_include_ui_tree_description">Combine OCR with UI tree for better element detection</string>
+  <string name="som_min_confidence">Minimum Confidence</string>
+  <string name="som_min_confidence_description">Filter elements below this confidence threshold</string>
+  <string name="som_confidence_value">%d%%</string>
+  <string name="som_confidence_low">Low</string>
+  <string name="som_confidence_high">High</string>
+  <string name="som_annotation_settings">Annotation</string>
+  <string name="som_render_annotations">Render Annotations</string>
+  <string name="som_render_annotations_description">Draw numbered markers on screenshot for LLM</string>
+  <string name="som_show_bounding_boxes">Show Bounding Boxes</string>
+  <string name="som_show_bounding_boxes_description">Draw element boundaries on annotated screenshot</string>
+  <string name="som_marker_size">Marker Size</string>
+  <string name="som_marker_size_description">Size of numbered markers in pixels</string>
+  <string name="som_marker_size_value">%d px</string>
+  <string name="som_marker_size_small">Small</string>
+  <string name="som_marker_size_large">Large</string>
+  <string name="som_max_elements">Max Elements</string>
+  <string name="som_max_elements_description">Maximum number of elements to include in annotation</string>
+  <string name="som_max_elements_value">%d</string>
+  <string name="som_max_elements_few">Few</string>
+  <string name="som_max_elements_many">Many</string>
+  <string name="som_filtering_settings">Filtering</string>
+  <string name="som_filter_small_elements">Filter Small Elements</string>
+  <string name="som_filter_small_elements_description">Exclude elements smaller than minimum area</string>
+  <string name="som_min_element_area">Minimum Element Area</string>
+  <string name="som_min_element_area_description">Minimum area in pixels for element inclusion</string>
+  <string name="som_min_element_area_value">%d px²</string>
+  <string name="som_min_element_area_small">Small</string>
+  <string name="som_min_element_area_large">Large</string>
+  <string name="som_merge_iou_threshold">Merge IoU Threshold</string>
+  <string name="som_merge_iou_threshold_description">Overlap threshold for merging OCR and UI tree elements</string>
+  <string name="som_iou_value">%d%%</string>
+  <string name="som_iou_low">Low</string>
+  <string name="som_iou_high">High</string>
+  <string name="som_quality_settings">Quality</string>
+  <string name="som_screenshot_quality">Screenshot Quality</string>
+  <string name="som_screenshot_quality_description">JPEG quality for annotated screenshot sent to LLM</string>
+  <string name="som_quality_value">%d%%</string>
+  <string name="som_quality_low">Low</string>
+  <string name="som_quality_high">High</string>
+  <string name="som_actions">Actions</string>
+  <string name="som_reset_to_defaults">Reset to Defaults</string>
+  <string name="som_reset_to_defaults_description">Restore all SoM settings to default values</string>
+
+  <!-- SoM Test -->
+  <string name="som_test_section">Test</string>
+  <string name="som_run_test">Run Perception Test</string>
+  <string name="som_run_test_description">Capture current screen and preview SoM annotations</string>
+  <string name="som_test_result_title">SoM Test Result</string>
+  <string name="som_test_result_image">Annotated screenshot</string>
+  <string name="som_test_elements">Elements</string>
+  <string name="som_test_capture_time">Capture</string>
+  <string name="som_test_annotation_time">Annotation</string>
+  <string name="som_test_ms">%1$d ms</string>
+  <string name="som_test_zoom_hint">Pinch to zoom, drag to pan</string>
+
+  <!-- API Protocol Types -->
+  <string name="protocol_openai_compatible">OpenAI Compatible</string>
+  <string name="protocol_gemini">Google Gemini</string>
+  <string name="protocol_anthropic">Anthropic Claude</string>
+  <string name="protocol_ollama">Ollama</string>
+
+  <!-- Provider Management -->
+  <string name="provider_add">Add Provider</string>
+  <string name="provider_edit">Edit Provider</string>
+  <string name="provider_delete">Delete Provider</string>
+  <string name="provider_delete_confirm">Delete \"%s\"?</string>
+  <string name="provider_delete_message">This will remove the provider and all its models. This action cannot be undone.</string>
+  <string name="provider_name_label">Provider Name</string>
+  <string name="provider_name_hint">e.g., My OpenAI</string>
+  <string name="provider_protocol">API Protocol</string>
+  <string name="provider_icon">Icon</string>
+  <string name="provider_icon_custom">Custom</string>
+  <string name="provider_enabled">Enabled</string>
+  <string name="provider_disabled">Disabled</string>
+  <string name="provider_not_configured">Not Configured</string>
+  <string name="provider_no_model_selected">No model selected</string>
+  <string name="provider_models_count">%d models</string>
+  <string name="provider_no_models">No models configured</string>
+  <string name="provider_from_template">From Template</string>
+  <string name="provider_custom">Custom Provider</string>
+  <string name="provider_add_new">Add New</string>
+  <string name="provider_delete_title">Delete Provider</string>
+  <string name="provider_name">Provider Name</string>
+  <string name="provider_model_configs">Model Configurations</string>
+  <string name="provider_add_model">Add Model</string>
+  <string name="provider_active_badge">Active</string>
+  <string name="provider_model_pricing">$%1$.2f / $%2$.2f per M tokens</string>
+  <string name="provider_configure_first">Configure API key first</string>
+  <string name="provider_select_model_first">Select a model first</string>
+  <string name="provider_create_title">Create Provider</string>
+  <string name="provider_select_protocol">Select API Protocol</string>
+  <string name="provider_base_url_hint">https://api.example.com/v1</string>
+  <string name="provider_create">Create Provider</string>
+  <string name="model_delete_title">Delete Model</string>
+  <string name="model_delete_message">Delete model \"%s\"? This cannot be undone.</string>
+
+  <!-- Model Management -->
+  <string name="model_add">Add Model</string>
+  <string name="model_edit">Edit Model</string>
+  <string name="model_delete">Delete Model</string>
+  <string name="model_id">Model ID</string>
+  <string name="model_id_hint">e.g., gpt-4o</string>
+  <string name="model_display_name">Display Name</string>
+  <string name="model_display_name_hint">e.g., GPT-4o</string>
+  <string name="model_pricing">Pricing</string>
+  <string name="model_input_price">Input Price</string>
+  <string name="model_output_price">Output Price</string>
+  <string name="model_price_unit">$/M tokens</string>
+  <string name="model_price_free">Free</string>
+  <string name="model_context_window">Context Window</string>
+  <string name="model_context_tokens">%s tokens</string>
+  <string name="model_supports_vision">Supports Vision</string>
+  <string name="model_select">Select Model</string>
+  <string name="model_available_count">%d models available</string>
+  <string name="model_active">Active</string>
+  <string name="model_use">Use</string>
+  <string name="model_default">Default</string>
+
+  <!-- Inference Stats -->
+  <string name="stats_title">Inference Statistics</string>
+  <string name="stats_total_cost">Total Cost</string>
+  <string name="stats_total_tokens">Total Tokens</string>
+  <string name="stats_total_requests">Total Requests</string>
+  <string name="stats_input_tokens">Input Tokens</string>
+  <string name="stats_output_tokens">Output Tokens</string>
+  <string name="stats_avg_latency">Avg Latency</string>
+  <string name="stats_last_used">Last Used</string>
+  <string name="stats_by_model">By Model</string>
+  <string name="stats_by_provider">By Provider</string>
+  <string name="stats_reset">Reset Statistics</string>
+  <string name="stats_reset_confirm">Reset all inference statistics?</string>
+  <string name="stats_reset_message">This will clear all usage data. This action cannot be undone.</string>
+  <string name="stats_no_data">No usage data yet</string>
+
+  <!-- Generic Operation Errors -->
+  <string name="error_fix_failed">Fix failed</string>
+  <string name="error_save_failed">Save failed</string>
+  <string name="error_load_failed">Load failed</string>
+  <string name="error_refresh_failed">Refresh failed</string>
+  <string name="error_detect_failed">Detection failed</string>
+  <string name="error_clear_failed">Clear failed</string>
+  <string name="error_download_failed">Download failed</string>
+  <string name="error_pause_failed">Pause failed</string>
+  <string name="error_resume_failed">Resume failed</string>
+  <string name="error_cancel_failed">Cancel failed</string>
+  <string name="error_enable_failed">Enable failed</string>
+  <string name="error_disable_failed">Disable failed</string>
+  <string name="error_delete_failed">Delete failed</string>
+  <string name="error_import_failed">Import failed</string>
+  <string name="error_data_load">Data load error</string>
+  <string name="error_with_detail">%1$s: %2$s</string>
+  <string name="error_check_root">Please check Root permission</string>
+
+  <!-- Generic Success Messages -->
+  <string name="success_download_complete">Download complete</string>
+  <string name="success_download_paused">Download paused</string>
+  <string name="success_download_resumed">Download resumed</string>
+  <string name="success_download_cancelled">Download cancelled</string>
+  <string name="success_model_enabled">Local model enabled</string>
+  <string name="success_model_disabled">Local model disabled</string>
+  <string name="success_model_deleted">Model deleted</string>
+  <string name="success_model_imported">Model imported successfully</string>
+  <string name="success_catalog_refreshed">Model list refreshed</string>
+  <string name="success_selinux_fixed">SELinux fixed</string>
+
+  <!-- Screenshot Quality -->
+  <string name="screenshot_quality_low">Low</string>
+  <string name="screenshot_quality_medium">Medium</string>
+  <string name="screenshot_quality_high">High</string>
+
+  <!-- Import Progress -->
+  <string name="import_stage_validating">Validating file...</string>
+  <string name="import_stage_importing">Importing...</string>
+  <string name="import_stage_mmproj_required">mmproj file required</string>
+
+  <!-- About Screen -->
+  <string name="about_title">About</string>
+  <string name="about_version">Version %1$s (%2$d)</string>
+  <string name="about_project">Project</string>
+  <string name="about_github">GitHub Repository</string>
+  <string name="about_author">Author</string>
+  <string name="about_license">License</string>
+  <string name="about_icon_design">Icon Design</string>
+  <string name="about_icon_designer">Design</string>
+  <string name="about_icon_illustrator">Illustration</string>
+  <string name="about_acknowledgements">Acknowledgements</string>
+</resources>

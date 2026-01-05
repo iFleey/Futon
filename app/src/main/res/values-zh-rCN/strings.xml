@@ -1,0 +1,1516 @@
+<resources>
+  <string name="app_name">Futon</string>
+
+  <!-- Common Actions -->
+  <string name="action_back">返回</string>
+  <string name="action_confirm">确定</string>
+  <string name="action_cancel">取消</string>
+  <string name="action_save">保存</string>
+  <string name="action_delete">删除</string>
+  <string name="action_retry">重试</string>
+  <string name="action_show">显示</string>
+  <string name="action_hide">隐藏</string>
+  <string name="action_clear">清空</string>
+  <string name="action_send">发送</string>
+  <string name="action_undo">撤销</string>
+  <string name="action_edit">编辑</string>
+
+  <!-- Swipe Actions -->
+  <string name="swipe_deleted">已删除</string>
+  <string name="swipe_deleted_item">已删除项目</string>
+  <string name="swipe_deleted_conversation">已删除对话</string>
+  <string name="swipe_deleted_record">已删除记录</string>
+
+  <!-- Navigation -->
+  <string name="nav_home">首页</string>
+  <string name="nav_task">任务</string>
+  <string name="nav_settings">设置</string>
+  <string name="nav_history">历史</string>
+
+  <!-- Content Descriptions -->
+  <string name="content_description_menu">打开菜单</string>
+  <string name="content_description_new_conversation">新建对话</string>
+
+  <!-- Home Screen -->
+  <string name="status_running">运行中</string>
+  <string name="status_not_enabled">未启用</string>
+  <string name="status_warning">警告</string>
+  <string name="status_connected">已连接</string>
+
+  <!-- Settings Screen -->
+  <string name="settings">设置</string>
+  <string name="api_key">API Key</string>
+  <string name="api_base_url">API Base URL</string>
+  <string name="model_name">模型名称</string>
+  <string name="max_steps">最大步数</string>
+  <string name="system_prompt">系统提示词</string>
+  <string name="save_settings">保存设置</string>
+  <string name="settings_saved">设置已保存</string>
+
+  <!-- Settings Screen Categories -->
+  <string name="settings_category_ai">AI 与模型</string>
+  <string name="settings_category_automation">自动化执行</string>
+  <string name="settings_category_perception">感知引擎</string>
+  <string name="settings_category_system">系统与守护进程</string>
+  <string name="settings_category_integrations">集成与连接</string>
+  <string name="settings_category_other">其他</string>
+  <string name="settings_category_appearance">界面</string>
+  <string name="settings_category_debug">调试</string>
+  <string name="settings_ai_provider">AI 提供商</string>
+  <string name="settings_local_model">本地模型</string>
+  <string name="settings_appearance">外观</string>
+  <string name="settings_automation">自动化</string>
+  <string name="settings_hybrid_perception">混合感知</string>
+  <string name="settings_advanced_options">高级选项</string>
+
+  <!-- Appearance Settings -->
+  <string name="settings_theme">主题</string>
+  <string name="settings_theme_mode">主题模式</string>
+  <string name="settings_theme_system">跟随系统</string>
+  <string name="settings_theme_system_description">自动跟随系统深浅色设置</string>
+  <string name="settings_theme_light">浅色模式</string>
+  <string name="settings_theme_light_description">始终使用浅色主题</string>
+  <string name="settings_theme_dark">深色模式</string>
+  <string name="settings_theme_dark_description">始终使用深色主题</string>
+  <string name="settings_theme_description">选择应用的主题模式</string>
+  <string name="settings_color">颜色</string>
+  <string name="settings_dynamic_color">动态颜色</string>
+  <string name="settings_dynamic_color_description">根据壁纸自动调整应用主色调（Material You）</string>
+
+  <!-- Language Settings -->
+  <string name="settings_language">语言</string>
+  <string name="settings_language_system">跟随系统</string>
+  <string name="settings_language_system_description">自动跟随系统语言设置</string>
+  <string name="settings_language_english">English</string>
+  <string name="settings_language_chinese_simplified">简体中文</string>
+  <string name="settings_language_chinese_traditional">繁體中文</string>
+  <string name="settings_language_japanese">日本語</string>
+
+  <!-- Automation Settings -->
+  <string name="settings_execution">执行设置</string>
+  <string name="settings_max_steps_description">单次任务最大执行步数</string>
+  <string name="settings_timeout">超时设置</string>
+  <string name="settings_ai_timeout">AI 请求超时</string>
+  <string name="settings_ai_timeout_description">AI 请求超时时间（秒）。使用 thinking 模型时建议设置较长时间</string>
+  <string name="settings_timeout_seconds">%d 秒</string>
+  <string name="settings_steps_count">%d 步</string>
+  <string name="settings_token">Token 设置</string>
+  <string name="settings_max_tokens">最大 Token 数</string>
+  <string name="settings_max_tokens_description">AI 响应的最大 Token 数。如果响应被截断，请增加此值</string>
+  <string name="settings_screenshot">截图质量</string>
+  <string name="settings_screenshot_quality">截图质量</string>
+  <string name="settings_screenshot_quality_low">低质量</string>
+  <string name="settings_screenshot_quality_low_description">50% 压缩，上传更快，适合网络较慢的情况</string>
+  <string name="settings_screenshot_quality_medium">中等质量</string>
+  <string name="settings_screenshot_quality_medium_description">70% 压缩，平衡速度与识别准确度</string>
+  <string name="settings_screenshot_quality_high">高质量</string>
+  <string name="settings_screenshot_quality_high_description">90% 压缩，识别更准确，但上传较慢</string>
+  <string name="settings_screenshot_quality_description">较低质量可加快上传速度，较高质量可提升 AI 识别准确度</string>
+
+  <!-- Advanced Settings -->
+  <string name="settings_ai_prompt">AI 提示词</string>
+  <string name="settings_system_prompt_description">自定义 AI 系统提示词，用于指导 AI 如何分析屏幕和执行任务</string>
+
+  <!-- Settings Validation -->
+  <string name="error_api_key_required">请输入 API Key</string>
+  <string name="error_base_url_required">请输入 API Base URL</string>
+  <string name="error_model_required">请输入模型名称</string>
+  <string name="error_max_steps_invalid">最大步数必须大于 0</string>
+
+  <!-- Task Screen -->
+  <string name="task_input_label">输入任务</string>
+  <string name="task_input_placeholder">例如：访问 fleey.me/blog 博客</string>
+  <string name="chat_input_placeholder">输入你想让我做的事情…</string>
+  <string name="chat_input_hint">随便问点什么</string>
+  <string name="ai_disclaimer">AI 可能会犯错，请仔细核实回复内容</string>
+  <string name="start_execution">开始执行</string>
+  <string name="stop_execution">停止</string>
+  <string name="executing">执行中…</string>
+  <string name="step_progress">步骤 %1$d / %2$d</string>
+  <string name="task_suggestions">建议操作</string>
+  <string name="task_no_action_history">暂无动作记录</string>
+
+  <!-- Automation Results -->
+  <string name="result_success">任务完成</string>
+  <string name="result_failure">任务失败</string>
+  <string name="result_cancelled">任务已取消</string>
+  <string name="result_timeout">任务超时</string>
+
+  <!-- History Screen -->
+  <string name="history">历史记录</string>
+  <string name="no_history">暂无历史记录</string>
+  <string name="retry_task">重试任务</string>
+  <string name="clear_history">清空历史</string>
+  <string name="history_steps">%d 步</string>
+
+  <!-- History Header -->
+  <string name="history_header_title">执行记录</string>
+  <string name="history_record_count">共 %d 条记录</string>
+
+  <!-- History Multi-Select -->
+  <string name="history_selected_count">已选择 %d 项</string>
+  <string name="history_select_all">全选</string>
+  <string name="history_deselect_all">取消全选</string>
+  <string name="history_delete_selected">删除所选</string>
+  <string name="history_status_success">成功</string>
+  <string name="history_status_failure">失败</string>
+  <string name="history_status_cancelled">已取消</string>
+  <string name="history_status_timeout">超时</string>
+
+  <!-- Execution Phase -->
+  <string name="phase_capturing_screenshot">截图中</string>
+  <string name="phase_analyzing_with_ai">AI分析中</string>
+  <string name="phase_executing_action">执行动作中</string>
+  <string name="phase_waiting">等待中</string>
+  <string name="phase_retrying">重试中</string>
+
+  <!-- Execution Details -->
+  <string name="elapsed_time">已用时间</string>
+  <string name="step_elapsed_time">当前步骤</string>
+  <string name="total_elapsed_time">总耗时</string>
+  <string name="thinking_model_hint">这对于推理模型是正常的</string>
+  <string name="ai_reasoning">AI 推理</string>
+  <string name="action_history">动作历史</string>
+  <string name="retry_attempt">重试 %1$d/%2$d</string>
+  <string name="retry_reason">原因: %s</string>
+  <string name="retry_current_step">重试当前步骤</string>
+  <string name="action_success">成功</string>
+  <string name="action_failed">失败</string>
+  <string name="duration_ms">%d ms</string>
+  <string name="step_number">步骤 %d</string>
+
+  <!-- Error Suggestions -->
+  <string name="suggestion_check_network">检查网络连接</string>
+  <string name="suggestion_increase_timeout">增加超时时间</string>
+  <string name="suggestion_check_api_key">检查 API Key</string>
+
+  <!-- Execution Log Detail -->
+  <string name="execution_log_detail">执行日志详情</string>
+  <string name="export_log">导出日志</string>
+  <string name="log_not_found">日志未找到</string>
+  <string name="actions_section">动作记录</string>
+  <string name="ai_responses_section">AI 响应</string>
+  <string name="errors_section">错误记录</string>
+  <string name="execution_steps_section">执行步骤</string>
+  <string name="start_time">开始时间</string>
+  <string name="duration">耗时</string>
+  <string name="steps_executed">执行步数</string>
+  <string name="errors_count">错误数</string>
+  <string name="parameters">参数</string>
+  <string name="failure_reason">失败原因</string>
+  <string name="response_time_ms">响应时间: %d ms</string>
+  <string name="execution_ms">执行: %d ms</string>
+  <string name="ai_response_ms">AI: %d ms</string>
+  <string name="retryable">可重试</string>
+  <string name="error_type_network">网络错误</string>
+  <string name="error_type_timeout">超时</string>
+  <string name="error_type_api">API 错误</string>
+  <string name="error_type_invalid_response">无效响应</string>
+  <string name="error_type_action_failed">动作失败</string>
+  <string name="error_type_unknown">未知错误</string>
+  <string name="view_details">查看详情</string>
+
+  <!-- Error Messages -->
+  <string name="error_api_key_not_configured">API Key 未配置</string>
+  <string name="error_screenshot_failed">截图失败: %s</string>
+  <string name="error_ai_request_failed">AI 请求失败: %s</string>
+  <string name="error_action_execution_failed">操作执行失败</string>
+  <string name="error_network">网络错误: %s</string>
+  <string name="error_invalid_api_key">无效的 API Key</string>
+  <string name="error_rate_limit">请求频率超限</string>
+  <string name="error_server">服务器错误: %d</string>
+  <string name="error_invalid_response">响应格式无效</string>
+  <string name="error_timeout">请求超时</string>
+  <string name="error_settings_not_configured">请先配置 API 设置</string>
+  <string name="error_unknown">未知错误</string>
+
+  <!-- Provider Config -->
+  <string name="provider_name_openai">OpenAI</string>
+  <string name="provider_name_gemini">Gemini</string>
+  <string name="provider_name_new_api">New API</string>
+  <string name="provider_name_custom">自定义</string>
+  <string name="provider_name_local_model">本地模型</string>
+  <string name="provider_config_title">%s 配置</string>
+  <string name="provider_api_key">API Key</string>
+  <string name="provider_base_url">Base URL</string>
+  <string name="provider_refresh_models">刷新模型列表</string>
+  <string name="provider_set_active">设为活跃提供商</string>
+  <string name="provider_currently_active">当前活跃</string>
+  <string name="provider_switch_to">点击切换到 %s</string>
+  <string name="provider_save_changes">保存更改</string>
+  <string name="provider_saved">已保存</string>
+  <string name="provider_api_key_empty_warning">API Key 为空，保存后将无法使用此提供商</string>
+  <string name="provider_test_connection">测试连接</string>
+  <string name="provider_testing">测试中…</string>
+  <string name="provider_close">关闭</string>
+
+  <!-- Hybrid Perception Settings -->
+  <string name="perception_mode">感知模式</string>
+  <string name="perception_enable_advanced">启用高级感知</string>
+  <string name="perception_enable_description">启用后可选择不同的感知模式</string>
+  <string name="perception_method">感知方式</string>
+  <string name="perception_screenshot_only">纯截图模式</string>
+  <string name="perception_screenshot_only_description">仅使用截图进行视觉感知，依赖 AI 理解界面</string>
+  <string name="perception_ui_tree_only">纯 UI 树模式</string>
+  <string name="perception_ui_tree_only_description">仅使用 UI 结构感知，提供精确的元素信息（需要 Root）</string>
+  <string name="perception_hybrid">混合模式</string>
+  <string name="perception_hybrid_description">同时使用截图和 UI 树，获得最佳准确度（需要 Root）</string>
+  <string name="perception_performance">性能</string>
+  <string name="perception_timeout">感知超时</string>
+  <string name="perception_timeout_description">UI 树获取的最大等待时间</string>
+  <string name="perception_timeout_min">1秒</string>
+  <string name="perception_timeout_max">10秒</string>
+  <string name="perception_ai_optimization">AI 优化</string>
+  <string name="perception_ui_tree_depth">UI 树深度</string>
+  <string name="perception_ui_tree_depth_description">限制发送给 AI 的 UI 树层级深度，减少 token 消耗，加快响应速度</string>
+  <string name="perception_depth_levels">%d 层</string>
+  <string name="perception_depth_shallow">浅</string>
+  <string name="perception_depth_deep">深</string>
+  <string name="perception_include_non_interactive">包含非交互元素</string>
+  <string name="perception_include_non_interactive_description">在 AI 上下文中包含不可点击的元素（如文本标签），会增加 token 消耗</string>
+  <string name="perception_adaptive_learning">自适应学习</string>
+  <string name="perception_enable_learning">启用自适应学习</string>
+  <string name="perception_learning_description">记录成功的元素匹配模式，提高后续匹配速度</string>
+  <string name="perception_root_status">Root 状态</string>
+  <string name="perception_root_checking">检测中…</string>
+  <string name="perception_root_available">可用 (%s)</string>
+  <string name="perception_root_unavailable">不可用</string>
+  <string name="perception_root_denied">权限被拒绝</string>
+  <string name="perception_refresh">刷新</string>
+  <string name="perception_root_denied_message">Root 权限被拒绝。请在 Root 管理器中授权 Futon 应用，然后点击下方按钮重新请求。</string>
+  <string name="perception_root_unavailable_message">未检测到 Root 权限。如果您已安装 KSU、SukiSU Ultra、Magisk 或其他 Root 方案，请点击下方按钮请求权限。</string>
+  <string name="perception_request_root">请求 Root 权限</string>
+  <string name="perception_requesting">请求中…</string>
+  <string name="perception_cache">学习缓存</string>
+  <string name="perception_cache_count">%1$d / %2$d 条记录</string>
+  <string name="perception_clear_cache">清除缓存</string>
+  <string name="perception_clearing">清除中…</string>
+  <string name="perception_cache_warning">清除缓存将删除所有已学习的元素匹配模式，可能会暂时降低匹配准确度。</string>
+  <string name="perception_cache_cleared">缓存已清除</string>
+
+  <!-- Root Types -->
+  <string name="root_type_ksu">KernelSU</string>
+  <string name="root_type_ksu_next">KernelSU Next</string>
+  <string name="root_type_sukisu_ultra">SukiSU Ultra</string>
+  <string name="root_type_magisk">Magisk</string>
+  <string name="root_type_supersu">SuperSU</string>
+  <string name="root_type_apatch">APatch</string>
+  <string name="root_type_other">其他</string>
+  <string name="root_type_none">无</string>
+
+  <!-- Execution Settings -->
+  <string name="settings_execution_layer">执行层设置</string>
+  <string name="settings_input_method">输入注入方式</string>
+  <string name="settings_capture_method">截图方式</string>
+  <string name="settings_method_auto">自动选择</string>
+  <string name="settings_method_auto_description">根据设备能力自动选择最佳方式</string>
+  <string name="settings_input_native">原生 IOCTL</string>
+  <string name="settings_input_native_description">JNI 直接写入 /dev/input，延迟 &lt;5ms</string>
+  <string name="settings_input_android">Android Input</string>
+  <string name="settings_input_android_description">通过 Root Shell 执行 input 命令，延迟 ~80ms</string>
+  <string name="settings_input_shell">Shell Sendevent</string>
+  <string name="settings_input_shell_description">通过 Root Shell 执行 sendevent 命令</string>
+  <string name="settings_capture_root">Root Screencap</string>
+  <string name="settings_capture_root_description">通过 Root Shell 执行 screencap 命令</string>
+  <string name="settings_capture_media_projection">媒体投影</string>
+  <string name="settings_method_active">活跃</string>
+  <string name="settings_method_available">可用</string>
+  <string name="settings_method_unavailable">不可用</string>
+  <string name="settings_fallback">回退设置</string>
+  <string name="settings_enable_fallback">启用自动回退</string>
+  <string name="settings_enable_fallback_description">当首选方式失败时自动尝试其他可用方式</string>
+  <string name="settings_show_warnings">显示能力警告</string>
+  <string name="settings_show_warnings_description">当某些执行方式不可用时显示警告</string>
+
+  <!-- Privacy Settings -->
+  <string name="settings_privacy">隐私设置</string>
+  <string name="privacy_mode_title">隐私模式</string>
+  <string name="privacy_mode_strict">严格模式</string>
+  <string name="privacy_mode_strict_description">永不截取安全窗口（FLAG_SECURE），最大程度保护隐私</string>
+  <string name="privacy_mode_consent">询问模式</string>
+  <string name="privacy_mode_consent_description">检测到安全窗口时询问用户是否允许截取</string>
+  <string name="privacy_mode_trusted">信任模式</string>
+  <string name="privacy_mode_trusted_description">允许截取所有窗口，包括安全窗口</string>
+  <string name="privacy_trusted_warning">警告：信任模式会允许截取银行应用、密码管理器等敏感应用的屏幕内容。请确保您了解风险后再启用此模式。</string>
+  <string name="privacy_audit_log_title">审计日志</string>
+  <string name="privacy_enable_audit_log">启用审计日志</string>
+  <string name="privacy_enable_audit_log_description">记录所有安全窗口的截图尝试</string>
+  <string name="privacy_audit_log_entries">%d 条记录</string>
+  <string name="privacy_no_audit_entries">暂无审计记录</string>
+  <string name="privacy_clear_audit_log_title">清除审计日志</string>
+  <string name="privacy_clear_audit_log_message">确定要清除所有审计日志记录吗？此操作不可撤销。</string>
+
+  <!-- Capability Status -->
+  <string name="settings_capability_status">能力状态</string>
+  <string name="capability_active_methods">当前活跃方式</string>
+  <string name="capability_active_input">输入注入</string>
+  <string name="capability_active_capture">截图方式</string>
+  <string name="capability_none">无</string>
+  <string name="capability_root_status">Root 状态</string>
+  <string name="capability_root_available">Root 可用</string>
+  <string name="capability_root_type">Root 类型</string>
+  <string name="capability_root_version">Root 版本</string>
+  <string name="capability_yes">是</string>
+  <string name="capability_no">否</string>
+  <string name="capability_selinux_status">SELinux 状态</string>
+  <string name="capability_selinux_mode">SELinux 模式</string>
+  <string name="capability_input_access">输入设备访问</string>
+  <string name="capability_allowed">允许</string>
+  <string name="capability_blocked">阻止</string>
+  <string name="capability_suggested_policy">建议的 SELinux 策略：</string>
+  <string name="capability_input_device">输入设备</string>
+  <string name="capability_dev_input_access">/dev/input 访问</string>
+  <string name="capability_accessible">可访问</string>
+  <string name="capability_not_accessible">不可访问</string>
+  <string name="capability_device_path">设备路径</string>
+  <string name="capability_mt_protocol">多点触控协议</string>
+  <string name="capability_max_touch_points">最大触点数</string>
+  <string name="capability_service_running">服务运行中</string>
+  <string name="capability_input_methods">输入方式可用性</string>
+  <string name="capability_capture_methods">截图方式可用性</string>
+  <string name="capability_available">可用</string>
+  <string name="capability_unavailable">不可用</string>
+  <string name="capability_daemon_connection">守护进程连接</string>
+  <string name="capability_daemon_binder_ipc">守护进程 (Binder IPC)</string>
+  <string name="capability_daemon_not_running">守护进程未运行 - 请通过 Root Shell 启动</string>
+  <string name="capability_daemon_connecting">正在连接守护进程...</string>
+  <string name="capability_daemon_authenticating">正在与守护进程认证...</string>
+  <string name="capability_daemon_reconciling">正在同步守护进程状态...</string>
+  <string name="capability_daemon_starting">正在启动守护进程...</string>
+  <string name="capability_daemon_error">守护进程错误: %s</string>
+  <string name="capability_input_injection_daemon">守护进程 IPC</string>
+  <string name="capability_unavailable_reason">不可用: %s</string>
+  <string name="capability_stale_data">数据可能已过期</string>
+  <string name="capability_auth_failed">认证失败: %s</string>
+  <string name="capability_connection_lost">连接已断开</string>
+  <string name="capability_reconnecting">正在重新连接...</string>
+
+  <!-- SELinux Modes -->
+  <string name="selinux_enforcing">强制模式</string>
+  <string name="selinux_permissive">宽容模式</string>
+  <string name="selinux_disabled">已禁用</string>
+  <string name="selinux_unknown">未知</string>
+
+  <!-- MT Protocol -->
+  <string name="mt_protocol_a">协议 A（无状态）</string>
+  <string name="mt_protocol_b">协议 B（基于槽位）</string>
+  <string name="mt_single_touch">单点触控</string>
+
+  <!-- System Messages -->
+  <string name="welcome_greeting">有什么可以帮你？</string>
+  <string name="welcome_greeting_1">有什么可以帮你？</string>
+  <string name="welcome_greeting_2">今天想做点什么？</string>
+  <string name="welcome_greeting_3">让我来帮你完成任务</string>
+  <string name="welcome_subtitle">我可以帮你自动完成手机上的各种操作</string>
+  <string name="welcome_title">你好！</string>
+  <string name="welcome_message">我是 Futon AI 助手，可以帮你自动完成手机上的各种操作。告诉我你想做什么，我会帮你完成。</string>
+  <string name="welcome_try_examples">试试这些示例：</string>
+  <string name="example_task_camera">打开相机</string>
+  <string name="example_task_camera_desc">启动系统相机应用</string>
+  <string name="example_task_camera_action">打开相机应用</string>
+  <string name="example_task_browser">访问博客</string>
+  <string name="example_task_browser_desc">打开浏览器访问网站</string>
+  <string name="example_task_browser_action">打开浏览器访问 fleey.me/blog</string>
+  <string name="example_task_settings">系统设置</string>
+  <string name="example_task_settings_desc">打开系统设置页面</string>
+  <string name="example_task_settings_action">打开系统设置</string>
+  <string name="example_task_idea_1">给我一些灵感</string>
+  <string name="example_task_idea_1_action">给我一些今天可以做的事情的建议</string>
+  <string name="example_task_idea_2">发条消息</string>
+  <string name="example_task_idea_2_action">打开微信给朋友发一条问候消息</string>
+  <string name="example_task_idea_3">查看天气</string>
+  <string name="example_task_idea_3_action">打开天气应用查看今天的天气</string>
+  <string name="example_task_idea_4">播放音乐</string>
+  <string name="example_task_idea_4_action">打开音乐应用播放一首歌</string>
+  <string name="example_task_idea_5">设个闹钟</string>
+  <string name="example_task_idea_5_action">设置一个明天早上8点的闹钟</string>
+  <string name="example_task_idea_6">看看新闻</string>
+  <string name="example_task_idea_6_action">打开新闻应用看看今天的热点</string>
+  <string name="settings_required_title">需要配置</string>
+  <string name="settings_required_subtitle">配置 AI 提供商以开始使用</string>
+  <string name="settings_required_message">需要 API 密钥或本地模型</string>
+  <string name="setup_ai_provider">AI 提供商</string>
+  <string name="go_to_settings">前往设置</string>
+  <string name="conversation_cleared">对话已清空</string>
+
+  <!-- Drawer -->
+  <string name="drawer_search_hint">搜索对话</string>
+  <string name="drawer_search_empty">输入关键词搜索</string>
+  <string name="drawer_search_no_result">未找到 \"%s\"</string>
+  <string name="drawer_search_try_other">尝试其他关键词</string>
+  <string name="drawer_recent_conversations">最近对话</string>
+  <string name="drawer_no_conversations">暂无对话记录</string>
+  <string name="drawer_start_new_task">开始一个新任务吧</string>
+
+  <!-- Relative Time -->
+  <string name="time_just_now">刚刚</string>
+  <plurals name="time_minutes_ago">
+    <item quantity="other">%d分钟前</item>
+  </plurals>
+  <plurals name="time_hours_ago">
+    <item quantity="other">%d小时前</item>
+  </plurals>
+  <plurals name="time_days_ago">
+    <item quantity="other">%d天前</item>
+  </plurals>
+  <string name="time_date_format">%1$d月%2$d日</string>
+  <string name="time_today">今天</string>
+  <string name="time_yesterday">昨天</string>
+  <string name="time_this_week">本周</string>
+  <string name="time_hour_minute">%1$02d:%2$02d</string>
+
+  <!-- Task Status -->
+  <string name="status_success">成功</string>
+  <string name="status_failure">失败</string>
+  <string name="status_cancelled">取消</string>
+  <string name="status_timeout">超时</string>
+  <string name="status_with_steps">%1$s · %2$d步</string>
+
+  <!-- Chat AI Messages -->
+  <string name="chat_task_started">开始执行任务</string>
+  <string name="chat_task_completed">任务执行完成！</string>
+  <string name="chat_task_failed">任务执行失败: %s</string>
+  <string name="chat_task_cancelled">任务已取消</string>
+  <string name="chat_task_timeout">任务执行超时</string>
+  <string name="chat_phase_capturing">正在截取屏幕…</string>
+  <string name="chat_phase_analyzing">AI 分析中…</string>
+  <string name="chat_phase_executing">执行动作中…</string>
+  <string name="chat_phase_waiting">等待中…</string>
+  <string name="chat_phase_retrying">重试中…</string>
+  <string name="chat_phase_retrying_reason">重试中: %s</string>
+
+  <!-- Chat Action Parameters -->
+  <string name="chat_action_tap_position">位置: (%1$d, %2$d)</string>
+  <string name="chat_action_swipe_from_to">从 (%1$d, %2$d) 到 (%3$d, %4$d)</string>
+  <string name="chat_action_input_text">文本: %s</string>
+  <string name="chat_action_wait_duration">等待: %dms</string>
+
+  <!-- Chat Suggestions -->
+  <string name="suggestion_check_screen">检查屏幕状态</string>
+  <string name="suggestion_retry_task">重试任务</string>
+  <string name="suggestion_adjust_description">调整任务描述</string>
+  <string name="suggestion_increase_max_steps">增加最大步数</string>
+  <string name="suggestion_simplify_task">简化任务描述</string>
+
+  <!-- Local Model Settings -->
+  <string name="local_model_import">导入模型</string>
+  <string name="local_model_import_description">从本地存储导入已下载的 GGUF 模型文件</string>
+  <string name="local_model_select_file">选择文件</string>
+  <string name="local_model_supported_formats">支持的格式</string>
+  <string name="local_model_supported_formats_description">• GGUF 格式模型文件\n• 视觉语言模型需要同时导入 mmproj 文件</string>
+  <string name="local_model_mmproj_required">需要 mmproj 文件</string>
+  <string name="local_model_mmproj_description">检测到这是一个视觉语言模型 (VLM)，需要同时导入 mmproj 文件才能正常使用。</string>
+  <string name="local_model_mmproj_hint">mmproj 文件通常与模型文件一起提供，文件名包含 \"mmproj\" 字样。</string>
+  <string name="local_model_select_mmproj">选择 mmproj 文件</string>
+  <string name="local_model_quantization_select">选择量化版本</string>
+  <string name="local_model_quantization_recommended">推荐</string>
+  <string name="local_model_quantization_size_ram">大小: %1$s | 最低内存: %2$s</string>
+  <string name="local_model_storage_insufficient">存储空间不足</string>
+  <string name="local_model_available_quantizations">可用量化版本</string>
+  <string name="local_model_ram_required">需要 %s RAM</string>
+  <string name="local_model_download">下载</string>
+  <string name="local_model_downloading">下载中 - %d%%</string>
+  <string name="local_model_download_failed">下载失败</string>
+  <string name="local_model_quantization">量化: %s</string>
+  <string name="local_model_size">大小: %s</string>
+  <string name="local_model_enabled">已启用</string>
+  <string name="local_model_enable">启用</string>
+  <string name="local_model_disable">禁用</string>
+  <string name="local_model_delete">删除模型</string>
+  <string name="local_model_pause_download">暂停下载</string>
+  <string name="local_model_resume_download">继续下载</string>
+  <string name="local_model_cancel_download">取消下载</string>
+  <string name="local_model_expand">展开</string>
+  <string name="local_model_collapse">收起</string>
+
+  <!-- Filter Chips -->
+  <string name="filter_all">全部</string>
+  <string name="filter_any_ram">任意</string>
+  <string name="filter_ram_4gb">≤4GB</string>
+  <string name="filter_ram_6gb">≤6GB</string>
+  <string name="filter_ram_8gb">≤8GB</string>
+  <string name="filter_ram_12gb">≤12GB</string>
+  <string name="sort_by_name">名称</string>
+  <string name="sort_by_size">大小</string>
+  <string name="sort_by_popularity">热度</string>
+  <string name="sort_by_name_action">按名称排序</string>
+  <string name="sort_by_size_action">按大小排序</string>
+  <string name="sort_by_popularity_action">按热度排序</string>
+
+  <!-- AI Error Messages -->
+  <string name="error_request_timeout">请求超时（%1$d秒）。如果使用 thinking 模型，建议增加超时时间到 %2$d 秒</string>
+  <string name="error_request_timeout_thinking">请求超时（%1$d秒）。如果使用 thinking 模型（如 o1、Claude thinking），建议增加超时时间到 %2$d 秒</string>
+  <string name="error_connection_timeout">连接超时。建议检查网络连接或增加超时时间到 %d 秒</string>
+  <string name="error_dns_failed">DNS 解析失败：无法解析 %s，请检查：1) 网络连接 2) DNS 设置 3) 域名是否正确</string>
+  <string name="error_network_unreachable">网络不可达：无法连接到 %s。可能原因：1) 服务器 IP 不可达 2) 防火墙阻止 3) VPN/代理配置问题</string>
+  <string name="error_ssl_handshake">SSL 握手失败：证书验证错误或 TLS 版本不兼容。如果使用代理，请检查代理的 SSL 证书配置。原因: %s</string>
+  <string name="error_ssl_connection">SSL 连接错误：可能是证书问题或网络中间人干扰。如果使用 VPN/代理，请尝试关闭后重试。原因: %s</string>
+  <string name="error_connection_aborted">连接被中断：服务器或网络中间设备关闭了连接。可能原因：1) 代理/VPN 问题 2) 防火墙拦截 3) 服务器拒绝连接。详情: %s</string>
+  <string name="error_connection_failed">连接失败：无法连接到 %1$s。可能原因：1) 服务器不可用 2) 端口被阻止 3) 代理/VPN 的 fake-ip 模式导致解析到无效地址。建议：检查 URL 是否正确，或尝试关闭代理后重试。详情: %2$s</string>
+  <string name="error_network_io">网络 IO 错误：%s</string>
+  <string name="error_request_failed">请求失败 (%1$s): %2$s</string>
+  <string name="error_response_format">响应格式异常: %s</string>
+  <string name="error_api_key_or_url_empty">API Key 或 Base URL 为空</string>
+  <string name="error_fetch_models_failed">获取模型列表失败: %s</string>
+  <string name="error_empty_response_thinking">AI 返回空响应，可能是模型正在思考中被中断。建议增加超时时间。</string>
+  <string name="error_empty_text_thinking">AI 返回空文本响应，模型可能仍在思考中。建议增加超时时间。</string>
+  <string name="error_safety_blocked">请求被安全过滤器阻止: %s</string>
+  <string name="error_response_safety_blocked">响应被安全过滤器阻止</string>
+  <string name="error_response_recitation_blocked">响应因引用问题被阻止</string>
+  <string name="error_content_filter_blocked">响应被内容过滤器阻止</string>
+  <string name="error_no_text_content_thinking">Gemini 响应中没有文本内容，模型可能仍在思考中。建议增加超时时间。</string>
+  <string name="error_cleaned_response_empty">清理后的响应为空，原始响应: %s</string>
+  <string name="error_parse_ai_response">解析 AI 响应失败: %1$s\n响应内容: %2$s</string>
+  <string name="error_gemini_api">Gemini API 错误: %s</string>
+  <string name="error_bad_request">请求格式错误</string>
+  <string name="error_api_key_invalid">API Key 无效，请检查配置</string>
+  <string name="error_model_not_found">模型不存在，请检查模型名称</string>
+  <string name="error_rate_limit_exceeded">请求过于频繁，请稍后重试</string>
+  <string name="error_service_unavailable">服务暂时不可用，请稍后重试 (%1$d): %2$s</string>
+  <string name="error_request_failed_code">请求失败 (%1$d): %2$s</string>
+
+  <!-- Local Model Inference Errors -->
+  <string name="error_inference_timeout">推理超时 (%d秒)，请尝试使用更小的模型或降低图片分辨率</string>
+
+  <!-- Delete Confirmation Dialog -->
+  <string name="local_model_delete_title">删除模型</string>
+  <string name="local_model_delete_confirm">确定要删除 \"%s\" 吗？</string>
+  <string name="local_model_delete_storage_info">这将释放 %s 的存储空间。</string>
+  <string name="local_model_delete_irreversible">此操作无法撤销。</string>
+  <string name="local_model_delete_active_warning">此模型当前正在使用中。删除后将自动切换到云端 AI 服务。</string>
+
+  <!-- Inference Config -->
+  <string name="inference_preset_config">预设配置</string>
+  <string name="inference_preset_fast">快速</string>
+  <string name="inference_preset_fast_desc">低延迟</string>
+  <string name="inference_preset_balanced">平衡</string>
+  <string name="inference_preset_balanced_desc">默认</string>
+  <string name="inference_preset_quality">质量</string>
+  <string name="inference_preset_quality_desc">高精度</string>
+  <string name="inference_nnapi">NNAPI 加速</string>
+  <string name="inference_nnapi_description">使用 Android 神经网络 API 加速推理</string>
+  <string name="inference_nnapi_unsupported">不支持</string>
+
+  <!-- Local Model Screen -->
+  <string name="local_model_loading">正在加载模型列表…</string>
+  <string name="local_model_load_failed">加载失败</string>
+  <string name="local_model_no_results_hint">尝试调整搜索条件或筛选器</string>
+  <string name="local_model_reset_filters">重置筛选</string>
+  <string name="local_model_ram_info">RAM: %1$s 可用 · 推荐: %2$s</string>
+  <string name="local_model_recommended_quantization">推荐量化: %s</string>
+  <string name="local_model_china_mirror">中国镜像</string>
+  <string name="local_model_recommended">推荐</string>
+
+  <!-- Common Dialog -->
+  <string name="dialog_error_title">错误</string>
+
+  <!-- Inference Config Sliders -->
+  <string name="inference_context_length">上下文长度</string>
+  <string name="inference_context_length_desc">更长的上下文可以处理更复杂的任务，但需要更多内存</string>
+  <string name="inference_context_length_value">%d tokens</string>
+  <string name="inference_thread_count">线程数</string>
+  <string name="inference_thread_count_desc">更多线程可以加快推理速度，但会增加功耗</string>
+  <string name="inference_thread_count_value">%d 线程</string>
+
+  <!-- Local Model Screen Sections -->
+  <string name="local_model_device_info">设备信息</string>
+  <string name="local_model_expand_details">点击展开详情</string>
+  <string name="local_model_device_details">设备详情</string>
+  <string name="local_model_memory">内存</string>
+  <string name="local_model_memory_value">%1$s (可用: %2$s)</string>
+  <string name="local_model_processor">处理器</string>
+  <string name="local_model_available_storage">可用存储</string>
+  <string name="local_model_nnapi_acceleration">NNAPI 加速</string>
+  <string name="local_model_supported">支持</string>
+  <string name="local_model_not_supported">不支持</string>
+  <string name="local_model_device_not_meet_minimum">设备不满足最低要求</string>
+  <string name="local_model_device_good_performance">设备性能良好</string>
+  <string name="local_model_device_average_performance">设备性能一般</string>
+  <string name="local_model_available_models">可用模型</string>
+  <string name="local_model_no_matching">没有匹配的模型</string>
+  <string name="local_model_no_available">暂无可用模型</string>
+  <string name="local_model_top_bar_title">本地模型</string>
+
+  <!-- Model Search Section -->
+  <string name="local_model_search_filter">搜索与筛选</string>
+  <string name="local_model_search_placeholder">搜索模型…</string>
+  <string name="local_model_catalog_loading">加载中</string>
+  <string name="local_model_catalog_online">在线</string>
+  <string name="local_model_catalog_cache">缓存</string>
+  <string name="local_model_catalog_offline">离线</string>
+  <string name="local_model_catalog_unknown">未知</string>
+
+  <!-- Local Model ViewModel Messages -->
+  <string name="local_model_download_complete">模型下载完成</string>
+  <string name="local_model_download_paused">下载已暂停</string>
+  <string name="local_model_download_resumed">下载已恢复</string>
+  <string name="local_model_download_cancelled">下载已取消</string>
+  <string name="local_model_enabled_success">本地模型已启用</string>
+  <string name="local_model_disabled_success">本地模型已禁用</string>
+  <string name="local_model_deleted_success">模型已删除</string>
+  <string name="local_model_import_success">模型导入成功</string>
+  <string name="local_model_list_refreshed">模型列表已刷新</string>
+  <string name="local_model_pause_failed">暂停失败: %s</string>
+  <string name="local_model_resume_failed">恢复失败: %s</string>
+  <string name="local_model_cancel_failed">取消失败: %s</string>
+
+  <!-- Settings ViewModel Messages -->
+  <string name="settings_load_failed">加载设置失败</string>
+  <string name="settings_detect_capability_failed">检测能力失败</string>
+  <string name="settings_refresh_capability_failed">刷新能力失败</string>
+  <string name="settings_save_failed">保存失败</string>
+  <string name="settings_clear_failed">清除失败</string>
+  <string name="settings_local_model_no_fetch">本地模型不需要获取模型列表</string>
+  <string name="settings_fetch_models_failed">获取模型失败</string>
+  <string name="settings_local_model_no_test">本地模型不需要连接测试</string>
+  <string name="settings_unsupported_provider">不支持的提供商类型</string>
+  <string name="settings_connection_failed">连接失败</string>
+  <string name="settings_set_active_provider_failed">设置活跃提供商失败</string>
+  <string name="settings_save_config_failed">保存配置失败</string>
+  <string name="settings_enter_base_url">请输入 API Base URL</string>
+  <string name="settings_invalid_url">无效的 URL 格式</string>
+  <string name="settings_enter_model_name">请输入模型名称</string>
+
+  <!-- Common UI -->
+  <string name="content_description_clear_search">清除搜索</string>
+  <string name="copied_to_clipboard">已复制到剪贴板</string>
+  <string name="action_undo_default">撤销</string>
+  <string name="common_save">保存</string>
+  <string name="common_cancel">取消</string>
+  <string name="common_delete">删除</string>
+  <string name="common_close">关闭</string>
+
+  <!-- Prompt Management -->
+  <string name="prompt_management_title">提示词管理</string>
+  <string name="prompt_management_description">管理系统提示词和快捷词</string>
+  <string name="prompt_tab_templates">提示词模板</string>
+  <string name="prompt_tab_quick_phrases">快捷词</string>
+  <string name="prompt_section_builtin">内置模板</string>
+  <string name="prompt_section_custom">自定义模板</string>
+  <string name="prompt_builtin_badge">内置</string>
+  <string name="prompt_add_new">新建</string>
+  <string name="prompt_edit">编辑</string>
+  <string name="prompt_delete">删除</string>
+  <string name="prompt_empty_templates">暂无模板，点击 + 创建</string>
+  <string name="prompt_empty_phrases">暂无快捷词，点击 + 创建</string>
+  <string name="prompt_quick_phrases_enable">启用快捷词</string>
+  <string name="prompt_quick_phrases_description">输入触发词快速插入预设文本</string>
+  <string name="prompt_delete_template_title">删除模板</string>
+  <string name="prompt_delete_template_message">确定要删除「%s」吗？</string>
+  <string name="prompt_delete_phrase_title">删除快捷词</string>
+  <string name="prompt_delete_phrase_message">确定要删除「%s」吗？</string>
+
+  <!-- Prompt Editor -->
+  <string name="prompt_editor_title_new">新建模板</string>
+  <string name="prompt_editor_title_edit">编辑模板</string>
+  <string name="prompt_editor_title_view">查看模板</string>
+  <string name="prompt_editor_name">名称</string>
+  <string name="prompt_editor_description">描述</string>
+  <string name="prompt_editor_content">内容</string>
+  <string name="prompt_editor_variables">可用变量</string>
+  <string name="prompt_editor_builtin_hint">内置模板不可编辑，你可以基于此模板创建副本。</string>
+
+  <!-- Quick Phrase Editor -->
+  <string name="prompt_phrase_editor_title_new">新建快捷词</string>
+  <string name="prompt_phrase_editor_title_edit">编辑快捷词</string>
+  <string name="prompt_phrase_trigger">触发词</string>
+  <string name="prompt_phrase_trigger_hint">建议以 / 开头便于识别，如 /open</string>
+  <string name="prompt_phrase_trigger_placeholder">/example</string>
+  <string name="prompt_phrase_expansion">展开文本</string>
+  <string name="prompt_phrase_description">描述（可选）</string>
+  <string name="prompt_phrase_preview">预览</string>
+  <string name="prompt_phrase_preview_input">输入: %s</string>
+
+  <!-- Prompt Errors -->
+  <string name="prompt_error_save_failed">保存失败</string>
+  <string name="prompt_error_delete_failed">删除失败</string>
+  <string name="prompt_error_invalid_template">无效的模板</string>
+  <string name="prompt_error_name_required">请输入名称</string>
+  <string name="prompt_error_content_required">请输入内容</string>
+  <string name="prompt_error_trigger_required">请输入触发词</string>
+  <string name="prompt_error_expansion_required">请输入展开文本</string>
+
+  <!-- Prompt Variables -->
+  <string name="prompt_var_task_name">任务描述</string>
+  <string name="prompt_var_task_desc">用户输入的任务内容</string>
+  <string name="prompt_var_step_number_name">步骤编号</string>
+  <string name="prompt_var_step_number_desc">当前自动化步骤编号</string>
+  <string name="prompt_var_max_steps_name">最大步数</string>
+  <string name="prompt_var_max_steps_desc">允许的最大步骤数</string>
+  <string name="prompt_var_app_name_name">当前应用</string>
+  <string name="prompt_var_app_name_desc">当前聚焦应用的名称</string>
+  <string name="prompt_var_app_package_name">应用包名</string>
+  <string name="prompt_var_app_package_desc">当前应用的包名</string>
+  <string name="prompt_var_app_activity_name">当前 Activity</string>
+  <string name="prompt_var_app_activity_desc">当前 Activity 类名</string>
+  <string name="prompt_var_timestamp_name">时间戳</string>
+  <string name="prompt_var_timestamp_desc">当前日期和时间 (ISO 格式)</string>
+  <string name="prompt_var_date_name">日期</string>
+  <string name="prompt_var_date_desc">当前日期 (YYYY-MM-DD)</string>
+  <string name="prompt_var_time_name">时间</string>
+  <string name="prompt_var_time_desc">当前时间 (HH:mm:ss)</string>
+  <string name="prompt_var_day_of_week_name">星期</string>
+  <string name="prompt_var_day_of_week_desc">当前星期几</string>
+  <string name="prompt_var_timezone_name">时区</string>
+  <string name="prompt_var_timezone_desc">设备时区</string>
+  <string name="prompt_var_device_model_name">设备型号</string>
+  <string name="prompt_var_device_model_desc">设备型号名称</string>
+  <string name="prompt_var_device_brand_name">设备品牌</string>
+  <string name="prompt_var_device_brand_desc">设备制造商</string>
+  <string name="prompt_var_android_version_name">Android 版本</string>
+  <string name="prompt_var_android_version_desc">Android 系统版本</string>
+  <string name="prompt_var_sdk_version_name">SDK 版本</string>
+  <string name="prompt_var_sdk_version_desc">Android SDK 级别</string>
+  <string name="prompt_var_screen_size_name">屏幕尺寸</string>
+  <string name="prompt_var_screen_size_desc">屏幕分辨率 (宽x高)</string>
+  <string name="prompt_var_screen_density_name">屏幕密度</string>
+  <string name="prompt_var_screen_density_desc">屏幕密度 (dpi)</string>
+  <string name="prompt_var_orientation_name">屏幕方向</string>
+  <string name="prompt_var_orientation_desc">屏幕方向</string>
+  <string name="prompt_var_model_name_name">AI 模型</string>
+  <string name="prompt_var_model_name_desc">当前 AI 模型名称</string>
+  <string name="prompt_var_provider_name_name">AI 提供商</string>
+  <string name="prompt_var_provider_name_desc">当前 AI 提供商</string>
+  <string name="prompt_var_locale_name">区域设置</string>
+  <string name="prompt_var_locale_desc">设备区域代码</string>
+  <string name="prompt_var_language_name">语言</string>
+  <string name="prompt_var_language_desc">设备语言名称</string>
+  <string name="prompt_var_battery_level_name">电池电量</string>
+  <string name="prompt_var_battery_level_desc">当前电池百分比</string>
+  <string name="prompt_var_network_type_name">网络类型</string>
+  <string name="prompt_var_network_type_desc">当前网络连接类型</string>
+  <string name="prompt_var_session_id_name">会话 ID</string>
+  <string name="prompt_var_session_id_desc">当前自动化会话 ID</string>
+  <string name="prompt_var_elapsed_time_name">已用时间</string>
+  <string name="prompt_var_elapsed_time_desc">任务开始后经过的秒数</string>
+
+  <!-- DSP Perception Settings -->
+  <string name="settings_dsp_perception">DSP 感知</string>
+  <string name="settings_dsp_perception_description">配置 DSP 加速感知系统</string>
+  <string name="dsp_master_switch">DSP 感知</string>
+  <string name="dsp_enable_perception">启用 DSP 感知</string>
+  <string name="dsp_enable_perception_description">在自动化过程中使用 LiteRT + OCR 增强 UI 元素检测</string>
+  <string name="dsp_injection_mode">触控注入模式</string>
+  <string name="dsp_injection_mode_description">选择触控事件的注入方式</string>
+  <string name="dsp_injection_root">Root (uinput)</string>
+  <string name="dsp_injection_root_description">通过 /dev/uinput 进行内核级注入，延迟 &lt;50ms（需要 Root）</string>
+  <string name="dsp_capture_settings">截图设置</string>
+  <string name="dsp_downscale_factor">缩放比例</string>
+  <string name="dsp_downscale_factor_description">降低分辨率以加快推理速度（1 = 原始，2 = 一半）</string>
+  <string name="dsp_downscale_value">1/%d</string>
+  <string name="dsp_downscale_full">原始</string>
+  <string name="dsp_downscale_quarter">1/4</string>
+  <string name="dsp_latency_settings">延迟设置</string>
+  <string name="dsp_target_latency">目标延迟</string>
+  <string name="dsp_target_latency_description">感知循环的目标延迟（警告阈值）</string>
+  <string name="dsp_target_latency_value">%d ms</string>
+  <string name="dsp_target_latency_min">10ms</string>
+  <string name="dsp_target_latency_max">100ms</string>
+  <string name="dsp_detection_settings">检测设置</string>
+  <string name="dsp_enable_ocr">启用 OCR</string>
+  <string name="dsp_enable_ocr_description">为检测到的 UI 元素启用文字识别</string>
+  <string name="dsp_min_confidence">最低置信度</string>
+  <string name="dsp_min_confidence_description">过滤低于此置信度阈值的检测结果</string>
+  <string name="dsp_min_confidence_value">%d%%</string>
+  <string name="dsp_min_confidence_low">低</string>
+  <string name="dsp_min_confidence_high">高</string>
+  <string name="dsp_buffer_settings">缓冲区设置</string>
+  <string name="dsp_max_buffers">最大并发缓冲区</string>
+  <string name="dsp_max_buffers_description">缓冲池中的最大截图缓冲区数量</string>
+  <string name="dsp_max_buffers_value">%d 个缓冲区</string>
+  <string name="dsp_max_buffers_min">1</string>
+  <string name="dsp_max_buffers_max">5</string>
+
+  <!-- Input Device Selection -->
+  <string name="dsp_input_device">触摸输入设备</string>
+  <string name="dsp_input_device_description">选择用于输入注入的触摸设备。推荐使用自动检测。</string>
+  <string name="dsp_input_device_auto">自动检测</string>
+  <string name="dsp_input_device_auto_description">自动选择最佳触摸屏设备</string>
+  <string name="dsp_input_device_refresh">刷新设备</string>
+  <string name="dsp_input_device_loading">正在加载设备…</string>
+  <string name="dsp_input_device_none">未找到设备</string>
+  <string name="dsp_input_device_probability">%d%% 匹配</string>
+  <string name="dsp_input_device_recommended">推荐</string>
+  <string name="dsp_input_device_resolution">分辨率: %s</string>
+  <string name="dsp_input_device_touch_points">触摸点数: %d</string>
+  <string name="dsp_input_device_protocol">协议: %s</string>
+  <string name="dsp_input_device_selected">已选择</string>
+
+  <string name="dsp_hardware_info">硬件信息</string>
+  <string name="dsp_hardware_accelerators">加速器</string>
+  <string name="dsp_active_delegate">活跃代理</string>
+  <string name="dsp_gpu_vendor">GPU</string>
+  <string name="dsp_hexagon_dsp">Hexagon DSP</string>
+  <string name="dsp_nnapi">NNAPI</string>
+  <string name="dsp_npu">NPU</string>
+  <string name="dsp_available">可用</string>
+  <string name="dsp_not_available">不可用</string>
+  <string name="dsp_performance_metrics">性能指标</string>
+  <string name="dsp_avg_latency">平均延迟</string>
+  <string name="dsp_p95_latency">P95 延迟</string>
+  <string name="dsp_loop_count">循环次数</string>
+  <string name="dsp_model_memory">模型内存</string>
+  <string name="dsp_buffer_memory">缓冲区内存</string>
+  <string name="dsp_latency_ms">%d ms</string>
+  <string name="dsp_memory_mb">%.1f MB</string>
+  <string name="dsp_capture_avg">截图平均</string>
+  <string name="dsp_detection_avg">检测平均</string>
+  <string name="dsp_ocr_avg">OCR 平均</string>
+  <string name="dsp_no_metrics">暂无指标数据</string>
+  <string name="dsp_above_threshold">超过阈值</string>
+  <string name="dsp_below_threshold">低于阈值</string>
+
+  <!-- SELinux Fix -->
+  <string name="selinux_fix_button">修复 SELinux 策略</string>
+  <string name="selinux_fix_title">修复 SELinux 策略</string>
+  <string name="selinux_current_mode">当前 SELinux 模式: %s</string>
+  <string name="selinux_fix_explanation">Android 的 SELinux 安全机制会阻止应用直接访问输入设备。此修复会添加临时策略规则，允许应用使用原生 IOCTL 方式进行输入注入，获得最低延迟（&lt;5ms）。</string>
+  <string name="selinux_fix_warning">此修复在重启后会失效，需要重新执行。仅影响输入设备访问，不会降低系统整体安全性。</string>
+  <string name="selinux_fix_confirm">执行修复</string>
+  <string name="selinux_fix_success_title">修复成功</string>
+  <string name="selinux_fix_success_message">SELinux 策略已更新。如果原生 IOCTL 仍不可用，请使用 Android Input 或 Shell Sendevent 方式，它们同样可靠。</string>
+  <string name="selinux_fix_failed_title">修复失败</string>
+  <string name="selinux_fix_failed_message">无法修复 SELinux 策略。建议使用 Android Input 或 Shell Sendevent 方式作为替代。</string>
+  <string name="common_ok">确定</string>
+
+  <!-- Automation Foreground Service -->
+  <string name="automation_running">自动化运行中</string>
+  <string name="automation_running_description">正在后台执行自动化任务</string>
+  <string name="automation_channel_name">自动化任务</string>
+  <string name="automation_channel_description">运行中的自动化任务通知</string>
+  <string name="task_completed">任务完成</string>
+  <string name="task_failed">任务失败</string>
+  <string name="task_timeout">任务超时</string>
+  <string name="task_cancelled">任务已取消</string>
+  <string name="task_completed_description">任务已成功完成</string>
+  <string name="task_timeout_description">任务超过最大步数限制</string>
+  <string name="task_completed_steps">已完成 %d 步</string>
+  <string name="task_timeout_steps">执行 %d 步后超时</string>
+  <string name="task_cancelled_by_user">用户已取消</string>
+  <string name="stop">停止</string>
+
+  <!-- App Discovery Settings -->
+  <string name="settings_app_discovery">应用发现</string>
+  <string name="settings_app_discovery_description">配置如何发现应用并提供给 AI</string>
+  <string name="app_discovery_enable">启用应用发现</string>
+  <string name="app_discovery_enable_description">向 AI 提供已安装应用信息，以便更好地理解任务</string>
+  <string name="app_discovery_include_system">包含系统应用</string>
+  <string name="app_discovery_include_system_description">在提供给 AI 的应用列表中包含系统应用</string>
+  <string name="app_discovery_max_apps">上下文中最大应用数</string>
+  <string name="app_discovery_max_apps_description">AI 上下文中包含的最大应用数量</string>
+  <string name="app_discovery_max_apps_value">%d 个应用</string>
+  <string name="app_discovery_categories">应用分类</string>
+  <string name="app_discovery_hidden_apps">隐藏的应用</string>
+  <string name="app_discovery_hidden_apps_count">已隐藏 %d 个应用</string>
+  <string name="app_discovery_no_hidden_apps">无隐藏应用</string>
+  <string name="app_discovery_reset">恢复默认设置</string>
+  <string name="app_discovery_reset_confirm">确定要将所有应用发现设置恢复为默认值吗？</string>
+  <string name="app_discovery_discovered_apps">已发现的应用</string>
+  <string name="app_discovery_view_apps">查看已发现的应用</string>
+  <string name="app_discovery_apps_count">已发现 %d 个应用</string>
+  <string name="app_discovery_system_badge">系统</string>
+  <string name="app_discovery_aliases_count">%d 个别名</string>
+  <string name="app_discovery_edit_aliases">编辑别名</string>
+  <string name="app_discovery_edit_aliases_title">编辑 %s 的别名</string>
+  <string name="app_discovery_aliases_hint">输入此应用的替代名称（每行一个）。AI 将使用这些名称更好地理解您的指令。</string>
+  <string name="app_discovery_aliases_placeholder">例如：\n微信\nWX</string>
+  <string name="app_discovery_hide">隐藏应用</string>
+  <string name="app_discovery_unhide">取消隐藏</string>
+  <string name="app_discovery_refresh">刷新应用列表</string>
+  <string name="app_discovery_refresh_description">重新扫描已安装的应用</string>
+
+  <!-- App Categories -->
+  <string name="app_category_social">社交</string>
+  <string name="app_category_communication">通讯</string>
+  <string name="app_category_browser">浏览器</string>
+  <string name="app_category_media">媒体</string>
+  <string name="app_category_finance">金融</string>
+  <string name="app_category_shopping">购物</string>
+  <string name="app_category_travel">出行</string>
+  <string name="app_category_productivity">效率</string>
+  <string name="app_category_other">其他</string>
+
+  <!-- AI Context Headers -->
+  <string name="ai_context_installed_apps">已安装应用 (%d)</string>
+
+  <!-- AI Client Errors - Network -->
+  <string name="error_ai_request_timeout">请求超时（%1$d 秒）。如果使用 thinking 模型，建议增加超时时间到 %2$d 秒</string>
+  <string name="error_ai_connection_timeout">连接超时。建议检查网络或增加超时时间到 %1$d 秒</string>
+  <string name="error_ai_dns_failed">DNS 解析失败：无法解析 %1$s，请检查网络连接或域名</string>
+  <string name="error_ai_network_unreachable">网络不可达：无法连接到 %1$s，可能是防火墙或代理问题</string>
+  <string name="error_ai_ssl_handshake">SSL 握手失败：证书验证错误。如使用代理请检查 SSL 配置</string>
+  <string name="error_ai_ssl_error">SSL 连接错误：可能是证书问题或网络干扰。详情: %1$s</string>
+  <string name="error_ai_connection_aborted">连接被中断：可能是代理/VPN 或防火墙问题。详情: %1$s</string>
+  <string name="error_ai_connection_failed">连接失败：无法连接到 %1$s。请检查 URL 或代理设置。详情: %2$s</string>
+  <string name="error_ai_io_error">网络 IO 错误：%1$s: %2$s</string>
+  <string name="error_ai_unknown">请求失败 (%1$s): %2$s</string>
+
+  <!-- AI Client Errors - API -->
+  <string name="error_ai_invalid_api_key">API Key 无效，请检查配置</string>
+  <string name="error_ai_rate_limit">请求过于频繁，请稍后重试</string>
+  <string name="error_ai_bad_request">请求格式错误</string>
+  <string name="error_ai_model_not_found">模型不存在，请检查模型名称</string>
+  <string name="error_ai_server_error">服务暂时不可用，请稍后重试 (%1$d): %2$s</string>
+  <string name="error_ai_http_error">请求失败 (%1$d): %2$s</string>
+
+  <!-- AI Client Errors - Response -->
+  <string name="error_ai_empty_response">AI 返回空响应，模型可能仍在思考中。建议增加超时时间</string>
+  <string name="error_ai_content_filtered">响应被内容过滤器阻止</string>
+  <string name="error_ai_safety_blocked">请求被安全过滤器阻止: %1$s</string>
+  <string name="error_ai_recitation_blocked">响应因引用问题被阻止</string>
+  <string name="error_ai_no_text_content">AI 响应中没有文本内容，模型可能仍在思考中。建议增加超时时间</string>
+  <string name="error_ai_parse_failed">解析 AI 响应失败: %1$s\n响应内容: %2$s</string>
+  <string name="error_ai_response_format">响应格式异常</string>
+  <string name="error_ai_response_format_detail">响应格式异常: %1$s</string>
+
+  <!-- AI Client Errors - Config -->
+  <string name="error_ai_config_empty">API Key 或 Base URL 为空</string>
+  <string name="error_ai_fetch_models_failed">获取模型列表失败: %1$s</string>
+
+  <!-- AI Client Errors - Input Validation -->
+  <string name="error_ai_no_screenshot_or_ui">必须提供截图或 UI 结构信息</string>
+  <string name="error_ai_no_active_provider">未配置活跃的 AI 提供商</string>
+  <string name="error_ai_provider_not_configured">%1$s 的 API Key 未配置</string>
+  <string name="error_ai_provider_not_found">未找到提供商 %1$s</string>
+  <string name="error_ai_unsupported_protocol">不支持的协议: %1$s</string>
+  <string name="error_ai_local_engine_not_configured">本地推理引擎未配置</string>
+
+  <!-- Daemon Settings -->
+  <string name="settings_daemon">守护进程设置</string>
+  <string name="daemon_status">守护进程状态</string>
+  <string name="daemon_lifecycle_state">生命周期状态</string>
+  <string name="daemon_status_stopped">已停止</string>
+  <string name="daemon_status_starting">启动中</string>
+  <string name="daemon_status_running">运行中</string>
+  <string name="daemon_status_stopping">停止中</string>
+  <string name="daemon_status_failed">失败</string>
+  <string name="daemon_root_status">Root 状态</string>
+  <string name="daemon_root_checking">检查中…</string>
+  <string name="daemon_root_available">可用</string>
+  <string name="daemon_root_unavailable">不可用</string>
+  <string name="daemon_root_selinux_blocked">SELinux 阻止</string>
+  <string name="daemon_control">守护进程控制</string>
+  <string name="daemon_start">启动守护进程</string>
+  <string name="daemon_start_description">启动守护进程</string>
+  <string name="daemon_stop">停止守护进程</string>
+  <string name="daemon_stop_description">终止守护进程</string>
+  <string name="daemon_restart">重启守护进程</string>
+  <string name="daemon_restart_description">停止并重新启动守护进程</string>
+  <string name="daemon_deployment">部署</string>
+  <string name="daemon_binary_integrity">二进制完整性</string>
+  <string name="daemon_integrity_unknown">未知</string>
+  <string name="daemon_integrity_verified">已验证</string>
+  <string name="daemon_integrity_tampered">已篡改</string>
+  <string name="daemon_integrity_check_failed">检查失败</string>
+  <string name="daemon_model_status">模型状态</string>
+  <string name="daemon_models_not_deployed">未部署</string>
+  <string name="daemon_models_deploying">部署中…</string>
+  <string name="daemon_models_deployed">已部署</string>
+  <string name="daemon_models_error">部署错误</string>
+  <string name="daemon_lifecycle_settings">生命周期设置</string>
+  <string name="daemon_auto_stop">自动停止</string>
+  <string name="daemon_auto_stop_description">应用关闭时自动停止守护进程</string>
+  <string name="daemon_keep_alive">保持运行</string>
+  <string name="daemon_keep_alive_description">在后台保持守护进程运行</string>
+  <string name="daemon_error_root_unavailable">Root 权限不可用</string>
+  <string name="daemon_error_start_failed">启动守护进程失败</string>
+  <string name="daemon_error_stop_failed">停止守护进程失败</string>
+  <string name="daemon_startup_logs">启动日志</string>
+  <string name="daemon_elapsed_time">%.1f秒</string>
+  <string name="daemon_phase_initializing">初始化中…</string>
+  <string name="daemon_phase_checking_root">检查 Root 权限…</string>
+  <string name="daemon_phase_checking_binary">检查二进制文件…</string>
+  <string name="daemon_phase_deploying">部署二进制文件…</string>
+  <string name="daemon_phase_executing">执行启动命令…</string>
+  <string name="daemon_phase_waiting_binder">等待服务就绪…</string>
+  <string name="daemon_phase_verifying">验证版本…</string>
+  <string name="daemon_phase_connecting">连接中…</string>
+
+  <!-- Inference Routing Settings -->
+  <string name="settings_inference_routing">推理路由</string>
+  <string name="inference_source_priority">来源优先级</string>
+  <string name="inference_source_priority_description">长按并拖动以调整顺序。仅可用的来源可以重新排序。</string>
+  <string name="inference_last_used">上次使用: %s</string>
+  <string name="inference_last_used_badge">上次使用</string>
+  <string name="action_drag_to_reorder">拖动以重新排序</string>
+  <string name="inference_available">可用</string>
+  <string name="inference_unavailable">不可用</string>
+  <string name="inference_unknown">未知</string>
+  <string name="inference_routing_strategy">路由策略</string>
+  <string name="inference_strategy_priority">优先级</string>
+  <string name="inference_strategy_priority_description">按配置的优先级顺序使用来源</string>
+  <string name="inference_strategy_cost">成本优化</string>
+  <string name="inference_strategy_cost_description">优先使用成本较低的来源</string>
+  <string name="inference_strategy_latency">延迟优化</string>
+  <string name="inference_strategy_latency_description">优先使用响应更快的来源</string>
+  <string name="inference_strategy_reliability">可靠性</string>
+  <string name="inference_strategy_reliability_description">优先使用成功率更高的来源</string>
+  <string name="inference_local_model">本地模型</string>
+  <string name="inference_warmup_model">预热模型</string>
+  <string name="inference_warmup_description">应用启动时预加载模型以加快首次推理</string>
+  <string name="inference_warmup">预热</string>
+
+  <!-- Inference Metrics -->
+  <string name="settings_inference_metrics">推理统计</string>
+  <string name="metrics_usage_distribution">使用分布</string>
+  <string name="metrics_no_data">暂无数据</string>
+  <string name="metrics_requests_count">%d 次请求</string>
+  <string name="metrics_requests_short">%d 次</string>
+  <string name="metrics_percentage">%d%%</string>
+  <string name="metrics_success_rate">成功率</string>
+  <string name="metrics_latency">延迟</string>
+  <string name="metrics_avg_latency">平均: %d ms</string>
+  <string name="metrics_cost_estimation">成本估算</string>
+  <string name="metrics_cost_value">$%.4f</string>
+  <string name="metrics_total_cost">总成本</string>
+  <string name="metrics_no_cost_data">暂无成本数据</string>
+  <string name="metrics_reset_statistics">重置</string>
+  <string name="metrics_reset_title">重置统计</string>
+  <string name="metrics_reset_confirm_message">确定要重置所有推理统计数据吗？此操作无法撤销。</string>
+  <string name="metrics_token_usage">Token 使用量</string>
+  <string name="metrics_input_tokens">输入 Token</string>
+  <string name="metrics_output_tokens">输出 Token</string>
+  <string name="metrics_total_tokens">总 Token</string>
+
+  <!-- Integrations Settings -->
+  <string name="settings_integrations">集成</string>
+  <string name="integration_tasker">Tasker 集成</string>
+  <string name="integration_tasker_description">允许 Tasker 触发自动化任务</string>
+  <string name="integration_tasker_token">Tasker Token</string>
+  <string name="integration_lan_server">局域网服务器</string>
+  <string name="integration_server_enabled">启用服务器</string>
+  <string name="integration_server_enabled_description">启用 HTTP 服务器以供局域网访问</string>
+  <string name="integration_server_port">服务器端口</string>
+  <string name="integration_server_port_description">局域网 HTTP 服务器端口</string>
+  <string name="integration_port_label">端口号</string>
+  <string name="integration_port_hint">有效范围: %1$d - %2$d</string>
+  <string name="integration_port_error">端口必须在 %1$d 到 %2$d 之间</string>
+  <string name="integration_lan_token">局域网 Token</string>
+  <string name="integration_server_status">服务器状态</string>
+  <string name="integration_server_running">运行中</string>
+  <string name="integration_server_stopped">已停止</string>
+  <string name="integration_server_starting">启动中…</string>
+  <string name="integration_server_error">错误</string>
+  <string name="integration_trusted_networks">受信任网络</string>
+  <string name="integration_trusted_networks_description">仅允许来自受信任网络的连接</string>
+  <string name="integration_trusted_networks_explanation">网络白名单</string>
+  <string name="integration_trusted_networks_explanation_detail">启用后，局域网服务器将仅接受来自您指定的 WiFi 网络上的设备连接。这通过限制对已知网络的访问来增加额外的安全层。</string>
+  <string name="integration_trust_all_wifi">信任所有 WiFi</string>
+  <string name="integration_trust_all_wifi_warning">未添加任何网络。服务器接受来自任何 WiFi 网络的连接。</string>
+  <string name="integration_add_current_network">添加当前网络</string>
+  <string name="integration_add_network_hint">将「%s」添加到受信任网络</string>
+  <string name="integration_current_network">当前: %s</string>
+  <string name="integration_idle_timeout">空闲超时</string>
+  <string name="integration_idle_timeout_title">空闲后自动停止</string>
+  <string name="integration_idle_timeout_hours">%d 小时</string>
+  <string name="integration_idle_timeout_description">无活动后自动停止服务器</string>
+  <string name="integration_idle_timeout_disabled">已禁用</string>
+  <string name="integration_idle_timeout_never">永不</string>
+  <string name="integration_idle_timeout_value">%d 小时</string>
+  <string name="integration_time_remaining">剩余时间: %s</string>
+  <string name="integration_service_discovery">服务发现</string>
+  <string name="integration_enable_mdns">启用 mDNS</string>
+  <string name="integration_mdns_description">通过 mDNS/Bonjour 广播服务</string>
+  <string name="integration_service_name">服务名称</string>
+  <string name="integration_tls">TLS 安全</string>
+  <string name="integration_enable_tls">启用 TLS</string>
+  <string name="integration_tls_description">使用 HTTPS 进行安全连接</string>
+  <string name="integration_tls_status">TLS 状态</string>
+  <string name="integration_tls_enabled">已启用</string>
+  <string name="integration_tls_disabled">已禁用</string>
+  <string name="integration_tls_cert_expired">证书已过期</string>
+  <string name="integration_tls_cert_invalid">证书无效</string>
+  <string name="integration_import_certificate">导入证书</string>
+  <string name="integration_import_certificate_not_available">证书导入功能暂不可用</string>
+  <string name="integration_location_permission_required">需要位置权限</string>
+  <string name="integration_location_permission_description">需要位置权限才能检测 WiFi 网络名称。点击授予权限。</string>
+  <string name="integration_location_service_required">需要位置服务</string>
+  <string name="integration_location_service_description">需要位置权限和位置服务才能检测 WiFi 网络名称。点击授予权限。</string>
+  <string name="integration_open_location_settings">打开位置设置</string>
+  <string name="integration_open_location_settings_description">如果已授予权限，请在设置中开启位置服务。</string>
+  <string name="integration_rate_limit">速率限制</string>
+  <string name="integration_rate_limit_qps">速率限制 (QPS)</string>
+  <string name="integration_rate_limit_description">每秒最大请求数</string>
+  <string name="integration_token_rotation">Token 轮换</string>
+  <string name="integration_auto_rotate_token">自动轮换 Token</string>
+  <string name="integration_auto_rotate_description">当 IP 地址变化或按计划间隔自动轮换 Token</string>
+  <string name="integration_rotation_interval">轮换间隔</string>
+  <string name="integration_rotation_interval_description">自动轮换访问令牌的频率</string>
+  <string name="integration_rotation_interval_value">%d 天</string>
+  <string name="integration_regenerate_token">重新生成 Token</string>
+  <string name="integration_token_regenerated">Token 已重新生成</string>
+  <string name="integration_scan_wifi">扫描 WiFi 网络</string>
+  <string name="integration_scan_wifi_description">扫描可用的 WiFi 网络以添加</string>
+  <string name="integration_scanning">扫描中…</string>
+  <string name="integration_available_networks">可用网络</string>
+  <string name="integration_trusted_networks_list">已信任的网络</string>
+  <string name="integration_current_network_label">当前网络</string>
+  <string name="integration_add_network">添加网络</string>
+  <string name="action_copy">复制</string>
+
+  <!-- Debug Dashboard -->
+  <string name="debug_dashboard_title">调试面板</string>
+  <string name="debug_stream_status">调试流</string>
+  <string name="debug_stream_disconnected">已断开</string>
+  <string name="debug_stream_connecting">连接中 (%1$d/%2$d)</string>
+  <string name="debug_stream_connected">已连接 (端口 %d)</string>
+  <string name="debug_stream_error">错误</string>
+  <string name="debug_stream_connect">连接</string>
+  <string name="debug_stream_disconnect">断开</string>
+  <string name="debug_performance_metrics">性能指标</string>
+  <string name="debug_fps">帧率</string>
+  <string name="debug_latency">延迟</string>
+  <string name="debug_frames">帧数</string>
+  <string name="debug_fps_chart">帧率历史</string>
+  <string name="debug_latency_chart">延迟历史</string>
+  <string name="debug_delegate_info">委托信息</string>
+  <string name="debug_delegate_none">无</string>
+  <string name="debug_delegate_gpu">GPU</string>
+  <string name="debug_delegate_nnapi">NNAPI</string>
+  <string name="debug_delegate_hexagon">Hexagon DSP</string>
+  <string name="debug_delegate_xnnpack">XNNPACK</string>
+  <string name="debug_active_delegate">当前委托:</string>
+  <string name="debug_detection_results">检测结果</string>
+  <string name="debug_detection_count">%d 个检测</string>
+  <string name="debug_no_detections">无检测结果</string>
+  <string name="debug_class_id">类别 ID: %d</string>
+  <string name="debug_bbox_info">边框: (%1$d, %2$d) %3$dx%4$d</string>
+  <string name="debug_ocr_text">文本: %s</string>
+  <string name="debug_more_detections">还有 %d 个检测</string>
+
+  <!-- Debug Security Logs -->
+  <string name="debug_security_logs_title">安全日志</string>
+  <string name="debug_clear_logs_title">清除日志</string>
+  <string name="debug_clear_logs_message">确定要清除所有安全日志吗？</string>
+  <string name="debug_search_logs">搜索日志…</string>
+  <string name="debug_log_count">%d 条记录</string>
+  <string name="debug_loading">加载中…</string>
+  <string name="debug_no_matching_logs">无匹配日志</string>
+  <string name="debug_no_logs">暂无安全日志</string>
+  <string name="debug_load_logs_failed">加载安全日志失败</string>
+  <string name="debug_logs_cleared">安全日志已清除</string>
+  <string name="debug_clear_logs_failed">清除安全日志失败</string>
+
+  <!-- Debug Chaos Testing -->
+  <string name="debug_chaos_testing_title">混沌测试</string>
+  <string name="debug_chaos_enable">启用混沌测试</string>
+  <string name="debug_chaos_enable_description">启用混沌测试以模拟故障并测试恢复机制</string>
+  <string name="debug_chaos_actions">混沌操作</string>
+  <string name="debug_chaos_simulate_crash">模拟守护进程崩溃</string>
+  <string name="debug_chaos_simulate_crash_description">模拟守护进程崩溃以测试恢复机制</string>
+  <string name="debug_chaos_network_delay">网络延迟</string>
+  <string name="debug_chaos_network_delay_description">注入网络延迟以测试超时处理</string>
+  <string name="debug_chaos_apply_network_delay">应用网络延迟</string>
+  <string name="debug_chaos_memory_pressure">内存压力</string>
+  <string name="debug_chaos_memory_pressure_description">模拟内存压力以测试缓冲区释放</string>
+  <string name="debug_chaos_apply_memory_pressure">应用内存压力</string>
+  <string name="debug_chaos_level">级别 %d</string>
+  <string name="debug_chaos_simulate_auth_failure">模拟认证失败</string>
+  <string name="debug_chaos_simulate_auth_failure_description">模拟认证失败以测试重新认证流程</string>
+  <string name="debug_chaos_recovery_metrics">恢复指标</string>
+  <string name="debug_chaos_reset_metrics">重置</string>
+  <string name="debug_chaos_detection_time">检测</string>
+  <string name="debug_chaos_reconciliation_time">协调</string>
+  <string name="debug_chaos_total_recovery_time">总计</string>
+  <string name="debug_chaos_successful_recoveries">成功</string>
+  <string name="debug_chaos_failed_recoveries">失败</string>
+  <string name="debug_chaos_success_rate">成功率</string>
+  <string name="debug_chaos_event_history">事件历史</string>
+
+  <!-- Notification Permission -->
+  <string name="notification_permission_title">通知权限</string>
+  <string name="notification_permission_rationale">Futon 需要通知权限来显示前台服务通知。这可以确保自动化任务和局域网服务器的稳定后台运行。</string>
+  <string name="notification_permission_grant">授予权限</string>
+  <string name="notification_permission_settings">打开设置</string>
+  <string name="notification_permission_required_title">需要通知权限</string>
+  <string name="notification_permission_required_message">局域网服务器需要通知权限才能作为前台服务运行。如果没有此权限，服务器可能会被系统停止。</string>
+  <string name="notification_permission_denied">通知权限被拒绝</string>
+  <string name="notification_permission_warning">未授予通知权限。某些功能可能无法正常工作。</string>
+
+  <!-- Onboarding -->
+  <string name="onboarding_welcome_title">欢迎使用 Futon</string>
+  <string name="onboarding_welcome_subtitle">让我们为您的设备配置自动化功能</string>
+  <string name="onboarding_progress">已完成 %d%%</string>
+  <string name="onboarding_complete">开始使用</string>
+  <string name="onboarding_exit">退出</string>
+  <string name="onboarding_exit_confirm_title">退出设置？</string>
+  <string name="onboarding_exit_confirm_message">Futon 需要 Root 权限和守护进程才能正常工作。确定要退出吗？</string>
+
+  <!-- Onboarding Steps -->
+  <string name="onboarding_step_root_title">Root 权限</string>
+  <string name="onboarding_step_root_description">验证 Root 访问权限</string>
+  <string name="onboarding_step_root_in_progress">正在检查 Root 权限…</string>
+  <string name="onboarding_step_root_success">Root 权限已验证</string>
+
+  <string name="onboarding_step_deploy_title">部署守护进程</string>
+  <string name="onboarding_step_deploy_description">安装原生守护进程二进制文件</string>
+  <string name="onboarding_step_deploy_in_progress">正在部署守护进程…</string>
+  <string name="onboarding_step_deploy_success">守护进程部署成功</string>
+  <string name="onboarding_step_deploy_success_reboot">模块已安装，建议重启以启用开机自启</string>
+  <string name="onboarding_step_deploy_up_to_date">已是最新版本</string>
+  <string name="onboarding_step_deploy_confirm_message">准备安装守护进程模块</string>
+  <string name="onboarding_step_deploy_confirm_action">安装模块</string>
+  <string name="onboarding_step_deploy_update_message">有新版本可用</string>
+  <string name="onboarding_step_deploy_update_action">更新模块</string>
+
+  <string name="onboarding_step_key_title">安全密钥</string>
+  <string name="onboarding_step_key_description">生成守护进程通信认证密钥</string>
+  <string name="onboarding_step_key_in_progress">正在生成安全密钥…</string>
+  <string name="onboarding_step_key_success">安全密钥已生成</string>
+
+  <string name="onboarding_step_verify_title">验证连接</string>
+  <string name="onboarding_step_verify_description">启动守护进程并验证连接</string>
+  <string name="onboarding_step_verify_in_progress">正在启动守护进程并验证…</string>
+  <string name="onboarding_step_verify_success">守护进程运行中，认证成功</string>
+
+  <!-- Onboarding Errors -->
+  <string name="onboarding_error_root_unavailable">Root 权限不可用。请确保您的设备已获取 Root 权限。</string>
+  <string name="onboarding_error_selinux_blocked">SELinux 阻止了操作。请尝试将 SELinux 设置为宽容模式。</string>
+  <string name="onboarding_error_root_check_failed">检查 Root 状态失败。请重试。</string>
+  <string name="onboarding_error_deploy_failed">部署守护进程失败。请检查存储权限。</string>
+  <string name="onboarding_error_key_generation_failed">生成安全密钥失败。请重试。</string>
+  <string name="onboarding_error_key_deploy_failed">部署公钥到守护进程失败。请检查 Root 权限。</string>
+  <string name="onboarding_error_daemon_start_failed">启动守护进程失败。请检查 Root 权限。</string>
+  <string name="onboarding_error_binder_connection_failed">连接守护进程失败。请重试。</string>
+  <string name="onboarding_error_auth_failed">认证失败。请重试。</string>
+  <string name="onboarding_error_deploy_check_failed">检查部署状态失败</string>
+  <string name="onboarding_verify_needs_reboot">模块已安装但守护进程无响应。请重启设备。</string>
+
+  <!-- Deployment Errors -->
+  <string name="deploy_error_contract_not_found">未找到模块协议</string>
+  <string name="deploy_error_contract_parse">解析模块协议失败</string>
+  <string name="deploy_error_incompatible_version">应用版本与模块不兼容</string>
+  <string name="deploy_error_unknown_deployment">检测到未知的模块部署</string>
+  <string name="deploy_error_root_not_available">Root 权限不可用</string>
+  <string name="deploy_error_extraction_failed">提取模块文件失败</string>
+  <string name="deploy_error_installation_timeout">安装超时</string>
+  <string name="deploy_error_installation_failed">模块安装失败</string>
+  <string name="deploy_error_root_denied">Root 权限被拒绝</string>
+  <string name="deploy_error_fallback_failed">备用部署方式失败</string>
+  <string name="deploy_error_uninstall_failed">卸载模块失败</string>
+
+  <!-- Model Deployment Onboarding -->
+  <string name="onboarding_step_model_title">部署模型</string>
+  <string name="onboarding_step_model_description">安装 OCR 和检测模型以进行设备端推理</string>
+  <string name="onboarding_step_model_in_progress">正在部署模型…</string>
+  <string name="onboarding_step_model_success">模型部署成功</string>
+  <string name="onboarding_step_model_progress">正在部署 %1$s (%2$d%%)</string>
+  <string name="onboarding_step_model_skipped">已跳过（功能受限）</string>
+  <string name="onboarding_error_model_deploy_failed">模型部署失败：%s</string>
+  <string name="onboarding_model_skip_title">跳过模型部署？</string>
+  <string name="onboarding_model_skip_message">跳过模型部署将禁用 OCR 和设备端检测功能。您可以稍后在设置中部署模型。</string>
+  <string name="onboarding_model_skip_confirm">跳过</string>
+
+  <!-- Model Settings -->
+  <string name="settings_models">模型</string>
+  <string name="model_settings_deployed_models">已部署的模型</string>
+  <string name="model_settings_no_models">未找到模型</string>
+  <string name="model_settings_no_models_description">无法加载模型清单</string>
+  <string name="model_settings_required">必需</string>
+  <string name="model_settings_status_not_deployed">未部署</string>
+  <string name="model_settings_status_deploying">部署中 (%d%%)</string>
+  <string name="model_settings_status_deployed">已部署</string>
+  <string name="model_settings_status_corrupted">已损坏</string>
+  <string name="model_settings_status_failed">失败</string>
+  <string name="model_settings_actions">操作</string>
+  <string name="model_settings_redeploy">重新部署模型</string>
+  <string name="model_settings_redeploy_description">从应用资源重新复制模型到守护进程目录</string>
+  <string name="model_settings_verify">验证模型</string>
+  <string name="model_settings_verify_description">使用 SHA256 校验和检查模型完整性</string>
+
+  <!-- SoM (Set-of-Mark) Settings -->
+  <string name="settings_som">Set-of-Mark (SoM)</string>
+  <string name="settings_som_description">配置 SoM 视觉定位以实现 AI 自动化</string>
+  <string name="som_master_switch">SoM 模式</string>
+  <string name="som_enable">启用 SoM 模式</string>
+  <string name="som_enable_description">使用 Set-of-Mark 提示以实现更精确的元素定位</string>
+  <string name="som_perception_settings">感知</string>
+  <string name="som_include_ui_tree">包含 UI 树</string>
+  <string name="som_include_ui_tree_description">结合 OCR 和 UI 树以获得更好的元素检测</string>
+  <string name="som_min_confidence">最低置信度</string>
+  <string name="som_min_confidence_description">过滤低于此置信度阈值的元素</string>
+  <string name="som_confidence_value">%d%%</string>
+  <string name="som_confidence_low">低</string>
+  <string name="som_confidence_high">高</string>
+  <string name="som_annotation_settings">标注</string>
+  <string name="som_render_annotations">渲染标注</string>
+  <string name="som_render_annotations_description">在截图上绘制编号标记供 LLM 使用</string>
+  <string name="som_show_bounding_boxes">显示边界框</string>
+  <string name="som_show_bounding_boxes_description">在标注截图上绘制元素边界</string>
+  <string name="som_marker_size">标记大小</string>
+  <string name="som_marker_size_description">编号标记的像素大小</string>
+  <string name="som_marker_size_value">%d px</string>
+  <string name="som_marker_size_small">小</string>
+  <string name="som_marker_size_large">大</string>
+  <string name="som_max_elements">最大元素数</string>
+  <string name="som_max_elements_description">标注中包含的最大元素数量</string>
+  <string name="som_max_elements_value">%d</string>
+  <string name="som_max_elements_few">少</string>
+  <string name="som_max_elements_many">多</string>
+  <string name="som_filtering_settings">过滤</string>
+  <string name="som_filter_small_elements">过滤小元素</string>
+  <string name="som_filter_small_elements_description">排除小于最小面积的元素</string>
+  <string name="som_min_element_area">最小元素面积</string>
+  <string name="som_min_element_area_description">元素包含的最小像素面积</string>
+  <string name="som_min_element_area_value">%d px²</string>
+  <string name="som_min_element_area_small">小</string>
+  <string name="som_min_element_area_large">大</string>
+  <string name="som_merge_iou_threshold">合并 IoU 阈值</string>
+  <string name="som_merge_iou_threshold_description">合并 OCR 和 UI 树元素的重叠阈值</string>
+  <string name="som_iou_value">%d%%</string>
+  <string name="som_iou_low">低</string>
+  <string name="som_iou_high">高</string>
+  <string name="som_quality_settings">质量</string>
+  <string name="som_screenshot_quality">截图质量</string>
+  <string name="som_screenshot_quality_description">发送给 LLM 的标注截图的 JPEG 质量</string>
+  <string name="som_quality_value">%d%%</string>
+  <string name="som_quality_low">低</string>
+  <string name="som_quality_high">高</string>
+  <string name="som_actions">操作</string>
+  <string name="som_reset_to_defaults">恢复默认设置</string>
+  <string name="som_reset_to_defaults_description">将所有 SoM 设置恢复为默认值</string>
+
+  <!-- SoM Test -->
+  <string name="som_test_section">测试</string>
+  <string name="som_run_test">运行感知测试</string>
+  <string name="som_run_test_description">截取当前屏幕并预览 SoM 标注结果</string>
+  <string name="som_test_result_title">SoM 测试结果</string>
+  <string name="som_test_result_image">标注后的截图</string>
+  <string name="som_test_elements">元素数</string>
+  <string name="som_test_capture_time">截图耗时</string>
+  <string name="som_test_annotation_time">标注耗时</string>
+  <string name="som_test_ms">%1$d 毫秒</string>
+  <string name="som_test_zoom_hint">双指缩放，拖动平移</string>
+
+  <!-- API Protocol Types -->
+  <string name="protocol_openai_compatible">OpenAI 兼容</string>
+  <string name="protocol_gemini">Google Gemini</string>
+  <string name="protocol_anthropic">Anthropic Claude</string>
+  <string name="protocol_ollama">Ollama</string>
+
+  <!-- Provider Management -->
+  <string name="provider_add">添加提供商</string>
+  <string name="provider_edit">编辑提供商</string>
+  <string name="provider_delete">删除提供商</string>
+  <string name="provider_delete_confirm">删除「%s」？</string>
+  <string name="provider_delete_message">这将删除该提供商及其所有模型，此操作无法撤销。</string>
+  <string name="provider_name_label">提供商名称</string>
+  <string name="provider_name_hint">例如：我的 OpenAI</string>
+  <string name="provider_protocol">API 协议</string>
+  <string name="provider_icon">图标</string>
+  <string name="provider_icon_custom">自定义</string>
+  <string name="provider_enabled">已启用</string>
+  <string name="provider_disabled">已禁用</string>
+  <string name="provider_not_configured">未配置</string>
+  <string name="provider_no_model_selected">未选择模型</string>
+  <string name="provider_models_count">%d 个模型</string>
+  <string name="provider_no_models">暂无模型配置</string>
+  <string name="provider_from_template">从模板创建</string>
+  <string name="provider_custom">自定义提供商</string>
+  <string name="provider_add_new">新增</string>
+  <string name="provider_delete_title">删除提供商</string>
+  <string name="provider_name">提供商名称</string>
+  <string name="provider_model_configs">模型配置</string>
+  <string name="provider_add_model">添加模型</string>
+  <string name="provider_active_badge">当前</string>
+  <string name="provider_model_pricing">$%1$.2f / $%2$.2f 每百万 token</string>
+  <string name="provider_configure_first">请先配置 API 密钥</string>
+  <string name="provider_select_model_first">请先选择模型</string>
+  <string name="provider_create_title">创建提供商</string>
+  <string name="provider_select_protocol">选择 API 协议</string>
+  <string name="provider_base_url_hint">https://api.example.com/v1</string>
+  <string name="provider_create">创建提供商</string>
+  <string name="model_delete_title">删除模型</string>
+  <string name="model_delete_message">删除模型「%s」？此操作无法撤销。</string>
+
+  <!-- Model Management -->
+  <string name="model_add">添加模型</string>
+  <string name="model_edit">编辑模型</string>
+  <string name="model_delete">删除模型</string>
+  <string name="model_id">模型 ID</string>
+  <string name="model_id_hint">例如：gpt-4o</string>
+  <string name="model_display_name">显示名称</string>
+  <string name="model_display_name_hint">例如：GPT-4o</string>
+  <string name="model_pricing">定价</string>
+  <string name="model_input_price">输入价格</string>
+  <string name="model_output_price">输出价格</string>
+  <string name="model_price_unit">$/百万 token</string>
+  <string name="model_price_free">免费</string>
+  <string name="model_context_window">上下文窗口</string>
+  <string name="model_context_tokens">%s tokens</string>
+  <string name="model_supports_vision">支持视觉</string>
+  <string name="model_select">选择模型</string>
+  <string name="model_available_count">%d 个可用模型</string>
+  <string name="model_active">当前使用</string>
+  <string name="model_use">使用</string>
+  <string name="model_default">默认</string>
+
+  <!-- Inference Stats -->
+  <string name="stats_title">推理统计</string>
+  <string name="stats_total_cost">总费用</string>
+  <string name="stats_total_tokens">总 Token 数</string>
+  <string name="stats_total_requests">总请求数</string>
+  <string name="stats_input_tokens">输入 Token</string>
+  <string name="stats_output_tokens">输出 Token</string>
+  <string name="stats_avg_latency">平均延迟</string>
+  <string name="stats_last_used">最后使用</string>
+  <string name="stats_by_model">按模型</string>
+  <string name="stats_by_provider">按提供商</string>
+  <string name="stats_reset">重置统计</string>
+  <string name="stats_reset_confirm">重置所有推理统计？</string>
+  <string name="stats_reset_message">这将清除所有使用数据，此操作无法撤销。</string>
+  <string name="stats_no_data">暂无使用数据</string>
+
+  <!-- Generic Operation Errors -->
+  <string name="error_fix_failed">修复失败</string>
+  <string name="error_save_failed">保存失败</string>
+  <string name="error_load_failed">加载失败</string>
+  <string name="error_refresh_failed">刷新失败</string>
+  <string name="error_detect_failed">检测失败</string>
+  <string name="error_clear_failed">清除失败</string>
+  <string name="error_download_failed">下载失败</string>
+  <string name="error_pause_failed">暂停失败</string>
+  <string name="error_resume_failed">恢复失败</string>
+  <string name="error_cancel_failed">取消失败</string>
+  <string name="error_enable_failed">启用失败</string>
+  <string name="error_disable_failed">禁用失败</string>
+  <string name="error_delete_failed">删除失败</string>
+  <string name="error_import_failed">导入失败</string>
+  <string name="error_data_load">数据加载错误</string>
+  <string name="error_with_detail">%1$s: %2$s</string>
+  <string name="error_check_root">请检查 Root 权限是否正常</string>
+
+  <!-- Generic Success Messages -->
+  <string name="success_download_complete">模型下载完成</string>
+  <string name="success_download_paused">下载已暂停</string>
+  <string name="success_download_resumed">下载已恢复</string>
+  <string name="success_download_cancelled">下载已取消</string>
+  <string name="success_model_enabled">本地模型已启用</string>
+  <string name="success_model_disabled">本地模型已禁用</string>
+  <string name="success_model_deleted">模型已删除</string>
+  <string name="success_model_imported">模型导入成功</string>
+  <string name="success_catalog_refreshed">模型列表已刷新</string>
+  <string name="success_selinux_fixed">SELinux 已修复</string>
+
+  <!-- Screenshot Quality -->
+  <string name="screenshot_quality_low">低</string>
+  <string name="screenshot_quality_medium">中</string>
+  <string name="screenshot_quality_high">高</string>
+
+  <!-- Import Progress -->
+  <string name="import_stage_validating">验证文件...</string>
+  <string name="import_stage_importing">导入中...</string>
+  <string name="import_stage_mmproj_required">需要 mmproj 文件</string>
+
+  <!-- About Screen -->
+  <string name="about_title">关于</string>
+  <string name="about_version">版本 %1$s (%2$d)</string>
+  <string name="about_project">项目</string>
+  <string name="about_github">GitHub 仓库</string>
+  <string name="about_author">作者</string>
+  <string name="about_license">许可证</string>
+  <string name="about_icon_design">图标设计</string>
+  <string name="about_icon_designer">设计</string>
+  <string name="about_icon_illustrator">绘制</string>
+  <string name="about_acknowledgements">致谢</string>
+</resources>

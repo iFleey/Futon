@@ -1,0 +1,17 @@
+# Futon Daemon Module
+# This file is generated during build. Do not edit manually.
+# Template: su-module/module.prop.template
+
+id=futon_daemon
+name=Futon Daemon
+version=${MODULE_VERSION}
+versionCode=${MODULE_VERSION_CODE}
+author=fleey
+description=Visit github.com/iFleey/Futon to download the Client APP.
+
+# Deployment Contract (auto-generated)
+daemonHash=${DAEMON_HASH}
+daemonArch=${DAEMON_ARCH}
+appVersionFrom=${APP_VERSION_FROM}
+appVersionTo=${APP_VERSION_TO}
+generatedAt=${GENERATED_AT}

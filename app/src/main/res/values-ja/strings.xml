@@ -1,0 +1,1065 @@
+<resources>
+  <string name="app_name">Futon</string>
+
+  <!-- Common Actions -->
+  <string name="action_back">戻る</string>
+  <string name="action_confirm">確定</string>
+  <string name="action_cancel">キャンセル</string>
+  <string name="action_save">保存</string>
+  <string name="action_delete">削除</string>
+  <string name="action_retry">再試行</string>
+  <string name="action_show">表示</string>
+  <string name="action_hide">非表示</string>
+  <string name="action_clear">クリア</string>
+  <string name="action_send">送信</string>
+  <string name="action_undo">元に戻す</string>
+
+  <!-- Swipe Actions -->
+  <string name="swipe_deleted">削除済み</string>
+  <string name="swipe_deleted_item">項目を削除しました</string>
+  <string name="swipe_deleted_conversation">会話を削除しました</string>
+  <string name="swipe_deleted_record">記録を削除しました</string>
+
+  <!-- Navigation -->
+  <string name="nav_home">ホーム</string>
+  <string name="nav_task">タスク</string>
+  <string name="nav_settings">設定</string>
+  <string name="nav_history">履歴</string>
+
+  <!-- Content Descriptions -->
+  <string name="content_description_menu">メニューを開く</string>
+  <string name="content_description_new_conversation">新しい会話</string>
+
+  <!-- Home Screen -->
+  <string name="status_running">実行中</string>
+  <string name="status_not_enabled">未有効</string>
+
+  <!-- Settings Screen -->
+  <string name="settings">設定</string>
+  <string name="api_key">APIキー</string>
+  <string name="api_base_url">APIベースURL</string>
+  <string name="model_name">モデル名</string>
+  <string name="max_steps">最大ステップ数</string>
+  <string name="system_prompt">システムプロンプト</string>
+  <string name="save_settings">設定を保存</string>
+  <string name="settings_saved">設定を保存しました</string>
+
+  <!-- Settings Screen Categories -->
+  <string name="settings_category_ai">AIとモデル</string>
+  <string name="settings_category_automation">自動化実行</string>
+  <string name="settings_category_perception">認識エンジン</string>
+  <string name="settings_category_system">システムとデーモン</string>
+  <string name="settings_category_integrations">統合と接続</string>
+  <string name="settings_category_other">その他</string>
+  <string name="settings_category_appearance">インターフェース</string>
+  <string name="settings_category_debug">デバッグ</string>
+  <string name="settings_ai_provider">AIプロバイダー</string>
+  <string name="settings_local_model">ローカルモデル</string>
+  <string name="settings_appearance">外観</string>
+  <string name="settings_automation">自動化</string>
+  <string name="settings_hybrid_perception">ハイブリッド認識</string>
+  <string name="settings_advanced_options">高度なオプション</string>
+
+  <!-- Appearance Settings -->
+  <string name="settings_theme">テーマ</string>
+  <string name="settings_theme_mode">テーマモード</string>
+  <string name="settings_theme_system">システムに従う</string>
+  <string name="settings_theme_system_description">システムのダークモード設定に自動的に従います</string>
+  <string name="settings_theme_light">ライトモード</string>
+  <string name="settings_theme_light_description">常にライトテーマを使用します</string>
+  <string name="settings_theme_dark">ダークモード</string>
+  <string name="settings_theme_dark_description">常にダークテーマを使用します</string>
+  <string name="settings_theme_description">アプリのテーマモードを選択してください</string>
+  <string name="settings_color">カラー</string>
+  <string name="settings_dynamic_color">ダイナミックカラー</string>
+  <string name="settings_dynamic_color_description">壁紙に合わせてアプリの色調を自動調整します (Material You)</string>
+
+  <!-- Language Settings -->
+  <string name="settings_language">言語</string>
+  <string name="settings_language_system">システムに従う</string>
+  <string name="settings_language_system_description">システムの言語設定に自動的に従います</string>
+  <string name="settings_language_english">English</string>
+  <string name="settings_language_chinese_simplified">简体中文</string>
+  <string name="settings_language_chinese_traditional">繁體中文</string>
+  <string name="settings_language_japanese">日本語</string>
+
+  <!-- Automation Settings -->
+  <string name="settings_execution">実行設定</string>
+  <string name="settings_max_steps_description">1タスクあたりの最大実行ステップ数</string>
+  <string name="settings_timeout">タイムアウト設定</string>
+  <string name="settings_ai_timeout">AIリクエストタイムアウト</string>
+  <string name="settings_ai_timeout_description">AIリクエストのタイムアウト時間（秒）。思考型モデルを使用する場合は長めの設定を推奨します。</string>
+  <string name="settings_timeout_seconds">%d 秒</string>
+  <string name="settings_steps_count">%d ステップ</string>
+  <string name="settings_token">トークン設定</string>
+  <string name="settings_max_tokens">最大トークン数</string>
+  <string name="settings_max_tokens_description">AI応答の最大トークン数。応答が途切れる場合は値を増やしてください。</string>
+  <string name="settings_screenshot">スクリーンショット品質</string>
+  <string name="settings_screenshot_quality">スクリーンショット品質</string>
+  <string name="settings_screenshot_quality_low">低品質</string>
+  <string name="settings_screenshot_quality_low_description">50%圧縮、アップロードが高速、低速回線向け</string>
+  <string name="settings_screenshot_quality_medium">中品質</string>
+  <string name="settings_screenshot_quality_medium_description">70%圧縮、速度と認識精度のバランス重視</string>
+  <string name="settings_screenshot_quality_high">高品質</string>
+  <string name="settings_screenshot_quality_high_description">90%圧縮、認識精度は高いがアップロードは低速</string>
+  <string name="settings_screenshot_quality_description">低品質はアップロードを高速化し、高品質はAIの認識精度を向上させます</string>
+
+  <!-- Advanced Settings -->
+  <string name="settings_ai_prompt">AIプロンプト</string>
+  <string name="settings_system_prompt_description">AIが画面を分析しタスクを実行する方法を指示する、カスタムシステムプロンプトです</string>
+
+  <!-- Settings Validation -->
+  <string name="error_api_key_required">APIキーを入力してください</string>
+  <string name="error_base_url_required">APIベースURLを入力してください</string>
+  <string name="error_model_required">モデル名を入力してください</string>
+  <string name="error_max_steps_invalid">最大ステップ数は0より大きい必要があります</string>
+
+  <!-- Task Screen -->
+  <string name="task_input_label">タスクを入力</string>
+  <string name="task_input_placeholder">例：fleey.me/blog ブログにアクセス</string>
+  <string name="chat_input_placeholder">頼みたいことを入力してください…</string>
+  <string name="chat_input_hint">何でも聞いてください</string>
+  <string name="ai_disclaimer">AIは間違いを犯す可能性があります。回答を確認してください。</string>
+  <string name="start_execution">実行開始</string>
+  <string name="stop_execution">停止</string>
+  <string name="executing">実行中…</string>
+  <string name="step_progress">ステップ %1$d / %2$d</string>
+  <string name="task_suggestions">提案アクション</string>
+  <string name="task_no_action_history">動作履歴はありません</string>
+
+  <!-- Automation Results -->
+  <string name="result_success">タスク完了</string>
+  <string name="result_failure">タスク失敗</string>
+  <string name="result_cancelled">タスクキャンセル</string>
+  <string name="result_timeout">タスクタイムアウト</string>
+
+  <!-- History Screen -->
+  <string name="history">履歴</string>
+  <string name="no_history">履歴はありません</string>
+  <string name="retry_task">タスクを再試行</string>
+  <string name="clear_history">履歴をクリア</string>
+  <string name="history_steps">%d ステップ</string>
+
+  <!-- History Header -->
+  <string name="history_header_title">実行記録</string>
+  <string name="history_record_count">全 %d 件</string>
+
+  <!-- History Multi-Select -->
+  <string name="history_selected_count">%d 件選択中</string>
+  <string name="history_select_all">すべて選択</string>
+  <string name="history_deselect_all">選択を解除</string>
+  <string name="history_delete_selected">選択項目を削除</string>
+  <string name="history_status_success">成功</string>
+  <string name="history_status_failure">失敗</string>
+  <string name="history_status_cancelled">キャンセル</string>
+  <string name="history_status_timeout">タイムアウト</string>
+
+  <!-- Execution Phase -->
+  <string name="phase_capturing_screenshot">撮影中</string>
+  <string name="phase_analyzing_with_ai">AI分析中</string>
+  <string name="phase_executing_action">動作実行中</string>
+  <string name="phase_waiting">待機中</string>
+  <string name="phase_retrying">再試行中</string>
+
+  <!-- Execution Details -->
+  <string name="elapsed_time">経過時間</string>
+  <string name="step_elapsed_time">現在のステップ</string>
+  <string name="total_elapsed_time">総所要時間</string>
+  <string name="thinking_model_hint">これは推論モデルでは正常な動作です</string>
+  <string name="ai_reasoning">AI推論</string>
+  <string name="action_history">動作履歴</string>
+  <string name="retry_attempt">再試行 %1$d/%2$d</string>
+  <string name="retry_reason">理由: %s</string>
+  <string name="retry_current_step">現在のステップを再試行</string>
+  <string name="action_success">成功</string>
+  <string name="action_failed">失敗</string>
+  <string name="duration_ms">%d ms</string>
+  <string name="step_number">ステップ %d</string>
+
+  <!-- Error Suggestions -->
+  <string name="suggestion_check_network">ネットワーク接続を確認</string>
+  <string name="suggestion_increase_timeout">タイムアウト時間を延長</string>
+  <string name="suggestion_check_api_key">APIキーを確認</string>
+
+  <!-- Execution Log Detail -->
+  <string name="execution_log_detail">実行ログ詳細</string>
+  <string name="export_log">ログをエクスポート</string>
+  <string name="log_not_found">ログが見つかりません</string>
+  <string name="actions_section">動作記録</string>
+  <string name="ai_responses_section">AI応答</string>
+  <string name="errors_section">エラー記録</string>
+  <string name="execution_steps_section">実行ステップ</string>
+  <string name="start_time">開始時刻</string>
+  <string name="duration">所要時間</string>
+  <string name="steps_executed">実行ステップ数</string>
+  <string name="errors_count">エラー数</string>
+  <string name="parameters">パラメータ</string>
+  <string name="failure_reason">失敗理由</string>
+  <string name="response_time_ms">応答時間: %d ms</string>
+  <string name="execution_ms">実行: %d ms</string>
+  <string name="ai_response_ms">AI: %d ms</string>
+  <string name="retryable">再試行可能</string>
+  <string name="error_type_network">ネットワークエラー</string>
+  <string name="error_type_timeout">タイムアウト</string>
+  <string name="error_type_api">APIエラー</string>
+  <string name="error_type_invalid_response">無効な応答</string>
+  <string name="error_type_action_failed">動作失敗</string>
+  <string name="error_type_unknown">不明なエラー</string>
+  <string name="view_details">詳細を見る</string>
+
+  <!-- Error Messages -->
+  <string name="error_api_key_not_configured">APIキーが設定されていません</string>
+  <string name="error_screenshot_failed">スクリーンショット失敗: %s</string>
+  <string name="error_ai_request_failed">AIリクエスト失敗: %s</string>
+  <string name="error_action_execution_failed">操作の実行に失敗しました</string>
+  <string name="error_network">ネットワークエラー: %s</string>
+  <string name="error_invalid_api_key">無効なAPIキーです</string>
+  <string name="error_rate_limit">リクエスト制限を超過しました</string>
+  <string name="error_server">サーバーエラー: %d</string>
+  <string name="error_invalid_response">応答フォーマットが無効です</string>
+  <string name="error_timeout">リクエストがタイムアウトしました</string>
+  <string name="error_settings_not_configured">先にAPI設定を行ってください</string>
+  <string name="error_unknown">不明なエラー</string>
+
+  <!-- Provider Config -->
+  <string name="provider_name_openai">OpenAI</string>
+  <string name="provider_name_gemini">Gemini</string>
+  <string name="provider_name_new_api">New API</string>
+  <string name="provider_name_custom">カスタム</string>
+  <string name="provider_name_local_model">ローカルモデル</string>
+  <string name="provider_config_title">%s 設定</string>
+  <string name="provider_api_key">APIキー</string>
+  <string name="provider_base_url">ベースURL</string>
+  <string name="provider_refresh_models">モデルリストを更新</string>
+  <string name="provider_set_active">アクティブなプロバイダーに設定</string>
+  <string name="provider_currently_active">現在アクティブ</string>
+  <string name="provider_switch_to">クリックして %s に切り替え</string>
+  <string name="provider_save_changes">変更を保存</string>
+  <string name="provider_saved">保存しました</string>
+  <string name="provider_api_key_empty_warning">APIキーが空です。保存後、このプロバイダーは使用できなくなります。</string>
+  <string name="provider_test_connection">接続テスト</string>
+  <string name="provider_testing">テスト中…</string>
+  <string name="provider_close">閉じる</string>
+  <string name="provider_disabled">無効</string>
+  <string name="provider_not_configured">未設定</string>
+  <string name="provider_no_model_selected">モデル未選択</string>
+
+  <!-- Hybrid Perception Settings -->
+  <string name="perception_mode">認識モード</string>
+  <string name="perception_enable_advanced">高度な認識を有効化</string>
+  <string name="perception_enable_description">有効にすると、異なる認識モードを選択できます</string>
+  <string name="perception_method">認識方式</string>
+  <string name="perception_screenshot_only">スクリーンショットのみ</string>
+  <string name="perception_screenshot_only_description">視覚認識にスクリーンショットのみを使用し、AIによる画面理解に依存します</string>
+  <string name="perception_ui_tree_only">UIツリーのみ</string>
+  <string name="perception_ui_tree_only_description">UI構造のみを使用し、正確な要素情報を提供します（Root必須）</string>
+  <string name="perception_hybrid">ハイブリッドモード</string>
+  <string name="perception_hybrid_description">スクリーンショットとUIツリーの両方を使用し、最高の精度を実現します（Root必須）</string>
+  <string name="perception_performance">パフォーマンス</string>
+  <string name="perception_timeout">認識タイムアウト</string>
+  <string name="perception_timeout_description">UIツリー取得の最大待機時間</string>
+  <string name="perception_timeout_min">1秒</string>
+  <string name="perception_timeout_max">10秒</string>
+  <string name="perception_ai_optimization">AI最適化</string>
+  <string name="perception_ui_tree_depth">UIツリー深度</string>
+  <string name="perception_ui_tree_depth_description">AIに送信するUIツリーの階層深度を制限し、トークン消費を抑え応答速度を向上させます</string>
+  <string name="perception_depth_levels">%d 階層</string>
+  <string name="perception_depth_shallow">浅い</string>
+  <string name="perception_depth_deep">深い</string>
+  <string name="perception_include_non_interactive">非対話要素を含める</string>
+  <string name="perception_include_non_interactive_description">クリックできない要素（テキストラベルなど）をAIコンテキストに含めます。トークン消費が増加します</string>
+  <string name="perception_adaptive_learning">適応学習</string>
+  <string name="perception_enable_learning">適応学習を有効化</string>
+  <string name="perception_learning_description">成功した要素マッチングパターンを記録し、次回以降の照合速度を向上させます</string>
+  <string name="perception_root_status">Root状態</string>
+  <string name="perception_root_checking">確認中…</string>
+  <string name="perception_root_available">利用可能 (%s)</string>
+  <string name="perception_root_unavailable">利用不可</string>
+  <string name="perception_root_denied">権限拒否</string>
+  <string name="perception_refresh">更新</string>
+  <string name="perception_root_denied_message">Root権限が拒否されました。RootマネージャーでFutonアプリを許可してから、下のボタンをクリックして再リクエストしてください。</string>
+  <string name="perception_root_unavailable_message">Root権限が検出されませんでした。KSU、SukiSU Ultra、MagiskなどのRootソリューションをインストールしている場合は、下のボタンをクリックして権限をリクエストしてください。</string>
+  <string name="perception_request_root">Root権限をリクエスト</string>
+  <string name="perception_requesting">リクエスト中…</string>
+  <string name="perception_cache">学習キャッシュ</string>
+  <string name="perception_cache_count">%1$d / %2$d 件</string>
+  <string name="perception_clear_cache">キャッシュをクリア</string>
+  <string name="perception_clearing">クリア中…</string>
+  <string name="perception_cache_warning">キャッシュをクリアすると、学習済みの要素マッチングパターンがすべて削除され、一時的にマッチング精度が低下する可能性があります。</string>
+  <string name="perception_cache_cleared">キャッシュをクリアしました</string>
+
+  <!-- Root Types -->
+  <string name="root_type_ksu">KernelSU</string>
+  <string name="root_type_ksu_next">KernelSU Next</string>
+  <string name="root_type_sukisu_ultra">SukiSU Ultra</string>
+  <string name="root_type_magisk">Magisk</string>
+  <string name="root_type_supersu">SuperSU</string>
+  <string name="root_type_apatch">APatch</string>
+  <string name="root_type_other">その他</string>
+  <string name="root_type_none">なし</string>
+
+  <!-- Execution Settings -->
+  <string name="settings_execution_layer">実行レイヤー設定</string>
+  <string name="settings_input_method">入力注入方式</string>
+  <string name="settings_capture_method">スクリーンショット方式</string>
+  <string name="settings_method_auto">自動選択</string>
+  <string name="settings_method_auto_description">デバイスの機能に基づいて最適な方式を自動選択します</string>
+  <string name="settings_input_native">Native IOCTL</string>
+  <string name="settings_input_native_description">JNIで /dev/input に直接書き込み。遅延 &lt;5ms</string>
+  <string name="settings_input_android">Android Input</string>
+  <string name="settings_input_android_description">Root Shell経由で input コマンドを実行。遅延 ~80ms</string>
+  <string name="settings_input_shell">Shell Sendevent</string>
+  <string name="settings_input_shell_description">Root Shell経由で sendevent コマンドを実行</string>
+  <string name="settings_capture_root">Root Screencap</string>
+  <string name="settings_capture_root_description">Root Shell経由で screencap コマンドを実行</string>
+  <string name="settings_capture_media_projection">メディアプロジェクション</string>
+  <string name="settings_method_active">アクティブ</string>
+  <string name="settings_method_available">利用可能</string>
+  <string name="settings_method_unavailable">利用不可</string>
+  <string name="settings_fallback">フォールバック設定</string>
+  <string name="settings_enable_fallback">自動フォールバックを有効化</string>
+  <string name="settings_enable_fallback_description">優先方式が失敗した場合、他の利用可能な方式を自動的に試行します</string>
+  <string name="settings_show_warnings">機能警告を表示</string>
+  <string name="settings_show_warnings_description">特定の実行方式が利用できない場合に警告を表示します</string>
+
+  <!-- Privacy Settings -->
+  <string name="settings_privacy">プライバシー設定</string>
+  <string name="privacy_mode_title">プライバシーモード</string>
+  <string name="privacy_mode_strict">厳格モード</string>
+  <string name="privacy_mode_strict_description">保護されたウィンドウ (FLAG_SECURE) は一切撮影しません。プライバシーを最大限保護します。</string>
+  <string name="privacy_mode_consent">確認モード</string>
+  <string name="privacy_mode_consent_description">保護されたウィンドウを検出した場合、ユーザーに撮影の許可を求めます</string>
+  <string name="privacy_mode_trusted">信頼モード</string>
+  <string name="privacy_mode_trusted_description">保護されたウィンドウを含むすべてのウィンドウの撮影を許可します</string>
+  <string name="privacy_trusted_warning">警告：信頼モードでは、銀行アプリやパスワード管理アプリなどの機密性の高いアプリの画面内容も撮影可能になります。リスクを理解した上で有効にしてください。</string>
+  <string name="privacy_audit_log_title">監査ログ</string>
+  <string name="privacy_enable_audit_log">監査ログを有効化</string>
+  <string name="privacy_enable_audit_log_description">保護されたウィンドウでの撮影試行をすべて記録します</string>
+  <string name="privacy_audit_log_entries">%d 件の記録</string>
+  <string name="privacy_no_audit_entries">監査記録はありません</string>
+  <string name="privacy_clear_audit_log_title">監査ログをクリア</string>
+  <string name="privacy_clear_audit_log_message">すべての監査ログ記録を消去してもよろしいですか？この操作は取り消せません。</string>
+
+  <!-- Capability Status -->
+  <string name="settings_capability_status">機能ステータス</string>
+  <string name="capability_active_methods">現在のアクティブな方式</string>
+  <string name="capability_active_input">入力注入</string>
+  <string name="capability_active_capture">スクリーンショット方式</string>
+  <string name="capability_none">なし</string>
+  <string name="capability_root_status">Rootステータス</string>
+  <string name="capability_root_available">Root利用可能</string>
+  <string name="capability_root_type">Rootタイプ</string>
+  <string name="capability_root_version">Rootバージョン</string>
+  <string name="capability_yes">はい</string>
+  <string name="capability_no">いいえ</string>
+  <string name="capability_selinux_status">SELinuxステータス</string>
+  <string name="capability_selinux_mode">SELinuxモード</string>
+  <string name="capability_input_access">入力デバイスアクセス</string>
+  <string name="capability_allowed">許可</string>
+  <string name="capability_blocked">拒否</string>
+  <string name="capability_suggested_policy">推奨SELinuxポリシー:</string>
+  <string name="capability_input_device">入力デバイス</string>
+  <string name="capability_dev_input_access">/dev/input アクセス</string>
+  <string name="capability_accessible">アクセス可能</string>
+  <string name="capability_not_accessible">アクセス不可</string>
+  <string name="capability_device_path">デバイスパス</string>
+  <string name="capability_mt_protocol">マルチタッチプロトコル</string>
+  <string name="capability_max_touch_points">最大タッチポイント</string>
+  <string name="capability_service_running">サービス実行中</string>
+  <string name="capability_input_methods">入力方式の可用性</string>
+  <string name="capability_capture_methods">スクリーンショット方式の可用性</string>
+  <string name="capability_available">利用可能</string>
+  <string name="capability_unavailable">利用不可</string>
+
+  <!-- SELinux Modes -->
+  <string name="selinux_enforcing">強制モード (Enforcing)</string>
+  <string name="selinux_permissive">寛容モード (Permissive)</string>
+  <string name="selinux_disabled">無効</string>
+  <string name="selinux_unknown">不明</string>
+
+  <!-- MT Protocol -->
+  <string name="mt_protocol_a">プロトコル A (ステートレス)</string>
+  <string name="mt_protocol_b">プロトコル B (スロットベース)</string>
+  <string name="mt_single_touch">シングルタッチ</string>
+
+  <!-- System Messages -->
+  <string name="welcome_greeting">何かお手伝いしましょうか？</string>
+  <string name="welcome_greeting_1">何かお手伝いしましょうか？</string>
+  <string name="welcome_greeting_2">今日は何をしますか？</string>
+  <string name="welcome_greeting_3">タスク完了のお手伝いをします</string>
+  <string name="welcome_subtitle">スマートフォン上の様々な操作を自動化します</string>
+  <string name="welcome_title">こんにちは！</string>
+  <string name="welcome_message">Futon AIアシスタントです。スマートフォンの操作を自動化できます。やりたいことを教えてください。</string>
+  <string name="welcome_try_examples">例を試してみる：</string>
+  <string name="example_task_camera">カメラを開く</string>
+  <string name="example_task_camera_desc">システムカメラアプリを起動</string>
+  <string name="example_task_camera_action">カメラアプリを開く</string>
+  <string name="example_task_browser">ブログにアクセス</string>
+  <string name="example_task_browser_desc">ブラウザを開いてWebサイトにアクセス</string>
+  <string name="example_task_browser_action">ブラウザを開いて fleey.me/blog にアクセス</string>
+  <string name="example_task_settings">システム設定</string>
+  <string name="example_task_settings_desc">システム設定ページを開く</string>
+  <string name="example_task_settings_action">システム設定を開く</string>
+  <string name="example_task_idea_1">アイデアを提案</string>
+  <string name="example_task_idea_1_action">今日できることの提案をいくつか挙げて</string>
+  <string name="example_task_idea_2">メッセージを送信</string>
+  <string name="example_task_idea_2_action">LINEを開いて友達に挨拶メッセージを送る</string>
+  <string name="example_task_idea_3">天気をチェック</string>
+  <string name="example_task_idea_3_action">天気アプリを開いて今日の天気を確認</string>
+  <string name="example_task_idea_4">音楽を再生</string>
+  <string name="example_task_idea_4_action">音楽アプリを開いて曲を再生</string>
+  <string name="example_task_idea_5">アラームを設定</string>
+  <string name="example_task_idea_5_action">明日の朝8時にアラームを設定</string>
+  <string name="example_task_idea_6">ニュースを見る</string>
+  <string name="example_task_idea_6_action">ニュースアプリを開いて今日のトップニュースを確認</string>
+  <string name="settings_required_title">設定が必要です</string>
+  <string name="settings_required_message">開始する前に、AIプロバイダーのAPI設定を行うか、ローカルモデルを有効にしてください。</string>
+  <string name="go_to_settings">設定へ移動</string>
+  <string name="conversation_cleared">会話をクリアしました</string>
+
+  <!-- Drawer -->
+  <string name="drawer_search_hint">会話を検索</string>
+  <string name="drawer_search_empty">キーワードを入力して検索</string>
+  <string name="drawer_search_no_result">\"%s\" は見つかりませんでした</string>
+  <string name="drawer_search_try_other">他のキーワードを試してください</string>
+  <string name="drawer_recent_conversations">最近の会話</string>
+  <string name="drawer_no_conversations">会話履歴はありません</string>
+  <string name="drawer_start_new_task">新しいタスクを開始しましょう</string>
+
+  <!-- Relative Time -->
+  <string name="time_just_now">たった今</string>
+  <plurals name="time_minutes_ago">
+    <item quantity="other">%d分前</item>
+  </plurals>
+  <plurals name="time_hours_ago">
+    <item quantity="other">%d時間前</item>
+  </plurals>
+  <plurals name="time_days_ago">
+    <item quantity="other">%d日前</item>
+  </plurals>
+  <string name="time_date_format">%1$d月%2$d日</string>
+  <string name="time_today">今日</string>
+  <string name="time_yesterday">昨日</string>
+  <string name="time_this_week">今週</string>
+  <string name="time_hour_minute">%1$02d:%2$02d</string>
+
+  <!-- Task Status -->
+  <string name="status_success">成功</string>
+  <string name="status_failure">失敗</string>
+  <string name="status_cancelled">キャンセル</string>
+  <string name="status_timeout">タイムアウト</string>
+  <string name="status_with_steps">%1$s · %2$d ステップ</string>
+
+  <!-- Chat AI Messages -->
+  <string name="chat_task_started">タスク実行を開始します</string>
+  <string name="chat_task_completed">タスク実行完了！</string>
+  <string name="chat_task_failed">タスク実行失敗: %s</string>
+  <string name="chat_task_cancelled">タスクはキャンセルされました</string>
+  <string name="chat_task_timeout">タスク実行がタイムアウトしました</string>
+  <string name="chat_phase_capturing">画面を撮影中…</string>
+  <string name="chat_phase_analyzing">AI分析中…</string>
+  <string name="chat_phase_executing">動作実行中…</string>
+  <string name="chat_phase_waiting">待機中…</string>
+  <string name="chat_phase_retrying">再試行中…</string>
+  <string name="chat_phase_retrying_reason">再試行中: %s</string>
+
+  <!-- Chat Action Parameters -->
+  <string name="chat_action_tap_position">位置: (%1$d, %2$d)</string>
+  <string name="chat_action_swipe_from_to">(%1$d, %2$d) から (%3$d, %4$d) へ</string>
+  <string name="chat_action_input_text">テキスト: %s</string>
+  <string name="chat_action_wait_duration">待機: %dms</string>
+
+  <!-- Chat Suggestions -->
+  <string name="suggestion_check_screen">画面状態を確認</string>
+  <string name="suggestion_retry_task">タスクを再試行</string>
+  <string name="suggestion_adjust_description">タスク説明を調整</string>
+  <string name="suggestion_increase_max_steps">最大ステップ数を増やす</string>
+  <string name="suggestion_simplify_task">タスク説明を簡潔にする</string>
+
+  <!-- Local Model Settings -->
+  <string name="local_model_import">モデルをインポート</string>
+  <string name="local_model_import_description">ダウンロード済みのGGUFモデルファイルをローカルストレージからインポートします</string>
+  <string name="local_model_select_file">ファイルを選択</string>
+  <string name="local_model_supported_formats">サポートされている形式</string>
+  <string name="local_model_supported_formats_description">• GGUF形式のモデルファイル\n• 視覚言語モデルはmmprojファイルも必要です</string>
+  <string name="local_model_mmproj_required">mmprojファイルが必要です</string>
+  <string name="local_model_mmproj_description">視覚言語モデル(VLM)が検出されました。使用するにはmmprojファイルも同時にインポートしてください。</string>
+  <string name="local_model_mmproj_hint">mmprojファイルは通常、モデルファイルと共に提供され、ファイル名に \"mmproj\" が含まれています。</string>
+  <string name="local_model_select_mmproj">mmprojファイルを選択</string>
+  <string name="local_model_quantization_select">量子化バージョンを選択</string>
+  <string name="local_model_quantization_recommended">推奨</string>
+  <string name="local_model_quantization_size_ram">サイズ: %1$s | 必要メモリ: %2$s</string>
+  <string name="local_model_storage_insufficient">ストレージ容量不足</string>
+  <string name="local_model_available_quantizations">利用可能な量子化バージョン</string>
+  <string name="local_model_ram_required">%s のRAMが必要です</string>
+  <string name="local_model_download">ダウンロード</string>
+  <string name="local_model_downloading">ダウンロード中 - %d%%</string>
+  <string name="local_model_download_failed">ダウンロード失敗</string>
+  <string name="local_model_quantization">量子化: %s</string>
+  <string name="local_model_size">サイズ: %s</string>
+  <string name="local_model_enabled">有効</string>
+  <string name="local_model_enable">有効にする</string>
+  <string name="local_model_disable">無効にする</string>
+  <string name="local_model_delete">モデルを削除</string>
+  <string name="local_model_pause_download">ダウンロード一時停止</string>
+  <string name="local_model_resume_download">ダウンロード再開</string>
+  <string name="local_model_cancel_download">ダウンロードキャンセル</string>
+  <string name="local_model_expand">展開</string>
+  <string name="local_model_collapse">折りたたむ</string>
+
+  <!-- Filter Chips -->
+  <string name="filter_all">すべて</string>
+  <string name="filter_any_ram">指定なし</string>
+  <string name="filter_ram_4gb">≤4GB</string>
+  <string name="filter_ram_6gb">≤6GB</string>
+  <string name="filter_ram_8gb">≤8GB</string>
+  <string name="filter_ram_12gb">≤12GB</string>
+  <string name="sort_by_name">名前</string>
+  <string name="sort_by_size">サイズ</string>
+  <string name="sort_by_popularity">人気順</string>
+  <string name="sort_by_name_action">名前順に並べ替え</string>
+  <string name="sort_by_size_action">サイズ順に並べ替え</string>
+  <string name="sort_by_popularity_action">人気順に並べ替え</string>
+
+  <!-- AI Error Messages -->
+  <string name="error_request_timeout">リクエストがタイムアウトしました（%1$d秒）。思考型モデルを使用している場合は、タイムアウトを %2$d 秒に増やすことをお勧めします。</string>
+  <string name="error_request_timeout_thinking">リクエストがタイムアウトしました（%1$d秒）。思考型モデル（o1、Claude thinkingなど）を使用している場合は、タイムアウトを %2$d 秒に増やすことをお勧めします。</string>
+  <string name="error_connection_timeout">接続がタイムアウトしました。ネットワーク接続を確認するか、タイムアウト時間を %d 秒に増やしてください。</string>
+  <string name="error_dns_failed">DNS解決に失敗しました：%s を解決できません。確認事項：1) ネットワーク接続 2) DNS設定 3) ドメイン名が正しいか</string>
+  <string name="error_network_unreachable">ネットワークに到達できません：%s に接続できません。原因の可能性：1) サーバーIP不可達 2) ファイアウォールによる遮断 3) VPN/プロキシの設定問題</string>
+  <string name="error_ssl_handshake">SSLハンドシェイクに失敗しました：証明書エラーまたはTLSバージョンの非互換。プロキシを使用している場合は、プロキシのSSL証明書設定を確認してください。理由: %s</string>
+  <string name="error_ssl_connection">SSL接続エラー：証明書の問題または中間者干渉の可能性があります。VPN/プロキシを使用している場合は、オフにして再試行してください。理由: %s</string>
+  <string name="error_connection_aborted">接続が中断されました：サーバーまたはネットワーク機器により接続が切断されました。原因の可能性：1) プロキシ/VPNの問題 2) ファイアウォールの遮断 3) サーバーによる接続拒否。詳細: %s</string>
+  <string name="error_connection_failed">接続失敗：%1$s に接続できません。原因の可能性：1) サーバー停止 2) ポート遮断 3) プロキシ/VPNのfake-ipモードによる無効なアドレス解決。推奨：URLの確認、またはプロキシをオフにして再試行。詳細: %2$s</string>
+  <string name="error_network_io">ネットワークIOエラー：%s</string>
+  <string name="error_request_failed">リクエスト失敗 (%1$s): %2$s</string>
+  <string name="error_response_format">応答フォーマット異常: %s</string>
+  <string name="error_api_key_or_url_empty">APIキーまたはベースURLが空です</string>
+  <string name="error_fetch_models_failed">モデルリストの取得に失敗: %s</string>
+  <string name="error_empty_response_thinking">AIから空の応答が返されました。モデルが思考中に中断された可能性があります。タイムアウト時間を増やしてください。</string>
+  <string name="error_empty_text_thinking">AIから空のテキスト応答が返されました。モデルがまだ思考中の可能性があります。タイムアウト時間を増やしてください。</string>
+  <string name="error_safety_blocked">リクエストが安全フィルターによりブロックされました: %s</string>
+  <string name="error_response_safety_blocked">応答が安全フィルターによりブロックされました</string>
+  <string name="error_response_recitation_blocked">引用の問題により応答がブロックされました</string>
+  <string name="error_content_filter_blocked">応答がコンテンツフィルターによりブロックされました</string>
+  <string name="error_no_text_content_thinking">Geminiの応答にテキストが含まれていません。モデルがまだ思考中の可能性があります。タイムアウト時間を増やしてください。</string>
+  <string name="error_cleaned_response_empty">整形後の応答が空です。元の応答: %s</string>
+  <string name="error_parse_ai_response">AI応答の解析に失敗しました: %1$s\n応答内容: %2$s</string>
+  <string name="error_gemini_api">Gemini API エラー: %s</string>
+  <string name="error_bad_request">不正なリクエスト形式です</string>
+  <string name="error_api_key_invalid">APIキーが無効です。設定を確認してください</string>
+  <string name="error_model_not_found">モデルが存在しません。モデル名を確認してください</string>
+  <string name="error_rate_limit_exceeded">リクエスト頻度が高すぎます。しばらく待ってから再試行してください</string>
+  <string name="error_service_unavailable">サービスが一時的に利用できません。しばらく待ってから再試行してください (%1$d): %2$s</string>
+  <string name="error_request_failed_code">リクエスト失敗 (%1$d): %2$s</string>
+
+  <!-- Local Model Inference Errors -->
+  <string name="error_inference_timeout">推論タイムアウト (%d秒)。より小さいモデルを使用するか、画像解像度を下げて試してください</string>
+
+  <!-- Delete Confirmation Dialog -->
+  <string name="local_model_delete_title">モデルを削除</string>
+  <string name="local_model_delete_confirm">\"%s\" を削除してもよろしいですか？</string>
+  <string name="local_model_delete_storage_info">これにより %s のストレージ容量が解放されます。</string>
+  <string name="local_model_delete_irreversible">この操作は取り消せません。</string>
+  <string name="local_model_delete_active_warning">このモデルは現在使用中です。削除後は自動的にクラウドAIサービスに切り替わります。</string>
+
+  <!-- Inference Config -->
+  <string name="inference_preset_config">プリセット設定</string>
+  <string name="inference_preset_fast">高速</string>
+  <string name="inference_preset_fast_desc">低遅延</string>
+  <string name="inference_preset_balanced">バランス</string>
+  <string name="inference_preset_balanced_desc">デフォルト</string>
+  <string name="inference_preset_quality">品質</string>
+  <string name="inference_preset_quality_desc">高精度</string>
+  <string name="inference_nnapi">NNAPIアクセラレーション</string>
+  <string name="inference_nnapi_description">Android Neural Networks APIを使用して推論を加速します</string>
+  <string name="inference_nnapi_unsupported">サポートされていません</string>
+
+  <!-- Local Model Screen -->
+  <string name="local_model_loading">モデルリストを読み込み中…</string>
+  <string name="local_model_load_failed">読み込み失敗</string>
+  <string name="local_model_no_results_hint">検索条件やフィルターを調整してください</string>
+  <string name="local_model_reset_filters">フィルターをリセット</string>
+  <string name="local_model_ram_info">RAM: %1$s 空き · 推奨: %2$s</string>
+  <string name="local_model_recommended_quantization">推奨量子化: %s</string>
+  <string name="local_model_china_mirror">中国ミラー</string>
+  <string name="local_model_recommended">推奨</string>
+
+  <!-- Common Dialog -->
+  <string name="dialog_error_title">エラー</string>
+
+  <!-- Inference Config Sliders -->
+  <string name="inference_context_length">コンテキスト長</string>
+  <string name="inference_context_length_desc">コンテキストを長くすると複雑なタスクを処理できますが、より多くのメモリを消費します</string>
+  <string name="inference_context_length_value">%d トークン</string>
+  <string name="inference_thread_count">スレッド数</string>
+  <string name="inference_thread_count_desc">スレッド数を増やすと推論は速くなりますが、消費電力が増加します</string>
+  <string name="inference_thread_count_value">%d スレッド</string>
+
+  <!-- Local Model Screen Sections -->
+  <string name="local_model_device_info">デバイス情報</string>
+  <string name="local_model_expand_details">詳細を展開</string>
+  <string name="local_model_device_details">デバイス詳細</string>
+  <string name="local_model_memory">メモリ</string>
+  <string name="local_model_memory_value">%1$s (空き: %2$s)</string>
+  <string name="local_model_processor">プロセッサ</string>
+  <string name="local_model_available_storage">利用可能ストレージ</string>
+  <string name="local_model_nnapi_acceleration">NNAPIアクセラレーション</string>
+  <string name="local_model_supported">対応</string>
+  <string name="local_model_not_supported">非対応</string>
+  <string name="local_model_device_not_meet_minimum">デバイスが最低要件を満たしていません</string>
+  <string name="local_model_device_good_performance">デバイス性能は良好です</string>
+  <string name="local_model_device_average_performance">デバイス性能は標準的です</string>
+  <string name="local_model_available_models">利用可能なモデル</string>
+  <string name="local_model_no_matching">一致するモデルがありません</string>
+  <string name="local_model_no_available">利用可能なモデルはありません</string>
+  <string name="local_model_top_bar_title">ローカルモデル</string>
+
+  <!-- Model Search Section -->
+  <string name="local_model_search_filter">検索とフィルター</string>
+  <string name="local_model_search_placeholder">モデルを検索…</string>
+  <string name="local_model_catalog_loading">読み込み中</string>
+  <string name="local_model_catalog_online">オンライン</string>
+  <string name="local_model_catalog_cache">キャッシュ</string>
+  <string name="local_model_catalog_offline">オフライン</string>
+  <string name="local_model_catalog_unknown">不明</string>
+
+  <!-- Local Model ViewModel Messages -->
+  <string name="local_model_download_complete">モデルのダウンロード完了</string>
+  <string name="local_model_download_paused">ダウンロードを一時停止しました</string>
+  <string name="local_model_download_resumed">ダウンロードを再開しました</string>
+  <string name="local_model_download_cancelled">ダウンロードをキャンセルしました</string>
+  <string name="local_model_enabled_success">ローカルモデルを有効にしました</string>
+  <string name="local_model_disabled_success">ローカルモデルを無効にしました</string>
+  <string name="local_model_deleted_success">モデルを削除しました</string>
+  <string name="local_model_import_success">モデルのインポートに成功しました</string>
+  <string name="local_model_list_refreshed">モデルリストを更新しました</string>
+  <string name="local_model_pause_failed">一時停止失敗: %s</string>
+  <string name="local_model_resume_failed">再開失敗: %s</string>
+  <string name="local_model_cancel_failed">キャンセル失敗: %s</string>
+
+  <!-- Settings ViewModel Messages -->
+  <string name="settings_load_failed">設定の読み込みに失敗しました</string>
+  <string name="settings_detect_capability_failed">機能の検出に失敗しました</string>
+  <string name="settings_refresh_capability_failed">機能の更新に失敗しました</string>
+  <string name="settings_save_failed">保存に失敗しました</string>
+  <string name="settings_clear_failed">クリアに失敗しました</string>
+  <string name="settings_local_model_no_fetch">ローカルモデルはモデルリストの取得が不要です</string>
+  <string name="settings_fetch_models_failed">モデルの取得に失敗しました</string>
+  <string name="settings_local_model_no_test">ローカルモデルは接続テストが不要です</string>
+  <string name="settings_unsupported_provider">サポートされていないプロバイダータイプです</string>
+  <string name="settings_connection_failed">接続に失敗しました</string>
+  <string name="settings_set_active_provider_failed">アクティブプロバイダーの設定に失敗しました</string>
+  <string name="settings_save_config_failed">設定の保存に失敗しました</string>
+  <string name="settings_enter_base_url">APIベースURLを入力してください</string>
+  <string name="settings_invalid_url">無効なURL形式です</string>
+  <string name="settings_enter_model_name">モデル名を入力してください</string>
+
+  <!-- Common UI -->
+  <string name="content_description_clear_search">検索をクリア</string>
+  <string name="copied_to_clipboard">クリップボードにコピーしました</string>
+  <string name="action_undo_default">元に戻す</string>
+  <string name="common_save">保存</string>
+  <string name="common_cancel">キャンセル</string>
+  <string name="common_delete">削除</string>
+
+  <!-- Prompt Management -->
+  <string name="prompt_management_title">プロンプト管理</string>
+  <string name="prompt_management_description">システムプロンプトとクイックフレーズを管理</string>
+  <string name="prompt_tab_templates">テンプレート</string>
+  <string name="prompt_tab_quick_phrases">クイックフレーズ</string>
+  <string name="prompt_section_builtin">組み込みテンプレート</string>
+  <string name="prompt_section_custom">カスタムテンプレート</string>
+  <string name="prompt_builtin_badge">組み込み</string>
+  <string name="prompt_add_new">新規作成</string>
+  <string name="prompt_edit">編集</string>
+  <string name="prompt_delete">削除</string>
+  <string name="prompt_empty_templates">テンプレートがありません。+ をタップして作成</string>
+  <string name="prompt_empty_phrases">クイックフレーズがありません。+ をタップして作成</string>
+  <string name="prompt_quick_phrases_enable">クイックフレーズを有効化</string>
+  <string name="prompt_quick_phrases_description">トリガーワードを入力して定型文を素早く挿入</string>
+  <string name="prompt_delete_template_title">テンプレートを削除</string>
+  <string name="prompt_delete_template_message">「%s」を削除してもよろしいですか？</string>
+  <string name="prompt_delete_phrase_title">クイックフレーズを削除</string>
+  <string name="prompt_delete_phrase_message">「%s」を削除してもよろしいですか？</string>
+
+  <!-- Prompt Editor -->
+  <string name="prompt_editor_title_new">新規テンプレート</string>
+  <string name="prompt_editor_title_edit">テンプレートを編集</string>
+  <string name="prompt_editor_title_view">テンプレートを表示</string>
+  <string name="prompt_editor_name">名前</string>
+  <string name="prompt_editor_description">説明</string>
+  <string name="prompt_editor_content">内容</string>
+  <string name="prompt_editor_variables">利用可能な変数</string>
+  <string name="prompt_editor_builtin_hint">組み込みテンプレートは編集できません。このテンプレートを基にコピーを作成できます。</string>
+
+  <!-- Quick Phrase Editor -->
+  <string name="prompt_phrase_editor_title_new">新規クイックフレーズ</string>
+  <string name="prompt_phrase_editor_title_edit">クイックフレーズを編集</string>
+  <string name="prompt_phrase_trigger">トリガー</string>
+  <string name="prompt_phrase_trigger_hint">/ で始めると識別しやすくなります（例: /open）</string>
+  <string name="prompt_phrase_trigger_placeholder">/example</string>
+  <string name="prompt_phrase_expansion">展開テキスト</string>
+  <string name="prompt_phrase_description">説明（任意）</string>
+  <string name="prompt_phrase_preview">プレビュー</string>
+  <string name="prompt_phrase_preview_input">入力: %s</string>
+
+  <!-- Prompt Errors -->
+  <string name="prompt_error_save_failed">保存に失敗しました</string>
+  <string name="prompt_error_delete_failed">削除に失敗しました</string>
+  <string name="prompt_error_invalid_template">無効なテンプレートです</string>
+  <string name="prompt_error_name_required">名前を入力してください</string>
+  <string name="prompt_error_content_required">内容を入力してください</string>
+  <string name="prompt_error_trigger_required">トリガーを入力してください</string>
+  <string name="prompt_error_expansion_required">展開テキストを入力してください</string>
+
+  <!-- DSP Perception Settings -->
+  <string name="settings_dsp_perception">DSP認識</string>
+  <string name="settings_dsp_perception_description">DSPアクセラレーション認識システムを設定</string>
+  <string name="dsp_master_switch">DSP認識</string>
+  <string name="dsp_enable_perception">DSP認識を有効化</string>
+  <string name="dsp_enable_perception_description">自動化中にLiteRT + OCRを使用してUI要素検出を強化</string>
+  <string name="dsp_injection_mode">タッチ注入モード</string>
+  <string name="dsp_injection_mode_description">タッチイベントの注入方法を選択</string>
+  <string name="dsp_injection_root">Root (uinput)</string>
+  <string name="dsp_injection_root_description">/dev/uinput経由のカーネルレベル注入、遅延 &lt;50ms（Root必須）</string>
+  <string name="dsp_capture_settings">キャプチャ設定</string>
+  <string name="dsp_downscale_factor">縮小率</string>
+  <string name="dsp_downscale_factor_description">推論を高速化するために解像度を下げる（1 = フル、2 = 半分）</string>
+  <string name="dsp_downscale_value">1/%d</string>
+  <string name="dsp_downscale_full">フル</string>
+  <string name="dsp_downscale_quarter">1/4</string>
+  <string name="dsp_latency_settings">遅延設定</string>
+  <string name="dsp_target_latency">目標遅延</string>
+  <string name="dsp_target_latency_description">認識ループの目標遅延（警告しきい値）</string>
+  <string name="dsp_target_latency_value">%d ms</string>
+  <string name="dsp_target_latency_min">10ms</string>
+  <string name="dsp_target_latency_max">100ms</string>
+  <string name="dsp_detection_settings">検出設定</string>
+  <string name="dsp_enable_ocr">OCRを有効化</string>
+  <string name="dsp_enable_ocr_description">検出されたUI要素のテキスト認識を有効にする</string>
+  <string name="dsp_min_confidence">最小信頼度</string>
+  <string name="dsp_min_confidence_description">このしきい値未満の検出結果をフィルタリング</string>
+  <string name="dsp_min_confidence_value">%d%%</string>
+  <string name="dsp_min_confidence_low">低</string>
+  <string name="dsp_min_confidence_high">高</string>
+  <string name="dsp_buffer_settings">バッファ設定</string>
+  <string name="dsp_max_buffers">最大同時バッファ数</string>
+  <string name="dsp_max_buffers_description">プール内のキャプチャバッファの最大数</string>
+  <string name="dsp_max_buffers_value">%d バッファ</string>
+  <string name="dsp_max_buffers_min">1</string>
+  <string name="dsp_max_buffers_max">5</string>
+
+  <!-- Input Device Selection -->
+  <string name="dsp_input_device">タッチ入力デバイス</string>
+  <string name="dsp_input_device_description">入力注入に使用するタッチデバイスを選択します。自動検出を推奨します。</string>
+  <string name="dsp_input_device_auto">自動検出</string>
+  <string name="dsp_input_device_auto_description">最適なタッチスクリーンデバイスを自動選択</string>
+  <string name="dsp_input_device_refresh">デバイスを更新</string>
+  <string name="dsp_input_device_loading">デバイスを読み込み中…</string>
+  <string name="dsp_input_device_none">デバイスが見つかりません</string>
+  <string name="dsp_input_device_probability">%d%% 一致</string>
+  <string name="dsp_input_device_recommended">推奨</string>
+  <string name="dsp_input_device_resolution">解像度: %s</string>
+  <string name="dsp_input_device_touch_points">タッチポイント: %d</string>
+  <string name="dsp_input_device_protocol">プロトコル: %s</string>
+  <string name="dsp_input_device_selected">選択済み</string>
+
+  <string name="dsp_hardware_info">ハードウェア情報</string>
+  <string name="dsp_hardware_accelerators">アクセラレータ</string>
+  <string name="dsp_active_delegate">アクティブデリゲート</string>
+  <string name="dsp_gpu_vendor">GPU</string>
+  <string name="dsp_hexagon_dsp">Hexagon DSP</string>
+  <string name="dsp_nnapi">NNAPI</string>
+  <string name="dsp_npu">NPU</string>
+  <string name="dsp_available">利用可能</string>
+  <string name="dsp_not_available">利用不可</string>
+  <string name="dsp_performance_metrics">パフォーマンス指標</string>
+  <string name="dsp_avg_latency">平均遅延</string>
+  <string name="dsp_p95_latency">P95遅延</string>
+  <string name="dsp_loop_count">ループ回数</string>
+  <string name="dsp_model_memory">モデルメモリ</string>
+  <string name="dsp_buffer_memory">バッファメモリ</string>
+  <string name="dsp_latency_ms">%d ms</string>
+  <string name="dsp_memory_mb">%.1f MB</string>
+  <string name="dsp_capture_avg">キャプチャ平均</string>
+  <string name="dsp_detection_avg">検出平均</string>
+  <string name="dsp_ocr_avg">OCR平均</string>
+  <string name="dsp_no_metrics">指標データなし</string>
+  <string name="dsp_above_threshold">しきい値超過</string>
+  <string name="dsp_below_threshold">しきい値未満</string>
+
+  <!-- SELinux Fix -->
+  <string name="selinux_fix_button">SELinuxポリシーを修正</string>
+  <string name="selinux_fix_title">SELinuxポリシーを修正</string>
+  <string name="selinux_current_mode">現在のSELinuxモード: %s</string>
+  <string name="selinux_fix_explanation">AndroidのSELinuxセキュリティ機構により、アプリは入力デバイスに直接アクセスできません。この修正により、一時的なポリシールールを追加し、アプリがネイティブIOCTLで入力注入を行い、最低遅延（&lt;5ms）を実現できます。</string>
+  <string name="selinux_fix_warning">この修正は再起動後に無効になり、再度実行する必要があります。入力デバイスへのアクセスのみに影響し、システム全体のセキュリティは低下しません。</string>
+  <string name="selinux_fix_confirm">修正を実行</string>
+  <string name="selinux_fix_success_title">修正成功</string>
+  <string name="selinux_fix_success_message">SELinuxポリシーが更新されました。ネイティブIOCTLがまだ利用できない場合は、Android InputまたはShell Sendevent方式をご利用ください。同様に信頼性があります。</string>
+  <string name="selinux_fix_failed_title">修正失敗</string>
+  <string name="selinux_fix_failed_message">SELinuxポリシーの修正に失敗しました。代替としてAndroid InputまたはShell Sendevent方式をご利用ください。</string>
+  <string name="common_ok">OK</string>
+
+  <!-- Automation Foreground Service -->
+  <string name="automation_running">自動化実行中</string>
+  <string name="automation_running_description">バックグラウンドで自動化タスクを実行中</string>
+  <string name="automation_channel_name">自動化タスク</string>
+  <string name="automation_channel_description">実行中の自動化タスクの通知</string>
+  <string name="task_completed">タスク完了</string>
+  <string name="task_failed">タスク失敗</string>
+  <string name="task_timeout">タスクタイムアウト</string>
+  <string name="task_cancelled">タスクキャンセル</string>
+  <string name="task_completed_description">タスクが正常に完了しました</string>
+  <string name="task_timeout_description">タスクが最大ステップ数を超えました</string>
+  <string name="task_completed_steps">%d ステップで完了</string>
+  <string name="task_timeout_steps">%d ステップ後にタイムアウト</string>
+  <string name="task_cancelled_by_user">ユーザーによりキャンセル</string>
+  <string name="stop">停止</string>
+
+  <!-- App Discovery Settings -->
+  <string name="settings_app_discovery">アプリ検出</string>
+  <string name="settings_app_discovery_description">アプリの検出方法とAIへの提供方法を設定</string>
+  <string name="app_discovery_enable">アプリ検出を有効化</string>
+  <string name="app_discovery_enable_description">インストール済みアプリの情報をAIに提供し、タスクの理解を向上させます</string>
+  <string name="app_discovery_include_system">システムアプリを含める</string>
+  <string name="app_discovery_include_system_description">AIに提供するアプリリストにシステムアプリを含めます</string>
+  <string name="app_discovery_max_apps">コンテキスト内の最大アプリ数</string>
+  <string name="app_discovery_max_apps_description">AIコンテキストに含める最大アプリ数</string>
+  <string name="app_discovery_max_apps_value">%d 個のアプリ</string>
+  <string name="app_discovery_categories">アプリカテゴリ</string>
+  <string name="app_discovery_hidden_apps">非表示のアプリ</string>
+  <string name="app_discovery_hidden_apps_count">%d 個のアプリを非表示</string>
+  <string name="app_discovery_no_hidden_apps">非表示のアプリはありません</string>
+  <string name="app_discovery_reset">デフォルトに戻す</string>
+  <string name="app_discovery_reset_confirm">すべてのアプリ検出設定をデフォルトに戻しますか？</string>
+  <string name="app_discovery_discovered_apps">検出されたアプリ</string>
+  <string name="app_discovery_view_apps">検出されたアプリを表示</string>
+  <string name="app_discovery_apps_count">%d 個のアプリを検出</string>
+  <string name="app_discovery_system_badge">システム</string>
+  <string name="app_discovery_aliases_count">%d 個の別名</string>
+  <string name="app_discovery_edit_aliases">別名を編集</string>
+  <string name="app_discovery_edit_aliases_title">%s の別名を編集</string>
+  <string name="app_discovery_aliases_hint">このアプリの代替名を入力してください（1行に1つ）。AIはこれらの名前を使用してコマンドをより理解します。</string>
+  <string name="app_discovery_aliases_placeholder">例：\nライン\nLINE</string>
+  <string name="app_discovery_hide">アプリを非表示</string>
+  <string name="app_discovery_unhide">表示する</string>
+  <string name="app_discovery_refresh">アプリリストを更新</string>
+  <string name="app_discovery_refresh_description">インストール済みアプリを再スキャン</string>
+
+  <!-- App Categories -->
+  <string name="app_category_social">ソーシャル</string>
+  <string name="app_category_communication">コミュニケーション</string>
+  <string name="app_category_browser">ブラウザ</string>
+  <string name="app_category_media">メディア</string>
+  <string name="app_category_finance">金融</string>
+  <string name="app_category_shopping">ショッピング</string>
+  <string name="app_category_travel">旅行</string>
+  <string name="app_category_productivity">生産性</string>
+  <string name="app_category_other">その他</string>
+
+  <!-- AI Context Headers -->
+  <string name="ai_context_installed_apps">インストール済みアプリ (%d)</string>
+
+  <!-- Debug Dashboard -->
+  <string name="debug_dashboard_title">デバッグダッシュボード</string>
+  <string name="debug_stream_status">デバッグストリーム</string>
+  <string name="debug_stream_disconnected">切断</string>
+  <string name="debug_stream_connecting">接続中 (%1$d/%2$d)</string>
+  <string name="debug_stream_connected">接続済み (ポート %d)</string>
+  <string name="debug_stream_error">エラー</string>
+  <string name="debug_stream_connect">接続</string>
+  <string name="debug_stream_disconnect">切断</string>
+  <string name="debug_performance_metrics">パフォーマンス指標</string>
+  <string name="debug_fps">FPS</string>
+  <string name="debug_latency">レイテンシ</string>
+  <string name="debug_frames">フレーム数</string>
+  <string name="debug_fps_chart">FPS履歴</string>
+  <string name="debug_latency_chart">レイテンシ履歴</string>
+  <string name="debug_delegate_info">デリゲート情報</string>
+  <string name="debug_delegate_none">なし</string>
+  <string name="debug_delegate_gpu">GPU</string>
+  <string name="debug_delegate_nnapi">NNAPI</string>
+  <string name="debug_delegate_hexagon">Hexagon DSP</string>
+  <string name="debug_delegate_xnnpack">XNNPACK</string>
+  <string name="debug_active_delegate">アクティブデリゲート:</string>
+  <string name="debug_detection_results">検出結果</string>
+  <string name="debug_detection_count">%d 件の検出</string>
+  <string name="debug_no_detections">検出なし</string>
+  <string name="debug_class_id">クラスID: %d</string>
+  <string name="debug_bbox_info">ボックス: (%1$d, %2$d) %3$dx%4$d</string>
+  <string name="debug_ocr_text">テキスト: %s</string>
+  <string name="debug_more_detections">他 %d 件の検出</string>
+
+  <!-- Debug Security Logs -->
+  <string name="debug_security_logs_title">セキュリティログ</string>
+  <string name="debug_clear_logs_title">ログをクリア</string>
+  <string name="debug_clear_logs_message">すべてのセキュリティログを消去してもよろしいですか？</string>
+  <string name="debug_search_logs">ログを検索…</string>
+  <string name="debug_log_count">%d 件のエントリ</string>
+  <string name="debug_loading">読み込み中…</string>
+  <string name="debug_no_matching_logs">一致するログがありません</string>
+  <string name="debug_no_logs">セキュリティログはありません</string>
+  <string name="debug_load_logs_failed">セキュリティログの読み込みに失敗しました</string>
+  <string name="debug_logs_cleared">セキュリティログを消去しました</string>
+  <string name="debug_clear_logs_failed">セキュリティログの消去に失敗しました</string>
+
+  <!-- Debug Chaos Testing -->
+  <string name="debug_chaos_testing_title">カオステスト</string>
+  <string name="debug_chaos_enable">カオステストを有効化</string>
+  <string name="debug_chaos_enable_description">障害をシミュレートし、復旧メカニズムをテストするためにカオステストを有効にします</string>
+  <string name="debug_chaos_actions">カオスアクション</string>
+  <string name="debug_chaos_simulate_crash">デーモンクラッシュをシミュレート</string>
+  <string name="debug_chaos_simulate_crash_description">復旧メカニズムをテストするためにデーモンクラッシュをシミュレートします</string>
+  <string name="debug_chaos_network_delay">ネットワーク遅延</string>
+  <string name="debug_chaos_network_delay_description">タイムアウト処理をテストするためにネットワーク遅延を注入します</string>
+  <string name="debug_chaos_apply_network_delay">ネットワーク遅延を適用</string>
+  <string name="debug_chaos_memory_pressure">メモリプレッシャー</string>
+  <string name="debug_chaos_memory_pressure_description">バッファ解放をテストするためにメモリプレッシャーをシミュレートします</string>
+  <string name="debug_chaos_apply_memory_pressure">メモリプレッシャーを適用</string>
+  <string name="debug_chaos_level">レベル %d</string>
+  <string name="debug_chaos_simulate_auth_failure">認証失敗をシミュレート</string>
+  <string name="debug_chaos_simulate_auth_failure_description">再認証フローをテストするために認証失敗をシミュレートします</string>
+  <string name="debug_chaos_recovery_metrics">復旧指標</string>
+  <string name="debug_chaos_reset_metrics">リセット</string>
+  <string name="debug_chaos_detection_time">検出</string>
+  <string name="debug_chaos_reconciliation_time">調整</string>
+  <string name="debug_chaos_total_recovery_time">合計</string>
+  <string name="debug_chaos_successful_recoveries">成功</string>
+  <string name="debug_chaos_failed_recoveries">失敗</string>
+  <string name="debug_chaos_success_rate">成功率</string>
+  <string name="debug_chaos_event_history">イベント履歴</string>
+
+  <!-- Model Deployment Onboarding -->
+  <string name="onboarding_step_model_title">モデルをデプロイ</string>
+  <string name="onboarding_step_model_description">オンデバイス推論用のOCRと検出モデルをインストール</string>
+  <string name="onboarding_step_model_in_progress">モデルをデプロイ中…</string>
+  <string name="onboarding_step_model_success">モデルのデプロイが完了しました</string>
+  <string name="onboarding_step_model_progress">%1$s をデプロイ中 (%2$d%%)</string>
+  <string name="onboarding_step_model_skipped">スキップしました（機能制限あり）</string>
+  <string name="onboarding_error_model_deploy_failed">モデルのデプロイに失敗しました：%s</string>
+  <string name="onboarding_model_skip_title">モデルのデプロイをスキップしますか？</string>
+  <string name="onboarding_model_skip_message">モデルのデプロイをスキップすると、OCRとオンデバイス検出機能が無効になります。後で設定からモデルをデプロイできます。</string>
+  <string name="onboarding_model_skip_confirm">スキップ</string>
+
+  <!-- Model Settings -->
+  <string name="settings_models">モデル</string>
+  <string name="model_settings_deployed_models">デプロイ済みモデル</string>
+  <string name="model_settings_no_models">モデルが見つかりません</string>
+  <string name="model_settings_no_models_description">モデルマニフェストを読み込めませんでした</string>
+  <string name="model_settings_required">必須</string>
+  <string name="model_settings_status_not_deployed">未デプロイ</string>
+  <string name="model_settings_status_deploying">デプロイ中 (%d%%)</string>
+  <string name="model_settings_status_deployed">デプロイ済み</string>
+  <string name="model_settings_status_corrupted">破損</string>
+  <string name="model_settings_status_failed">失敗</string>
+  <string name="model_settings_actions">アクション</string>
+  <string name="model_settings_redeploy">モデルを再デプロイ</string>
+  <string name="model_settings_redeploy_description">アプリアセットからデーモンディレクトリにモデルを再コピー</string>
+  <string name="model_settings_verify">モデルを検証</string>
+  <string name="model_settings_verify_description">SHA256チェックサムでモデルの整合性を確認</string>
+
+  <!-- Daemon Settings -->
+  <string name="daemon_status">デーモンステータス</string>
+  <string name="daemon_lifecycle_state">ライフサイクル状態</string>
+  <string name="daemon_status_stopped">停止中</string>
+  <string name="daemon_status_starting">起動中</string>
+  <string name="daemon_status_running">実行中</string>
+  <string name="daemon_status_stopping">停止処理中</string>
+  <string name="daemon_status_failed">失敗</string>
+  <string name="daemon_root_status">Root ステータス</string>
+  <string name="daemon_root_checking">確認中…</string>
+  <string name="daemon_root_available">利用可能</string>
+  <string name="daemon_root_unavailable">利用不可</string>
+  <string name="daemon_root_selinux_blocked">SELinux によりブロック</string>
+  <string name="daemon_control">デーモン制御</string>
+  <string name="daemon_start">デーモンを起動</string>
+  <string name="daemon_start_description">デーモンプロセスを起動します</string>
+  <string name="daemon_stop">デーモンを停止</string>
+  <string name="daemon_stop_description">デーモンプロセスを終了します</string>
+  <string name="daemon_restart">デーモンを再起動</string>
+  <string name="daemon_restart_description">デーモンを停止して再起動します</string>
+  <string name="daemon_deployment">デプロイメント</string>
+  <string name="daemon_binary_integrity">バイナリ整合性</string>
+  <string name="daemon_integrity_unknown">不明</string>
+  <string name="daemon_integrity_verified">検証済み</string>
+  <string name="daemon_integrity_tampered">改ざん検出</string>
+  <string name="daemon_integrity_check_failed">検証失敗</string>
+  <string name="daemon_model_status">モデルステータス</string>
+  <string name="daemon_models_not_deployed">未デプロイ</string>
+  <string name="daemon_models_deploying">デプロイ中…</string>
+  <string name="daemon_models_deployed">デプロイ済み</string>
+  <string name="daemon_models_error">デプロイエラー</string>
+  <string name="daemon_lifecycle_settings">ライフサイクル設定</string>
+  <string name="daemon_auto_stop">自動停止</string>
+  <string name="daemon_auto_stop_description">アプリ終了時にデーモンを自動停止</string>
+  <string name="daemon_keep_alive">キープアライブ</string>
+  <string name="daemon_keep_alive_description">バックグラウンドでデーモンを維持</string>
+  <string name="daemon_error_root_unavailable">Root 権限が利用できません</string>
+  <string name="daemon_error_start_failed">デーモンの起動に失敗しました</string>
+  <string name="daemon_error_stop_failed">デーモンの停止に失敗しました</string>
+  <string name="daemon_startup_logs">起動ログ</string>
+  <string name="daemon_elapsed_time">%.1f秒</string>
+  <string name="daemon_phase_initializing">初期化中…</string>
+  <string name="daemon_phase_checking_root">Root 権限を確認中…</string>
+  <string name="daemon_phase_checking_binary">バイナリを確認中…</string>
+  <string name="daemon_phase_deploying">バイナリをデプロイ中…</string>
+  <string name="daemon_phase_executing">起動コマンドを実行中…</string>
+  <string name="daemon_phase_waiting_binder">サービスを待機中…</string>
+  <string name="daemon_phase_verifying">バージョンを検証中…</string>
+  <string name="daemon_phase_connecting">接続中…</string>
+
+  <!-- Generic Operation Errors -->
+  <string name="error_fix_failed">修復に失敗しました</string>
+  <string name="error_save_failed">保存に失敗しました</string>
+  <string name="error_load_failed">読み込みに失敗しました</string>
+  <string name="error_refresh_failed">更新に失敗しました</string>
+  <string name="error_detect_failed">検出に失敗しました</string>
+  <string name="error_clear_failed">クリアに失敗しました</string>
+  <string name="error_download_failed">ダウンロードに失敗しました</string>
+  <string name="error_pause_failed">一時停止に失敗しました</string>
+  <string name="error_resume_failed">再開に失敗しました</string>
+  <string name="error_cancel_failed">キャンセルに失敗しました</string>
+  <string name="error_enable_failed">有効化に失敗しました</string>
+  <string name="error_disable_failed">無効化に失敗しました</string>
+  <string name="error_delete_failed">削除に失敗しました</string>
+  <string name="error_import_failed">インポートに失敗しました</string>
+  <string name="error_data_load">データ読み込みエラー</string>
+  <string name="error_with_detail">%1$s: %2$s</string>
+  <string name="error_check_root">Root 権限を確認してください</string>
+
+  <!-- Generic Success Messages -->
+  <string name="success_download_complete">ダウンロード完了</string>
+  <string name="success_download_paused">ダウンロードを一時停止しました</string>
+  <string name="success_download_resumed">ダウンロードを再開しました</string>
+  <string name="success_download_cancelled">ダウンロードをキャンセルしました</string>
+  <string name="success_model_enabled">ローカルモデルを有効にしました</string>
+  <string name="success_model_disabled">ローカルモデルを無効にしました</string>
+  <string name="success_model_deleted">モデルを削除しました</string>
+  <string name="success_model_imported">モデルのインポートに成功しました</string>
+  <string name="success_catalog_refreshed">モデルリストを更新しました</string>
+  <string name="success_selinux_fixed">SELinux を修復しました</string>
+
+  <!-- Screenshot Quality -->
+  <string name="screenshot_quality_low">低</string>
+  <string name="screenshot_quality_medium">中</string>
+  <string name="screenshot_quality_high">高</string>
+
+  <!-- Import Progress -->
+  <string name="import_stage_validating">ファイルを検証中...</string>
+  <string name="import_stage_importing">インポート中...</string>
+  <string name="import_stage_mmproj_required">mmprojファイルが必要です</string>
+
+  <!-- About Screen -->
+  <string name="about_title">アプリについて</string>
+  <string name="about_version">バージョン %1$s (%2$d)</string>
+  <string name="about_project">プロジェクト</string>
+  <string name="about_github">GitHub リポジトリ</string>
+  <string name="about_author">作者</string>
+  <string name="about_license">ライセンス</string>
+  <string name="about_icon_design">アイコンデザイン</string>
+  <string name="about_icon_designer">デザイン</string>
+  <string name="about_icon_illustrator">イラスト</string>
+  <string name="about_acknowledgements">謝辞</string>
+</resources>

@@ -1,0 +1,41 @@
+--- a/src/system.h
++++ b/src/system.h
+@@ -19,6 +19,11 @@
+ #ifndef _SYSTEM_H
+ #define _SYSTEM_H
+ 
++/* Android NDK provides these types in linux/seccomp.h */
++#ifdef __ANDROID__
++#include <linux/seccomp.h>
++#else
++
+ #include <linux/audit.h>
+ #include <linux/filter.h>
+ #include <linux/types.h>
+@@ -79,6 +84,8 @@ struct seccomp_data {
+ 	__u64 args[6];
+ };
+ 
++#endif /* !__ANDROID__ - struct definitions */
++
+ #define SECCOMP_DATA_ARCH_OFFSET	offsetof(struct seccomp_data, arch)
+ #define SECCOMP_DATA_NR_OFFSET		offsetof(struct seccomp_data, nr)
+ #define SECCOMP_DATA_IP_OFFSET		offsetof(struct seccomp_data, instruction_pointer)
+@@ -86,6 +93,8 @@ struct seccomp_data {
+ 
+ #define SECCOMP_DATA_ARG_OFFSET(_x)	offsetof(struct seccomp_data, args[_x])
+ 
++#ifndef __ANDROID__
++
+ struct seccomp_notif_sizes {
+ 	__u16 seccomp_notif;
+ 	__u16 seccomp_notif_resp;
+@@ -115,6 +124,8 @@ struct seccomp_notif_addfd {
+ 	__u32 newfd_flags;
+ };
+ 
++#endif /* !__ANDROID__ - notif structs */
++
+ int sys_chk_seccomp_syscall(void);
+ int sys_chk_seccomp_action(uint32_t action);
+ int sys_chk_seccomp_flag(int flag);

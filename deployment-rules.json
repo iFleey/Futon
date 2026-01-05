@@ -1,0 +1,19 @@
+{
+  "description": "Deployment contract rules for Futon daemon module",
+  "rules": [
+    {
+      "comment": "Initial release - versionCode 1 and onwards until next daemon update",
+      "appVersionRange": {
+        "from": 1
+      },
+      "module": {
+        "daemonHash": "sha256:75383c064012e908c458956b8600a7e33a5a2a86f7452f9c36dd7a96f2a13beb",
+        "moduleVersion": 2,
+        "patchVersion": 1
+      }
+    }
+  ],
+  "architectures": [
+    "arm64-v8a"
+  ]
+}

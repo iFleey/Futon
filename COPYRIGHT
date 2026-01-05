@@ -1,0 +1,103 @@
+Futon
+==================================
+
+COPYRIGHT NOTICE
+----------------
+
+Source Code:
+  Copyright (C) 2025 Fleey
+  Licensed under the GNU General Public License v3.0 (GPLv3)
+
+Logo:
+  Copyright (C) 2025 Fleey & Caniv
+  Licensed for non-commercial use only. Commercial use requires written permission.
+
+
+SOFTWARE LICENSE (GPLv3)
+------------------------
+
+The source code of this project is licensed under the GNU General Public
+License version 3 (GPLv3). You may copy, distribute, and modify the software
+as long as you track changes/dates in source files. Any modifications to or
+software including (via compiler) GPL-licensed code must also be made
+available under the GPL along with build & install instructions.
+
+See the LICENSE file for the full GPLv3 text.
+
+
+TRADEMARK AND LOGO POLICY
+-------------------------
+
+The name "Futon", the Futon logo, and associated visual assets are protected
+intellectual property and are NOT covered by the GPLv3 license.
+
+Logo Copyright:
+  The Futon logo is jointly owned by Fleey and Caniv.
+  Fleey holds exclusive management and licensing rights.
+
+  Permitted (non-commercial, referential use only):
+    - Use in blog posts, tutorials, reviews, or educational content
+    - Display in community discussions or presentations
+    - Include in screenshots or documentation of the OFFICIAL software
+
+  Prohibited without permission:
+    - Commercial use (merchandise, paid products, advertising)
+    - Modification or creation of derivative logos
+    - Bundling in ANY modified version of the software (forks), regardless of
+      commercial or non-commercial intent
+    - Use in ways that imply official endorsement
+
+  Asset Checksums (for verification):
+    branding/official/logo.svg
+      SHA-256: 30d554edfdc7eb72e60639dc083bbe258ee923147155a7e59aa54347135f9836
+
+If you distribute a modified version of this software, you MUST:
+
+1. REMOVE all official branding:
+   - Remove or replace all official logos (see branding/README.md)
+   - This applies regardless of whether your fork is commercial or non-commercial
+   - Change the application name (do not use "Futon" or similar names)
+   - Update APP_NAME and SERVICE_NAME in daemon/core/branding.h
+   - Change the package name if distributing an Android app
+
+2. NOT imply official endorsement:
+   - Do not claim your fork is "Futon" or "Official Futon"
+   - Do not use the Futon name in a way that confuses users
+   - Clearly indicate that your version is a fork/derivative
+
+3. PRESERVE attribution:
+   - Keep the original copyright notices in source files
+   - Acknowledge the original project in your documentation
+
+This trademark policy follows the model established by Mozilla Firefox
+(which Debian renamed to IceWeasel) and Chromium/Chrome.
+
+
+RATIONALE
+---------
+
+This policy exists to:
+- Protect users from malicious forks claiming to be official
+- Maintain quality standards for the official release
+- Allow the community to freely fork while preventing brand confusion
+
+You are FREE to:
+- Fork and modify the code for any purpose
+- Distribute your modifications
+- Use the code commercially
+- Create derivative works
+
+You must NOT:
+- Use "Futon" branding for unofficial releases
+- Imply your fork is endorsed by the original authors
+- Distribute malware under the Futon name
+- Use the Futon logo without permission
+
+
+CONTACT
+-------
+
+For trademark licensing inquiries or permission to use the Futon name/logo,
+contact the original author through the project repository.
+
+Repository: https://github.com/iFleey/Futon
