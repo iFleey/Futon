@@ -196,7 +196,14 @@ jobs:
 
       - name: Prepare Release APK
         run: |
-          mv artifacts/app-release.apk "${{ needs.build.outputs.apk-name }}"
+          ls -la artifacts/
+          # Find the APK file (could be app-release.apk or other name)
+          APK_FILE=$(find artifacts -name "*.apk" -type f | head -1)
+          if [[ -z "$APK_FILE" ]]; then
+            echo "Error: No APK found in artifacts"
+            exit 1
+          fi
+          mv "$APK_FILE" "${{ needs.build.outputs.apk-name }}"
           ls -la *.apk
 
       - name: Create Release
