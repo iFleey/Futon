@@ -149,12 +149,12 @@ jobs:
         run: |
           APK_PATH="app/build/outputs/apk/release/app-release.apk"
           if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
-            APK_NAME="futon-${{ github.ref_name }}.apk"
+            ARTIFACT_NAME="futon-${{ github.ref_name }}"
           else
-            APK_NAME="futon-$(git rev-parse --short HEAD).apk"
+            ARTIFACT_NAME="futon-$(git rev-parse --short HEAD)"
           fi
           echo "path=$APK_PATH" >> $GITHUB_OUTPUT
-          echo "name=$APK_NAME" >> $GITHUB_OUTPUT
+          echo "name=$ARTIFACT_NAME" >> $GITHUB_OUTPUT
 
       # Enable when repo is public
       # - name: Generate APK Attestation
@@ -195,14 +195,14 @@ jobs:
 
       - name: Prepare Release APK
         run: |
-          ls -la
-          # APK is downloaded to current directory with original name
-          mv app-release.apk "${{ needs.build.outputs.apk-name }}"
+          ls -la "${{ needs.build.outputs.apk-name }}/"
+          mv "${{ needs.build.outputs.apk-name }}/app-release.apk" "${{ needs.build.outputs.apk-name }}.apk"
+          rm -rf "${{ needs.build.outputs.apk-name }}"
           ls -la *.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@da05d552573ad5aba039eaac05058a918a7bf631 # v2.2.2
         with:
-          files: ${{ needs.build.outputs.apk-name }}
+          files: ${{ needs.build.outputs.apk-name }}.apk
           generate_release_notes: true
           fail_on_unmatched_files: true
